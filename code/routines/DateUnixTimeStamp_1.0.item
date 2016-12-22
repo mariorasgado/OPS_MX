@@ -1,0 +1,1089 @@
+package routines;
+
+import java.util.Date;
+import java.math.BigDecimal;
+import java.text.DateFormat;
+import java.text.DecimalFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Locale;
+import java.util.TimeZone;
+
+import com.sun.javafx.css.CalculatedValue;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class DateUnixTimeStamp {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public String helloExample (String message) {
+    	try{
+    	switch(message)
+        {
+        case "CO":
+        	return "COL";
+        case "MX":
+        	return "MEX";
+        case "MXCP":
+        	return "MEX";
+        case "CL":
+        	return "CHL";
+        case "COLM":
+        	return "COL";
+        case "PE":
+        	return "PER";
+        case "VE":
+        	return "VEN";
+        case "AR":
+        	return "ARG";
+        case "PELM":
+        	return "PER";
+        case "EC":
+        	return "ECU";
+        case "HP MX":
+        	return "MEX";
+        case "PA":
+        	return "PAN";
+        case "HP CL":
+        	return "CHL";
+        case "Customer Service AR":
+        	return "ARG";
+        case "Customer Service AR Casos Especiales":
+        	return "ARG";
+        case "Customer Service CL":
+        	return "CHL";
+        case "Customer Service CL Casos Especiales":
+        	return "CHL";
+        case "Customer Service CO":
+        	return "COL";
+        case "Customer Service CO Casos Especiales":
+        	return "COL";
+        case "Customer Service COLM":
+        	return "LMC";
+        case "Customer Service EC":
+        	return "ECU";
+        case "Customer Service EC Casos Especiales":
+        	return "ECU";
+        case "Customer Service MX":
+        	return "MEX";
+        case "Customer Service MX Casos Especiales":
+        	return "MEX";
+        case "Customer Service MXCP":
+        	return "CLP";
+        case "Customer Service PA":
+        	return "PAN";
+        case "Customer Service PA Casos Especiales":
+        	return "PAN";
+        case "Customer Service PE":
+        	return "PER";
+        case "Customer Service PE Casos Especiales":
+        	return "PER";
+        case "Customer Service PELM":
+        	return "LMP";
+        case "Customer Service VE":
+        	return "VEN";
+        case "Customer Service VE Casos Especiales":
+        	return "VEN";
+        case "Guias IL México":
+        	return "Invalid";
+        case "Guías IL Colombia":
+        	return "Invalid";
+        case "Guías IL Perú":
+        	return "Invalid";
+        case "Market Place":
+        	return "Invalid";
+        case "Market Place Admin":
+        	return "Invalid";
+        case "Market Place Cerrado":
+        	return "Invalid";
+        case "Market Place Cerrado CL":
+        	return "Invalid";
+        case "Market Place Cerrado CO":
+        	return "Invalid";
+        case "Market Place Cerrado PE":
+        	return "Invalid";
+        case "Market Place CL":
+        	return "Invalid";
+        case "Market Place CO":
+        	return "Invalid";
+        case "Market Place INT":
+        	return "Invalid";
+        case "Market Place LU":
+        	return "Invalid";
+        case "Market Place PE":
+        	return "Invalid";
+        case "Soporte SalesForce":
+        	return "Invalid";
+        case "Telesales Recuperación":
+        	return "Invalid";
+        case "Telesales REG":
+        	return "Invalid";
+        case "Tienda HP CL":
+        	return "Invalid";
+        case "Tienda HP MX":
+        	return "Invalid";
+        }
+		return message;
+    	}
+    	catch(Exception e)
+    	{
+    		return message;
+    	}
+    }
+    
+    /**
+     * CountryFix: Returns the correct country.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} .
+     */
+    
+    public static String countryFix (String country) {
+    	try{
+    	switch(country)
+        {
+        case "CO":
+        	return "COL";
+        case "MX":
+        	return "MEX";
+        case "MXCP":
+        	return "MEX";
+        case "CL":
+        	return "CHL";
+        case "COLM":
+        	return "COL";
+        case "PE":
+        	return "PER";
+        case "VE":
+        	return "VEN";
+        case "AR":
+        	return "ARG";
+        case "PELM":
+        	return "PER";
+        case "EC":
+        	return "ECU";
+        case "HP MX":
+        	return "MEX";
+        case "PA":
+        	return "PAN";
+        case "HP CL":
+        	return "CHL";
+        case "Customer Service AR":
+        	return "ARG";
+        case "Customer Service AR Casos Especiales":
+        	return "ARG";
+        case "Customer Service CL":
+        	return "CHL";
+        case "Customer Service CL Casos Especiales":
+        	return "CHL";
+        case "Customer Service CO":
+        	return "COL";
+        case "Customer Service CO Casos Especiales":
+        	return "COL";
+        case "Customer Service COLM":
+        	return "COL";
+        case "Customer Service EC":
+        	return "ECU";
+        case "Customer Service EC Casos Especiales":
+        	return "ECU";
+        case "Customer Service MX":
+        	return "MEX";
+        case "Customer Service MX Casos Especiales":
+        	return "MEX";
+        case "Customer Service MXCP":
+        	return "MEX";
+        case "Customer Service PA":
+        	return "PAN";
+        case "Customer Service PA Casos Especiales":
+        	return "PAN";
+        case "Customer Service PE":
+        	return "PER";
+        case "Customer Service PE Casos Especiales":
+        	return "PER";
+        case "Customer Service PELM":
+        	return "PER";
+        case "Customer Service VE":
+        	return "VEN";
+        case "Customer Service VE Casos Especiales":
+        	return "VEN";
+        case "Guias IL México":
+        	return "Invalid";
+        case "Guías IL Colombia":
+        	return "Invalid";
+        case "Guías IL Perú":
+        	return "Invalid";
+        case "Market Place":
+        	return "Invalid";
+        case "Market Place Admin":
+        	return "Invalid";
+        case "Market Place Cerrado":
+        	return "Invalid";
+        case "Market Place Cerrado CL":
+        	return "Invalid";
+        case "Market Place Cerrado CO":
+        	return "Invalid";
+        case "Market Place Cerrado PE":
+        	return "Invalid";
+        case "Market Place CL":
+        	return "Invalid";
+        case "Market Place CO":
+        	return "Invalid";
+        case "Market Place INT":
+        	return "Invalid";
+        case "Market Place LU":
+        	return "Invalid";
+        case "Market Place PE":
+        	return "Invalid";
+        case "Soporte SalesForce":
+        	return "Invalid";
+        case "Telesales Recuperación":
+        	return "Invalid";
+        case "Telesales REG":
+        	return "Invalid";
+        case "Tienda HP CL":
+        	return "Invalid";
+        case "Tienda HP MX":
+        	return "Invalid";
+        }
+		return country;
+    	}
+    	catch(Exception e){
+    		return country;
+    	}
+    }
+    /**
+     * ChannelDIm: Returns the SK for channel.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("Chat") input: The string need to be printed.
+     * 
+     * {example} .
+     */
+    
+    public static String ChannelDimm (String channel) {
+    	try{
+    	switch(channel)
+        {
+        case "Email":
+        	return "Mails";
+        case "Facebook":
+        	return "Social Media";
+        case "Chat":
+        	return "Chats";
+        case "Teléfono":
+        	return "Calls";
+        case "Whatsapp":
+        	return "Social Media";
+        case "Twitter":
+        	return "Social Media";
+        }
+		return "Other";
+    	}
+    	catch(Exception e){
+    		return "Other";
+    	}
+    }
+    /**
+     * Concatenate: Due to SOQL doesn't support In-Line Process.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("Status y subsatus") input: The string need to be printed.
+     * 
+     * {example} .
+     */
+    
+    public static String Concatenate (String status,String substatus) {
+    	try{
+    	String cadena=substatus+"-"+status+"-Cases";
+		return cadena;
+    	}
+    	catch(Exception e){
+    		return "";
+    	}
+    }
+    /**
+     * DateTimeZone: Local Date for all countries
+     * 
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("Status y subsatus") input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static Date DateTimeZone (Date fecha,String pais) throws ParseException {
+    	try
+    	{
+    	SimpleDateFormat formatter = new SimpleDateFormat("dd-M-yyyy hh:mm:ss a");
+    	SimpleDateFormat newDate=new SimpleDateFormat("dd-M-yyyy hh:mm:ss a");
+    	String sNewDate=null;
+    	Date finalDate;
+    	TimeZone newtimeZone = TimeZone.getTimeZone("UTC");
+    	switch(pais)
+    	{
+    	case "COL":
+    		newtimeZone = TimeZone.getTimeZone("America/Bogota");
+    		break;
+    	case "PER":
+    		newtimeZone = TimeZone.getTimeZone("America/Lima");
+    		break;
+    	case "CHL":
+    		newtimeZone = TimeZone.getTimeZone("America/Santiago");
+    		break;
+    	case "VEN":
+    		newtimeZone = TimeZone.getTimeZone("America/Caracas");
+    		break;
+    	case "ECU":
+    		newtimeZone = TimeZone.getTimeZone("America/Guayaquil");
+    		break;
+    	case "ARG":
+    		newtimeZone = TimeZone.getTimeZone("America/Buenos_Aires");
+    		break;
+    	case "PAN":
+    		newtimeZone = TimeZone.getTimeZone("America/Panama");
+    		break;
+    	case "MEX":
+    		newtimeZone = TimeZone.getDefault();
+    		break;
+    	default:
+    		newtimeZone = TimeZone.getDefault();
+    		break;
+    	}
+    	newDate.setTimeZone(newtimeZone);
+		sNewDate=newDate.format(fecha);
+		finalDate=formatter.parse(sNewDate);
+		//DateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
+		return finalDate;
+    	}
+    	catch(Exception e){
+    		return fecha;
+    	}
+    	}
+    /**
+     * Comparacion de fechas: Ojala funcione, estoy hasta la madre!
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("Status y subsatus") input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static Date DatesCompar (Date answered,Date incoming) throws ParseException {
+    	try{
+    		SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
+    		Date date;
+    		if(answered.compareTo(incoming)==1)
+    		{
+    			date=answered;
+    		}
+    		else{
+    			date=fmt.parse("9999-12-31");
+    		}
+    		return date;
+    	}
+    	catch(Exception e){
+    		SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
+    		Date date = fmt.parse("9999-12-31");
+    		return date;
+    	}
+    }
+    /**
+     * DateCreatedMain: Para ajuste laboral de Mails
+     * 
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("fromInput,initCalendar,finitCalendar,isWD,NextWorkingDate") input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static Date CreatedMain (Date fromInput,Date initCalendar,Date finitCalendar,String isWD,Date NextWorkingDate) throws ParseException {
+    	try{
+    		Date date = null;
+    		//System.out.println("Fecha original"+fromInput+" Is WH: "+isWD);
+    		if(isWD.contentEquals("0")){
+    			//System.out.println("No hay WD");
+    			date=NextWorkingDate;
+    		}
+	    		else if(isWD.contentEquals("1") && initCalendar.compareTo(fromInput)>=0){
+	    			date=initCalendar;
+	    			//System.out.println("Comparado con init: "+initCalendar.compareTo(fromInput)+" Fechas: "+fromInput+initCalendar);
+		    		}
+			    		else if(isWD.contentEquals("1")&&fromInput.compareTo(initCalendar)>=0 && finitCalendar.compareTo(fromInput)>=0){
+			    			//SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			    			//date=formatter.parse(formatter.format(fromInput));
+			    			date=fromInput;
+			    			//System.out.println("Comparado con init: "+initCalendar.compareTo(fromInput)+" y finit: "+finitCalendar.compareTo(fromInput)+" Fechas: "+fromInput+initCalendar);
+			    		}
+			    		else{
+			    			date=NextWorkingDate;
+			    			//System.out.println("Else");
+			    		}
+    		//System.out.println("Final: "+date);
+    		return date;
+    	}
+    	catch(Exception e){
+    		return fromInput;
+    	}
+    }
+    /**
+     * DateOnly: Tranformar date y regresar un string con solo la fecha
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("CreatedDate") input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static String DateOnly (Date CreatedDate) throws ParseException {
+    	try{
+    		DateFormat outputFormatter = new SimpleDateFormat("yyyy-MM-dd");
+    		String output = outputFormatter.format(CreatedDate);
+    		return output;
+    	}
+    	catch(Exception e){
+    		return "";
+    	}
+    }
+    /**
+     * DateDiff: Diferencia entre fechas regresa Long 
+     * 
+     * 
+     * {talendTypes} Long
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("CreatedMain,AnsweredDate") input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static int DateDiff (Date CreatedDate,Date AnsweredDate) throws ParseException {
+    	try{
+    		int diff = (int) (AnsweredDate.getTime() - CreatedDate.getTime());
+    		int diffSeconds = diff / 1000;
+    		return diffSeconds;
+    	}
+    	catch(Exception e){
+    		Integer y = 0;
+    		return y;
+    	}
+    }
+    /**
+     * Comparacion de fechas: Ojala funcione, estoy hasta la madre!
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("Status y subsatus") input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static Integer DatesComparString (Date answered) throws ParseException {
+    	try{
+    		SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
+    		Date def=fmt.parse("9999-12-31");
+    		if(answered.compareTo(def)==0)
+    			return 0;
+    		else
+    			return 1;
+    	}
+    	catch(Exception e){
+    		return 0;
+    	}
+    }
+    /**
+     * Comparacion de fechas: Ojala funcione, estoy hasta la madre!
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("Status y subsatus") input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    public static Integer DatesComparStringClosed (Date answered) throws ParseException {
+    	try{
+    		SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
+    		Date def;
+    		def=fmt.parse("0000-00-00");
+    		if(answered.compareTo(def)==0)
+    			return 0;
+    		else
+    			return 1;
+    	}
+    	catch(Exception e){
+    		return 0;
+    	}
+    }
+    /**
+     * DateTimeZoneToMex: Local Date for all countries
+     * 
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(fecha,país) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+	public static Date DateTimeZoneToMex (String fechas,String pais) throws ParseException {
+    	try
+    	{
+    		/*
+    		String utcTime = fechas;
+    		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+    		//SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+    		TimeZone tz;*/
+    		/*
+    	switch(pais)
+    	{
+    	case "CO":
+    		tz = TimeZone.getTimeZone("America/Bogota");
+    		//format.setTimeZone(TimeZone.getTimeZone("America/Bogota"));
+    		break;
+    	case "PE":
+    		 tz = TimeZone.getTimeZone("America/Lima");
+    		break;
+    	case "CL":
+    		 tz = TimeZone.getTimeZone("America/Santiago");
+    		break;
+    	case "VE":
+    		 tz = TimeZone.getTimeZone("America/Caracas");
+    		break;
+    	case "EC":
+    		 tz = TimeZone.getTimeZone("America/Guayaquil");
+    		break;
+    	case "AR":
+    		 tz = TimeZone.getTimeZone("America/Buenos_Aires");
+    		break;
+    	case "PA":
+    		 tz = TimeZone.getTimeZone("America/Panama");
+    		break;
+    	case "MX":
+    		 tz = TimeZone.getTimeZone("America/Mexico");
+    		break;
+    	default:
+    		 tz = TimeZone.getTimeZone("America/Mexico");
+    		break;
+    	}
+    	System.out.println(tz);
+		dateFormat.setTimeZone(tz);
+		Date utcDate = dateFormat.parse(utcTime);
+		System.out.println(pais);
+		System.out.println(utcDate);
+		GregorianCalendar cal = new GregorianCalendar();
+		cal.setTime(utcDate);
+		return utcDate;*/
+    		DateFormat utcFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+    		utcFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+
+    		Date date = utcFormat.parse(fechas);
+    		DateFormat pstFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS");
+    		pstFormat.setTimeZone(TimeZone.getTimeZone("Americas/Caracas"));
+
+    		System.out.println(pstFormat.format(date));
+    		String pststring = pstFormat.format(date);
+    		Date ret=pstFormat.parse(pststring);
+    		System.out.println(ret);
+    		return ret;
+    	}
+    	catch(Exception e){
+    		System.out.println("Algo paso :( "+pais+fechas);
+    		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+    		Date ret=dateFormat.parse(fechas);
+    		return ret;
+    	}
+    	}
+	/**
+     * DateOnlyFromString: Obtener solo la fecha con base en un string
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(Date) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static String DateOnlyFromString (String CreatedDate) throws ParseException {
+    	try{
+    		String CutDate=CreatedDate.substring(0,10);
+    		return CutDate;
+    	}
+    	catch(Exception e){
+    		return "";
+    	}
+    }
+    /**
+     * DateTimeZoneToMex: Local Date for all countries
+     * 
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(fecha,país) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+	public static Date DTZFromDate (Date fecha,String pais) throws ParseException {
+    	try
+    	{
+    		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+    		String utcTime = dateFormat.format(fecha);
+    		TimeZone tz;
+    	switch(pais)
+    	{
+    	case "CO":
+    		tz = TimeZone.getTimeZone("America/Bogota");
+    		//format.setTimeZone(TimeZone.getTimeZone("America/Bogota"));
+    		break;
+    	case "PE":
+    		 tz = TimeZone.getTimeZone("America/Lima");
+    		break;
+    	case "CL":
+    		 tz = TimeZone.getTimeZone("America/Santiago");
+    		break;
+    	case "VE":
+    		 tz = TimeZone.getTimeZone("America/Caracas");
+    		break;
+    	case "EC":
+    		 tz = TimeZone.getTimeZone("America/Guayaquil");
+    		break;
+    	case "AR":
+    		 tz = TimeZone.getTimeZone("America/Buenos_Aires");
+    		break;
+    	case "PA":
+    		 tz = TimeZone.getTimeZone("America/Panama");
+    		break;
+    	case "MX":
+    		 tz = TimeZone.getTimeZone("America/Mexico");
+    		break;
+    	default:
+    		 tz = TimeZone.getTimeZone("America/Mexico");
+    		break;
+    	}
+		dateFormat.setTimeZone(tz);
+		Date utcDate = dateFormat.parse(utcTime); 
+		GregorianCalendar cal = new GregorianCalendar();
+		cal.setTime(utcDate);
+		return utcDate;
+    	}
+    	catch(Exception e){
+    		System.out.println("Algo paso");
+    		return fecha;
+    	}
+    	}
+	/**
+     * SimpleDTZFromString: MexicoLocalDate for all
+     * 
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(fecha) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+	public static Date SimpleDTZFromString (String fecha) throws ParseException {
+    	try
+    	{
+    		/*
+    		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+    		String utcTime =fecha;
+    		TimeZone tz;
+    		 tz = TimeZone.getTimeZone("etc/UTC");
+		dateFormat.setTimeZone(tz);
+		Date utcDate = dateFormat.parse(utcTime); 
+		GregorianCalendar cal = new GregorianCalendar();
+		cal.setTime(utcDate);
+		return utcDate;*/
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+		Date utcDate = dateFormat.parse(fecha); 
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(utcDate);
+		cal.add(Calendar.HOUR, -4);
+		Date oneHourBack = cal.getTime();
+		 return oneHourBack;
+    	}
+    	catch(Exception e){
+    		if(fecha!=null)
+    		{
+    		System.out.println(fecha);
+    		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+    		Date utcTime = dateFormat.parse(fecha);
+    		return utcTime;
+    		}
+    		else
+    			return DateFixed();
+    	}
+    	}
+	/**
+     * SimpleDTZFromDate: MexicoLocalDate for all
+     * 
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(fecha) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+	public static Date SimpleDTZFromDate (Date fecha) throws ParseException {
+    	try
+    	{
+    		//SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+    		/*String utcTime = dateFormat.format(fecha);
+    		TimeZone tz;
+    		 tz = TimeZone.getTimeZone("etc/UTC");
+    		 dateFormat.setTimeZone(tz);
+    		 Date utcDate = dateFormat.parse(utcTime); 
+    		 GregorianCalendar cal = new GregorianCalendar();
+    		 cal.setTime(utcDate);*/
+    		Calendar cal = Calendar.getInstance();
+    		cal.setTime(fecha);
+    		cal.add(Calendar.HOUR, -4);
+    		Date oneHourBack = cal.getTime();
+    		 return oneHourBack;
+    	}
+    	catch(Exception e){
+    		//SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+    		//String utcTime = dateFormat.format(fecha);
+    		//System.out.println(fecha);
+    		return fecha;
+    	}
+    	}
+	/**
+     * DateTimeZoneByCountry: Local Date for all countries
+     * 
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(fecha,país) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+	public static Date DateTimeZoneByCountry (Date fecha,String pais) throws ParseException {
+    	try
+    	{
+    		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+    		String utcTime = dateFormat.format(fecha);
+    		//SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+    		TimeZone tz;
+    	switch(pais)
+    	{
+    	case "COL":
+    		tz = TimeZone.getTimeZone("America/Bogota");
+    		//format.setTimeZone(TimeZone.getTimeZone("America/Bogota"));
+    		break;
+    	case "PER":
+    		 tz = TimeZone.getTimeZone("America/Lima");
+    		break;
+    	case "CHL":
+    		 tz = TimeZone.getTimeZone("America/Santiago");
+    		break;
+    	case "VEN":
+    		 tz = TimeZone.getTimeZone("America/Caracas");
+    		break;
+    	case "ECU":
+    		 tz = TimeZone.getTimeZone("America/Guayaquil");
+    		break;
+    	case "ARG":
+    		 tz = TimeZone.getTimeZone("America/Buenos_Aires");
+    		break;
+    	case "PAN":
+    		 tz = TimeZone.getTimeZone("America/Panama");
+    		break;
+    	case "MEX":
+    		 tz = TimeZone.getTimeZone("America/Mexico");
+    		break;
+    	default:
+    		 tz = TimeZone.getTimeZone("America/Mexico");
+    		break;
+    	}
+		dateFormat.setTimeZone(tz);
+		Date utcDate = dateFormat.parse(utcTime); 
+		GregorianCalendar cal = new GregorianCalendar();
+		cal.setTime(utcDate);
+		return utcDate;
+    	}
+    	catch(Exception e){
+    		System.out.println("Algo Pasa :S");
+    		return fecha;
+    	}
+    	}
+	/**
+     * DateForSF: Transformar date y regresar un string con la fecha en Formato Salesforce
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("CreatedDate") input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static String DateForSF (Date CreatedDate) throws ParseException {
+    	try{
+    		SimpleDateFormat outputFormatter = new SimpleDateFormat("yyyy-MM-dd\'T\'HH:mm:ss");
+    		String output = outputFormatter.format(CreatedDate);
+    		return output;
+    	}
+    	catch(Exception e){
+    		return "";
+    	}
+    }
+    /**
+     * DateFixed: Un valor constante de 9999-12-31
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("CreatedDate") input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static Date DateFixed() throws ParseException {
+    		SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
+    		Date def=fmt.parse("9999-12-31");
+    		return def;
+    }
+    /**
+     * DateFixed: Un valor constante de 9999-12-31
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("CreatedDate") input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static String ServicePresenceStatusId(String id) throws ParseException {
+    	String ret;
+    		switch(id){
+    		case "0N5o0000000TN2yCAG":
+    			ret="After_call_work";
+    		break;
+    		
+    		case "0N5o0000000TN33CAG":
+    			ret="Bano";
+    			break;
+    		case "0N5o0000000TN38CAG ":
+    			ret="Break";
+    			break;
+    		case "0N5o0000000TN3DCAW":
+    			ret="Disponible";
+    		break;
+    		case "0N5o0000000TN3ICAW":
+    			ret="Enfermeria";
+    			break;
+    		case "0N5o0000000TN3NCAW":
+    			ret="Feedback";
+    			break;
+    		case "0N5o0000000TN3SCAW":
+    			ret="Formacion";
+    			break;
+    		default:
+    			ret="NA";
+    		}
+    		return ret;
+    }
+    
+    /**
+     * RoundFloat: Un valor constante de 9999-12-31
+     * 
+     * {talendTypes} Float
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(float,decimals-int) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static double round(double d, int decimalPlace) {
+    	DecimalFormat df = new DecimalFormat("###.##");
+    	double ret=Double.parseDouble(df.format(d));
+    	return ret;
+    }
+    
+    /**
+     * ContactVSProcess: Para ajuste laboral de Mails
+     * 
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(Date dtContact,Date dtOrder,Date dtExported,Date dtShipped,Date dt1stAttempt,Date dtPromiseDelivered,Date dtDelivered) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static String ContactVSProcess (Date dtContact,Date dtOrder,Date dtExported,Date dtShipped,Date dt1stAttempt,Date dtPromiseDelivered,Date dtDelivered) throws ParseException {
+    	try{
+    		String proceso = "";
+    		//System.out.println("Fecha original"+fromInput+" Is WH: "+isWD);
+    		if(dtContact.compareTo(dtOrder)>=1 && dtContact.compareTo(dtExported)>=0){
+    			//System.out.println("No hay WD");
+    			proceso="Between order and  exported";
+    		}
+	    		else if(dtContact.compareTo(dtExported)>=1 && dtContact.compareTo(dtShipped)>=0){
+	    			proceso="Between exported and shipped";
+	    			//System.out.println("Comparado con init: "+initCalendar.compareTo(fromInput)+" Fechas: "+fromInput+initCalendar);
+		    		}
+	    					else if(dtContact.compareTo(dtShipped)>=1 && dtContact.compareTo(dt1stAttempt)>=0){
+			    			//SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			    			//date=formatter.parse(formatter.format(fromInput));
+	    						proceso="Between shipped and 1st Attempt";
+			    			//System.out.println("Comparado con init: "+initCalendar.compareTo(fromInput)+" y finit: "+finitCalendar.compareTo(fromInput)+" Fechas: "+fromInput+initCalendar);
+	    					}
+	    						else if(dtContact.compareTo(dtShipped)>=1 && dtContact.compareTo(dtPromiseDelivered)>=0){
+	    							proceso="Between shipped and delivered";
+	    						}
+	    						else if(dtContact.compareTo(dtPromiseDelivered)>=1 && dtContact.compareTo(dtDelivered)>=0){
+	    							proceso="Between delivery promise and delivered";
+	    						}
+			    		else{
+			    			proceso="To Satisfied";
+			    			//System.out.println("Else");
+			    		}
+    		//System.out.println("Final: "+date);
+    		return proceso;
+    	}
+    	catch(Exception e){
+    		return "AfterDelivered";
+    	}
+    }
+    /**
+     * SimpleDTZFromDateMX: Mexico LocalDate for all
+     * 
+     * 
+     * {talendTypes} Date
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(fecha) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+	public static Date SimpleDTZFromDateMX(Date fecha) throws ParseException {
+    	try
+    	{
+    		Calendar cal = Calendar.getInstance();
+    		cal.setTime(fecha);
+    		cal.add(Calendar.HOUR, -6);
+    		Date oneHourBack = cal.getTime();
+    		 return oneHourBack;
+    	}
+    	catch(Exception e){
+    		return fecha;
+    	}
+    	}
+    
+}
+    
+    
+

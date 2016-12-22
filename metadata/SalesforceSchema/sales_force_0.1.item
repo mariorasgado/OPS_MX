@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:SalesforceSchemaConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_lmZdIBbIEeayidd619EiWA" name="sales_force" webServiceUrl="https://login.salesforce.com/services/Soap/u/34.0" userName="bi.bot@linio.com" password="tZAJYXJDJRxd8iU+J/jiu8BeaMzNzL+nBbKj9dy0mp513RxcEFgMGg==" moduleName="LiveChatTranscript" batchSize="250" timeOut="60000" webServiceUrlTextForOAuth="https://login.salesforce.com/services/oauth2" salesforceVersion="34.0" loginType="basic">
+  <modules xmi:id="_lmZdIRbIEeayidd619EiWA" id="_dqJ2cBDBEeazjrQLlEam7Q" label="Case" moduleName="Case">
+    <tables xmi:id="_lmZdIhbIEeayidd619EiWA" name="Case" id="_dqJ2cRDBEeazjrQLlEam7Q" label="Case">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdKxbIEeayidd619EiWA" label="CaseNumber" length="30" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZdLBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdNxbIEeayidd619EiWA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZdOBbIEeayidd619EiWA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_lmZdUxbIEeayidd619EiWA" id="_UXmEsBFrEeaDhp9P1qbslg" label="EmailMessage" moduleName="EmailMessage">
+    <tables xmi:id="_lmZdVBbIEeayidd619EiWA" name="EmailMessage" id="_UXmEsRFrEeaDhp9P1qbslg" label="EmailMessage">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdVRbIEeayidd619EiWA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_lmZdVhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdVxbIEeayidd619EiWA" label="FromAddress" length="1000" talendType="id_String">
+        <initialValue xmi:id="_lmZdWBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdWRbIEeayidd619EiWA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZdWhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdWxbIEeayidd619EiWA" label="MessageDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_lmZdXBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdXRbIEeayidd619EiWA" label="ParentId" length="18" talendType="id_String">
+        <initialValue xmi:id="_lmZdXhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdXxbIEeayidd619EiWA" label="Status" length="40" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZdYBbIEeayidd619EiWA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_lmZdYRbIEeayidd619EiWA" id="_umDZcBX8Eeayidd619EiWA" label="LiveChatTranscript" moduleName="LiveChatTranscript">
+    <tables xmi:id="_lmZdYhbIEeayidd619EiWA" name="LiveChatTranscript" id="_umDZcRX8Eeayidd619EiWA" label="LiveChatTranscript">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_pwDjBEearzuKJOQwzFw" label="Abandoned" length="1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_pxzjBEearzuKJOQwzFw" label="COMO_CONSIDERAS_LA_ATENCION_DEL_CHAT__c" length="255" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_pyDjBEearzuKJOQwzFw" label="CaseId" length="18" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_pyTjBEearzuKJOQwzFw" label="ChatDuration" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_pyjjBEearzuKJOQwzFw" label="ChatKey" length="200" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_pyzjBEearzuKJOQwzFw" label="ChatReportadoConError__c" talendType="id_Boolean" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_pzDjBEearzuKJOQwzFw" label="ComoConsiderasAtencionChat__c" length="1300" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_pzTjBEearzuKJOQwzFw" label="ContactId" length="18" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_pzjjBEearzuKJOQwzFw" label="CreatedById" length="18" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_pzzjBEearzuKJOQwzFw" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p0DjBEearzuKJOQwzFw" label="Customer_Email__c" length="50" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p0TjBEearzuKJOQwzFw" label="DiaSemana__c" length="1300" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p0jjBEearzuKJOQwzFw" label="Email_agente__c" length="1300" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p0zjBEearzuKJOQwzFw" label="EncuestaContestada__c" length="1300" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p1DjBEearzuKJOQwzFw" label="Encuesta_Chat__c" length="18" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p1TjBEearzuKJOQwzFw" label="EndTime" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p1jjBEearzuKJOQwzFw" label="EndedBy" length="255" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p1zjBEearzuKJOQwzFw" label="FechaCreacion__c" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p2DjBEearzuKJOQwzFw" label="HabilidadPais__c" length="50" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p2TjBEearzuKJOQwzFw" label="HoraSolicitudColombia__c" length="18" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p2jjBEearzuKJOQwzFw" label="Id" length="18" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p2zjBEearzuKJOQwzFw" label="IpAddress" length="39" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p3DjBEearzuKJOQwzFw" label="IsDeleted" talendType="id_Boolean" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p3TjBEearzuKJOQwzFw" label="LastModifiedById" length="18" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p3jjBEearzuKJOQwzFw" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p4TjBEearzuKJOQwzFw" label="LeadId" length="18" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p4jjBEearzuKJOQwzFw" label="LiveChatButtonId" length="18" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p4zjBEearzuKJOQwzFw" label="LiveChatDeploymentId" length="18" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p5DjBEearzuKJOQwzFw" label="LiveChatVisitorId" length="18" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p5TjBEearzuKJOQwzFw" label="Location" length="200" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p6DjBEearzuKJOQwzFw" label="NOS_HAS_CONTACTADO_ANTERIORMENTE__c" length="255" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p6TjBEearzuKJOQwzFw" label="Name" length="255" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p6jjBEearzuKJOQwzFw" label="Nombre_Cliente_Chat__c" length="70" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p6zjBEearzuKJOQwzFw" label="NumeroOrdenManual__c" length="9" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p7DjBEearzuKJOQwzFw" label="OperatorMessageCount" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p7TjBEearzuKJOQwzFw" label="OwnerId" length="18" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p7jjBEearzuKJOQwzFw" label="PaisAtencion__c" length="1300" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p7zjBEearzuKJOQwzFw" label="PaisChat__c" length="1300" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p8zjBEearzuKJOQwzFw" label="RESOLVIMOS_TUS_DUDAS__c" length="255" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p9DjBEearzuKJOQwzFw" label="RecordTypeId" length="18" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p9TjBEearzuKJOQwzFw" label="ReferrerUri" length="200" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p9jjBEearzuKJOQwzFw" label="RequestTime" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p9zjBEearzuKJOQwzFw" label="ScreenResolution" length="200" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p-DjBEearzuKJOQwzFw" label="Sin_agente__c" length="1300" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p-TjBEearzuKJOQwzFw" label="SkillId" length="18" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p-jjBEearzuKJOQwzFw" label="StartTime" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p-zjBEearzuKJOQwzFw" label="Status" length="255" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p_DjBEearzuKJOQwzFw" label="SupervisorTranscriptBody" length="131072" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p_TjBEearzuKJOQwzFw" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p_jjBEearzuKJOQwzFw" label="TiempoEsperaNumero__c" length="18" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_p_zjBEearzuKJOQwzFw" label="Tipo_Chat__c" length="255" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_qADjBEearzuKJOQwzFw" label="Transferencia__c" talendType="id_Boolean" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_qATjBEearzuKJOQwzFw" label="UserAgent" length="200" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_qAjjBEearzuKJOQwzFw" label="VisitorMessageCount" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_qAzjBEearzuKJOQwzFw" label="WaitTime" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_qBDjBEearzuKJOQwzFw" label="hora_finalizacion__c" length="18" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_qBTjBEearzuKJOQwzFw" label="hora_inicio__c" length="18" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yU_qBjjBEearzuKJOQwzFw" label="hora_solicitud__c" length="18" talendType="id_Double"/>
+    </tables>
+  </modules>
+  <modules xmi:id="_lmZdkRbIEeayidd619EiWA" id="_ur2fcBX8Eeayidd619EiWA" label="LiveChatTranscriptEvent" moduleName="LiveChatTranscriptEvent">
+    <tables xmi:id="_lmZdkhbIEeayidd619EiWA" name="LiveChatTranscriptEvent" id="_ur2fcRX8Eeayidd619EiWA" label="LiveChatTranscriptEvent">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgQDjBEearzuKJOQwzFw" label="AgentId" length="18" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgQTjBEearzuKJOQwzFw" label="CreatedById" length="18" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgQjjBEearzuKJOQwzFw" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgQzjBEearzuKJOQwzFw" label="Detail" length="255" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgRDjBEearzuKJOQwzFw" label="Id" length="18" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgRjjBEearzuKJOQwzFw" label="LastModifiedById" length="18" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgRzjBEearzuKJOQwzFw" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgSjjBEearzuKJOQwzFw" label="LiveChatTranscriptId" length="18" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgSzjBEearzuKJOQwzFw" label="Name" length="255" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgTTjBEearzuKJOQwzFw" label="Time" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FijgTjjBEearzuKJOQwzFw" label="Type" length="255" talendType="id_String" nullable="false"/>
+    </tables>
+  </modules>
+  <modules xmi:id="_lmZdlxbIEeayidd619EiWA" id="_ro1WMBYDEeayidd619EiWA" label="EmailMessage" moduleName="EmailMessage">
+    <tables xmi:id="_lmZdmBbIEeayidd619EiWA" name="EmailMessage" id="_ro19QBYDEeayidd619EiWA" label="EmailMessage">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdmRbIEeayidd619EiWA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZdmhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdmxbIEeayidd619EiWA" label="ParentId" length="18" talendType="id_String">
+        <initialValue xmi:id="_lmZdnBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdnRbIEeayidd619EiWA" label="ActivityId" length="18" talendType="id_String">
+        <initialValue xmi:id="_lmZdnhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdnxbIEeayidd619EiWA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZdoBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdoRbIEeayidd619EiWA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_lmZdohbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdoxbIEeayidd619EiWA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_lmZdpBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdpRbIEeayidd619EiWA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZdphbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdpxbIEeayidd619EiWA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_lmZdqBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdqRbIEeayidd619EiWA" label="TextBody" length="32000" talendType="id_String">
+        <initialValue xmi:id="_lmZdqhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdqxbIEeayidd619EiWA" label="HtmlBody" length="32000" talendType="id_String">
+        <initialValue xmi:id="_lmZdrBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdrRbIEeayidd619EiWA" label="Headers" length="32000" talendType="id_String">
+        <initialValue xmi:id="_lmZdrhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdrxbIEeayidd619EiWA" label="Subject" length="3000" talendType="id_String">
+        <initialValue xmi:id="_lmZdsBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdsRbIEeayidd619EiWA" label="FromName" length="1000" talendType="id_String">
+        <initialValue xmi:id="_lmZdshbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdsxbIEeayidd619EiWA" label="FromAddress" length="1000" talendType="id_String">
+        <initialValue xmi:id="_lmZdtBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdtRbIEeayidd619EiWA" label="ToAddress" length="4000" talendType="id_String">
+        <initialValue xmi:id="_lmZdthbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdtxbIEeayidd619EiWA" label="CcAddress" length="4000" talendType="id_String">
+        <initialValue xmi:id="_lmZduBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZduRbIEeayidd619EiWA" label="BccAddress" length="4000" talendType="id_String">
+        <initialValue xmi:id="_lmZduhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZduxbIEeayidd619EiWA" label="Incoming" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_lmZdvBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdvRbIEeayidd619EiWA" label="HasAttachment" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_lmZdvhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdvxbIEeayidd619EiWA" label="Status" length="40" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZdwBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdwRbIEeayidd619EiWA" label="MessageDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_lmZdwhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdwxbIEeayidd619EiWA" label="IsDeleted" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_lmZdxBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdxRbIEeayidd619EiWA" label="ReplyToEmailMessageId" length="18" talendType="id_String">
+        <initialValue xmi:id="_lmZdxhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdxxbIEeayidd619EiWA" label="IsExternallyVisible" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_lmZdyBbIEeayidd619EiWA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_lmZdyRbIEeayidd619EiWA" id="_tAXw4BYDEeayidd619EiWA" label="Encuesta_Chat__c" moduleName="Encuesta_Chat__c">
+    <tables xmi:id="_lmZdyhbIEeayidd619EiWA" name="Encuesta_Chat__c" id="_tAXw4RYDEeayidd619EiWA" label="Encuesta_Chat__c">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdyxbIEeayidd619EiWA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZdzBbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdzRbIEeayidd619EiWA" label="OwnerId" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZdzhbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZdzxbIEeayidd619EiWA" label="IsDeleted" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_lmZd0BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd0RbIEeayidd619EiWA" label="Name" length="80" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZd0hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd0xbIEeayidd619EiWA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_lmZd1BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd1RbIEeayidd619EiWA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZd1hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd1xbIEeayidd619EiWA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_lmZd2BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd2RbIEeayidd619EiWA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lmZd2hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd2xbIEeayidd619EiWA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_lmZd3BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd3RbIEeayidd619EiWA" label="COMO_CONSIDERAS_LA_ATENCION_DEL_CHAT__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_lmZd3hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd3xbIEeayidd619EiWA" label="ChatKey__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_lmZd4BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd4RbIEeayidd619EiWA" label="FechaInicio__c" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_lmZd4hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd4xbIEeayidd619EiWA" label="ID_Agente__c" length="18" talendType="id_String">
+        <initialValue xmi:id="_lmZd5BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd5RbIEeayidd619EiWA" label="NOS_HAS_CONTACTADO_ANTERIORMENTE__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_lmZd5hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd5xbIEeayidd619EiWA" label="Pagina_Chat__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_lmZd6BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd6RbIEeayidd619EiWA" label="RESOLVIMOS_TUS_DUDAS__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_lmZd6hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd6xbIEeayidd619EiWA" label="Duracion_Chat__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_lmZd7BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd7RbIEeayidd619EiWA" label="Explorador__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_lmZd7hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd7xbIEeayidd619EiWA" label="IP_Visitante__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_lmZd8BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd8RbIEeayidd619EiWA" label="Link__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_lmZd8hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd8xbIEeayidd619EiWA" label="NumOrden__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_lmZd9BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd9RbIEeayidd619EiWA" label="Plataforma__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_lmZd9hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd9xbIEeayidd619EiWA" label="Tipo_Chat__c" length="100" talendType="id_String">
+        <initialValue xmi:id="_lmZd-BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd-RbIEeayidd619EiWA" label="TranscriptBody__c" length="131072" talendType="id_String">
+        <initialValue xmi:id="_lmZd-hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd-xbIEeayidd619EiWA" label="VisitanteID__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_lmZd_BbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd_RbIEeayidd619EiWA" label="Ubicacion__c" length="100" talendType="id_String">
+        <initialValue xmi:id="_lmZd_hbIEeayidd619EiWA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lmZd_xbIEeayidd619EiWA" label="Habilidad_por_pais__c" length="20" talendType="id_String">
+        <initialValue xmi:id="_lmZeABbIEeayidd619EiWA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_lmZeARbIEeayidd619EiWA" id="_lK4l0BbIEeayidd619EiWA" label="User" moduleName="User">
+    <tables xmi:id="_lmaEMBbIEeayidd619EiWA" name="User" id="_lK4l0RbIEeayidd619EiWA" label="User">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_okPufxbIEeayidd619EiWA" label="Id" length="18" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_okPuthbIEeayidd619EiWA" label="Tipo_de_usuario_Front_Back__c" length="1300" talendType="id_String"/>
+    </tables>
+  </modules>
+</TalendMetadata:SalesforceSchemaConnection>

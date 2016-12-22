@@ -1,0 +1,212 @@
+package routines;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class MX_Processing {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static void helloExample(String message) {
+        if (message == null) {
+            message = "World"; //$NON-NLS-1$
+        }
+        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    }
+    /**
+     * Size: Regresa el tipo de tamaño del paquete standar u Oversized.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(carrier,shipment_type) input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static String Size (String carrier,String shipment_type) {
+    	try{
+    		if(shipment_type=="National")
+    			{
+    			switch(carrier)
+    				{
+    					case "ESTAFETA":
+    						return "Standard";
+    					case "FEDEX":
+    						return "Standard";
+    					case "FEDEX COD":
+    						return "Standard";
+    					case "DHL":
+    						return "Standard";
+    					case "METROPOLITANA":
+    						return "Oversize";
+    					case "PITIC":
+    						return "Oversize";
+    					case "Seller Own fleet":
+    						return "Oversize";
+    					case "BELTRAN":
+    						return "Oversize";
+    					case "CASTORES":
+    						return "Oversize";
+    					case "SKYMEX":
+    						return "Oversize";
+    					case "ROCO":
+    						return "Oversize";
+    					case "FLOTILLA LINIO - CAMIONETA":
+    						return "Oversize";
+    					case "FLOTILLA LINIO - MOTO":
+    						return "Mix";
+    					case "OFFICE":
+    						return "Mix";
+    					case "FEDEX XS":
+    						return "Standard";
+    					case "FEDEX COD XS":
+    						return "Standard";
+    					case "Estafeta TX":
+    						return "Standard";
+    					case "Linio Fleet - Bikes":
+    						return "Standard";
+    					case "fake_DHL":
+    						return "Standard";
+    					case "DHL Express":
+    						return "Standard";
+    					case "fake_FedEx":
+    						return "Standard";
+    					case "Other Carrier":
+    						return "Oversize";
+    				}
+    			}
+		return "Null";
+    	}
+    	catch(Exception e)
+    	{
+    		return "Null";
+    	}
+    }
+    /**
+     * CategoriaPorTiempo: Diferencia entre fechas regresa String 
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(DateMenor) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static String ClassificationByTime (Date DateMenor) throws ParseException {
+    	try{
+    		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+    		Date date = new Date();
+    		int diff = (int) (date.getTime() - DateMenor.getTime());
+    		int diffSeconds = diff / 1000;
+    		int diffHours=diffSeconds/3600;
+    		if(diffHours<12){
+    			return "<12";
+    		}
+    		else if(diffHours>=12 && diffHours<24){
+    			return "12-24";
+    		}
+    		else if(diffHours>=24 && diffHours<48){
+    			return "24-48";
+    		}
+    		else if(diffHours>=48 && diffHours<72){
+    			return "48-72";
+    		}
+    		else {
+    			return ">72";
+    		}
+    		
+    	}
+    	catch(Exception e){
+    		String y = "0";
+    		return y;
+    	}
+    }
+    /**
+     * FormatDateMonth: Formato de fechas a Meses
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(Date,format) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static String FormatDateMonth (Date incoming,String format) throws ParseException {
+    	try{
+    		String result;
+    		SimpleDateFormat formatter;
+    		formatter = new SimpleDateFormat(format);
+    		result=formatter.format(incoming);
+    		return result;
+    	}
+    	catch(Exception e){
+    		return "Algo paso :S";
+    	}
+    }
+    /**
+     * FormatDateMonth: Formato de fechas a Meses
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(Date,format) input: The string need to be printed.
+     * 
+     * {example} .
+     * @throws ParseException 
+     */
+    
+    public static String curdate_str () throws ParseException {
+    	try{
+    		String result;
+    		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+    		Date date = new Date();
+    		result=formatter.format(date); //2016/11/16 12:08:43
+    		return result;
+    	}
+    	catch(Exception e){
+    		return "Algo paso :S";
+    	}
+    }
+}

@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:SalesforceSchemaConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_ClMuIJr0Eea8XYHADQQ_aA" name="LinioSandbox" webServiceUrl="https://test.salesforce.com/services/Soap/u/37.0" userName="operations.strategy@linio.com.desarrollo" password="Ic7uIF4r4MRLJxJpWD1zHugwY9Cra53vQkMmDHWHIbO3HaC1qTwgAw==" moduleName="PruebaETL__c" batchSize="250" timeOut="60000" webServiceUrlTextForOAuth="https://login.salesforce.com/services/oauth2" salesforceVersion="34.0" loginType="basic">
+  <modules xmi:id="_ClMuIZr0Eea8XYHADQQ_aA" id="_w9mugCzYEeai1LbiIY4s-A" label="PresenceDeclineReason" moduleName="PresenceDeclineReason">
+    <tables xmi:id="_ClMuIpr0Eea8XYHADQQ_aA" name="PresenceDeclineReason" id="_w9mugSzYEeai1LbiIY4s-A" label="PresenceDeclineReason">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuI5r0Eea8XYHADQQ_aA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuJJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuJZr0Eea8XYHADQQ_aA" label="IsDeleted" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMuJpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuJ5r0Eea8XYHADQQ_aA" label="DeveloperName" length="80" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuKJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuKZr0Eea8XYHADQQ_aA" label="Language" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClMuKpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuK5r0Eea8XYHADQQ_aA" label="MasterLabel" length="80" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuLJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuLZr0Eea8XYHADQQ_aA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuLpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuL5r0Eea8XYHADQQ_aA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuMJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuMZr0Eea8XYHADQQ_aA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuMpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuM5r0Eea8XYHADQQ_aA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuNJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuNZr0Eea8XYHADQQ_aA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuNpr0Eea8XYHADQQ_aA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_ClMuN5r0Eea8XYHADQQ_aA" id="___xGICzYEeai1LbiIY4s-A" label="PresenceConfigDeclineReason" moduleName="PresenceConfigDeclineReason">
+    <tables xmi:id="_ClMuOJr0Eea8XYHADQQ_aA" name="PresenceConfigDeclineReason" id="___xGISzYEeai1LbiIY4s-A" label="PresenceConfigDeclineReason">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuOZr0Eea8XYHADQQ_aA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuOpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuO5r0Eea8XYHADQQ_aA" label="IsDeleted" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMuPJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuPZr0Eea8XYHADQQ_aA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuPpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuP5r0Eea8XYHADQQ_aA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuQJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuQZr0Eea8XYHADQQ_aA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuQpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuQ5r0Eea8XYHADQQ_aA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuRJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuRZr0Eea8XYHADQQ_aA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuRpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuR5r0Eea8XYHADQQ_aA" label="PresenceUserConfigId" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuSJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuSZr0Eea8XYHADQQ_aA" label="PresenceDeclineReasonId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClMuSpr0Eea8XYHADQQ_aA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_ClMuS5r0Eea8XYHADQQ_aA" id="_AQeboCzZEeai1LbiIY4s-A" label="PresenceUserConfig" moduleName="PresenceUserConfig">
+    <tables xmi:id="_ClMuTJr0Eea8XYHADQQ_aA" name="PresenceUserConfig" id="_AQeboSzZEeai1LbiIY4s-A" label="PresenceUserConfig">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuTZr0Eea8XYHADQQ_aA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuTpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuT5r0Eea8XYHADQQ_aA" label="IsDeleted" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMuUJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuUZr0Eea8XYHADQQ_aA" label="DeveloperName" length="80" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuUpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuU5r0Eea8XYHADQQ_aA" label="Language" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClMuVJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuVZr0Eea8XYHADQQ_aA" label="MasterLabel" length="80" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuVpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuV5r0Eea8XYHADQQ_aA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuWJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuWZr0Eea8XYHADQQ_aA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuWpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuW5r0Eea8XYHADQQ_aA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuXJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuXZr0Eea8XYHADQQ_aA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuXpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuX5r0Eea8XYHADQQ_aA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuYJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuYZr0Eea8XYHADQQ_aA" label="Capacity" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_ClMuYpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuY5r0Eea8XYHADQQ_aA" label="OptionsIsAutoAcceptEnabled" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMuZJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuZZr0Eea8XYHADQQ_aA" label="OptionsIsDeclineEnabled" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMuZpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuZ5r0Eea8XYHADQQ_aA" label="OptionsIsDeclineReasonEnabled" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMuaJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuaZr0Eea8XYHADQQ_aA" label="OptionsIsRequestSoundEnabled" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMuapr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMua5r0Eea8XYHADQQ_aA" label="OptionsIsDisconnectSoundEnabled" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMubJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMubZr0Eea8XYHADQQ_aA" label="PresenceStatusOnDeclineId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClMubpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMub5r0Eea8XYHADQQ_aA" label="PresenceStatusOnPushTimeoutId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClMucJr0Eea8XYHADQQ_aA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_ClMucZr0Eea8XYHADQQ_aA" id="_AWarkCzZEeai1LbiIY4s-A" label="PresenceUserConfigProfile" moduleName="PresenceUserConfigProfile">
+    <tables xmi:id="_ClMucpr0Eea8XYHADQQ_aA" name="PresenceUserConfigProfile" id="_AWarkSzZEeai1LbiIY4s-A" label="PresenceUserConfigProfile">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuc5r0Eea8XYHADQQ_aA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMudJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMudZr0Eea8XYHADQQ_aA" label="IsDeleted" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMudpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMud5r0Eea8XYHADQQ_aA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMueJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMueZr0Eea8XYHADQQ_aA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuepr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMue5r0Eea8XYHADQQ_aA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMufJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMufZr0Eea8XYHADQQ_aA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMufpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuf5r0Eea8XYHADQQ_aA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMugJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMugZr0Eea8XYHADQQ_aA" label="PresenceUserConfigId" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMugpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMug5r0Eea8XYHADQQ_aA" label="ProfileId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClMuhJr0Eea8XYHADQQ_aA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_ClMuhZr0Eea8XYHADQQ_aA" id="_AeVRcCzZEeai1LbiIY4s-A" label="PresenceUserConfigUser" moduleName="PresenceUserConfigUser">
+    <tables xmi:id="_ClMuhpr0Eea8XYHADQQ_aA" name="PresenceUserConfigUser" id="_AeVRcSzZEeai1LbiIY4s-A" label="PresenceUserConfigUser">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuh5r0Eea8XYHADQQ_aA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuiJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuiZr0Eea8XYHADQQ_aA" label="IsDeleted" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMuipr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMui5r0Eea8XYHADQQ_aA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMujJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMujZr0Eea8XYHADQQ_aA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMujpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuj5r0Eea8XYHADQQ_aA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMukJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMukZr0Eea8XYHADQQ_aA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMukpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuk5r0Eea8XYHADQQ_aA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMulJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMulZr0Eea8XYHADQQ_aA" label="PresenceUserConfigId" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMulpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMul5r0Eea8XYHADQQ_aA" label="UserId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClMumJr0Eea8XYHADQQ_aA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_ClMumZr0Eea8XYHADQQ_aA" id="_OqtF8C2cEeaVDc31wlKIxQ" label="UserServicePresence" moduleName="UserServicePresence">
+    <tables xmi:id="_ClMumpr0Eea8XYHADQQ_aA" name="UserServicePresence" id="_OqtF8S2cEeaVDc31wlKIxQ" label="UserServicePresence">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMum5r0Eea8XYHADQQ_aA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMunJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMunZr0Eea8XYHADQQ_aA" label="IsDeleted" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMunpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMun5r0Eea8XYHADQQ_aA" label="Name" length="255" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuoJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuoZr0Eea8XYHADQQ_aA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuopr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuo5r0Eea8XYHADQQ_aA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMupJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMupZr0Eea8XYHADQQ_aA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuppr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMup5r0Eea8XYHADQQ_aA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMuqJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuqZr0Eea8XYHADQQ_aA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMuqpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMuq5r0Eea8XYHADQQ_aA" label="UserId" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClMurJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMurZr0Eea8XYHADQQ_aA" label="ServicePresenceStatusId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClMurpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMur5r0Eea8XYHADQQ_aA" label="StatusStartDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMusJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMusZr0Eea8XYHADQQ_aA" label="ConfiguredCapacity" talendType="id_Integer">
+        <initialValue xmi:id="_ClMuspr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMus5r0Eea8XYHADQQ_aA" label="StatusEndDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClMutJr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClMutZr0Eea8XYHADQQ_aA" label="IsAway" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClMutpr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKYJr0Eea8XYHADQQ_aA" label="IdleDuration" talendType="id_Integer">
+        <initialValue xmi:id="_ClPKYZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKYpr0Eea8XYHADQQ_aA" label="AtCapacityDuration" talendType="id_Integer">
+        <initialValue xmi:id="_ClPKY5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKZJr0Eea8XYHADQQ_aA" label="AverageCapacity" length="10" talendType="id_Double">
+        <initialValue xmi:id="_ClPKZZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKZpr0Eea8XYHADQQ_aA" label="IsCurrentState" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPKZ5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKaJr0Eea8XYHADQQ_aA" label="StatusDuration" talendType="id_Integer">
+        <initialValue xmi:id="_ClPKaZr0Eea8XYHADQQ_aA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_ClPKapr0Eea8XYHADQQ_aA" id="_I25aIE6fEeaPa8g7C0KH9w" label="User" moduleName="User">
+    <tables xmi:id="_ClPKa5r0Eea8XYHADQQ_aA" name="User" id="_I25aIU6fEeaPa8g7C0KH9w" label="User">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKbJr0Eea8XYHADQQ_aA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKbZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKbpr0Eea8XYHADQQ_aA" label="Username" length="80" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKb5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKcJr0Eea8XYHADQQ_aA" label="LastName" length="80" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKcZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKcpr0Eea8XYHADQQ_aA" label="FirstName" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClPKc5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKdJr0Eea8XYHADQQ_aA" label="Name" length="121" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKdZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKdpr0Eea8XYHADQQ_aA" label="CompanyName" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPKd5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKeJr0Eea8XYHADQQ_aA" label="Division" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPKeZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKepr0Eea8XYHADQQ_aA" label="Department" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPKe5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKfJr0Eea8XYHADQQ_aA" label="Title" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPKfZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKfpr0Eea8XYHADQQ_aA" label="Street" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPKf5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKgJr0Eea8XYHADQQ_aA" label="City" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClPKgZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKgpr0Eea8XYHADQQ_aA" label="State" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPKg5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKhJr0Eea8XYHADQQ_aA" label="PostalCode" length="20" talendType="id_String">
+        <initialValue xmi:id="_ClPKhZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKhpr0Eea8XYHADQQ_aA" label="Country" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPKh5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKiJr0Eea8XYHADQQ_aA" label="Latitude" length="18" talendType="id_Double">
+        <initialValue xmi:id="_ClPKiZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKipr0Eea8XYHADQQ_aA" label="Longitude" length="18" talendType="id_Double">
+        <initialValue xmi:id="_ClPKi5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKjJr0Eea8XYHADQQ_aA" label="GeocodeAccuracy" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClPKjZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKjpr0Eea8XYHADQQ_aA" label="Address" talendType="id_String">
+        <initialValue xmi:id="_ClPKj5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKkJr0Eea8XYHADQQ_aA" label="Email" length="128" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKkZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKkpr0Eea8XYHADQQ_aA" label="EmailPreferencesAutoBcc" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPKk5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKlJr0Eea8XYHADQQ_aA" label="EmailPreferencesAutoBccStayInTouch" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPKlZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKlpr0Eea8XYHADQQ_aA" label="EmailPreferencesStayInTouchReminder" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPKl5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKmJr0Eea8XYHADQQ_aA" label="SenderEmail" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPKmZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKmpr0Eea8XYHADQQ_aA" label="SenderName" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPKm5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKnJr0Eea8XYHADQQ_aA" label="Signature" length="1333" talendType="id_String">
+        <initialValue xmi:id="_ClPKnZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKnpr0Eea8XYHADQQ_aA" label="StayInTouchSubject" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPKn5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKoJr0Eea8XYHADQQ_aA" label="StayInTouchSignature" length="512" talendType="id_String">
+        <initialValue xmi:id="_ClPKoZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKopr0Eea8XYHADQQ_aA" label="StayInTouchNote" length="512" talendType="id_String">
+        <initialValue xmi:id="_ClPKo5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKpJr0Eea8XYHADQQ_aA" label="Phone" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClPKpZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKppr0Eea8XYHADQQ_aA" label="Fax" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClPKp5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKqJr0Eea8XYHADQQ_aA" label="MobilePhone" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClPKqZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKqpr0Eea8XYHADQQ_aA" label="Alias" length="8" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKq5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKrJr0Eea8XYHADQQ_aA" label="CommunityNickname" length="40" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKrZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKrpr0Eea8XYHADQQ_aA" label="BadgeText" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPKr5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKsJr0Eea8XYHADQQ_aA" label="IsActive" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPKsZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKspr0Eea8XYHADQQ_aA" label="TimeZoneSidKey" length="40" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKs5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKtJr0Eea8XYHADQQ_aA" label="UserRoleId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClPKtZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKtpr0Eea8XYHADQQ_aA" label="LocaleSidKey" length="40" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKt5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKuJr0Eea8XYHADQQ_aA" label="ReceivesInfoEmails" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPKuZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKupr0Eea8XYHADQQ_aA" label="ReceivesAdminInfoEmails" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPKu5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKvJr0Eea8XYHADQQ_aA" label="EmailEncodingKey" length="40" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKvZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKvpr0Eea8XYHADQQ_aA" label="UserType" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClPKv5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKwJr0Eea8XYHADQQ_aA" label="LanguageLocaleKey" length="40" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKwZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKwpr0Eea8XYHADQQ_aA" label="EmployeeNumber" length="20" talendType="id_String">
+        <initialValue xmi:id="_ClPKw5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKxJr0Eea8XYHADQQ_aA" label="DelegatedApproverId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClPKxZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKxpr0Eea8XYHADQQ_aA" label="ManagerId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClPKx5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKyJr0Eea8XYHADQQ_aA" label="LastLoginDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPKyZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKypr0Eea8XYHADQQ_aA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPKy5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKzJr0Eea8XYHADQQ_aA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPKzZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPKzpr0Eea8XYHADQQ_aA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPKz5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK0Jr0Eea8XYHADQQ_aA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPK0Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK0pr0Eea8XYHADQQ_aA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPK05r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK1Jr0Eea8XYHADQQ_aA" label="OfflineTrialExpirationDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPK1Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK1pr0Eea8XYHADQQ_aA" label="OfflinePdaTrialExpirationDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPK15r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK2Jr0Eea8XYHADQQ_aA" label="UserPermissionsMarketingUser" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK2Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK2pr0Eea8XYHADQQ_aA" label="UserPermissionsOfflineUser" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK25r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK3Jr0Eea8XYHADQQ_aA" label="UserPermissionsAvantgoUser" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK3Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK3pr0Eea8XYHADQQ_aA" label="UserPermissionsCallCenterAutoLogin" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK35r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK4Jr0Eea8XYHADQQ_aA" label="UserPermissionsMobileUser" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK4Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK4pr0Eea8XYHADQQ_aA" label="UserPermissionsSFContentUser" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK45r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK5Jr0Eea8XYHADQQ_aA" label="UserPermissionsKnowledgeUser" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK5Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK5pr0Eea8XYHADQQ_aA" label="UserPermissionsInteractionUser" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK55r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK6Jr0Eea8XYHADQQ_aA" label="UserPermissionsSupportUser" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK6Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK6pr0Eea8XYHADQQ_aA" label="UserPermissionsLiveAgentUser" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK65r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK7Jr0Eea8XYHADQQ_aA" label="UserPermissionsChatterAnswersUser" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK7Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK7pr0Eea8XYHADQQ_aA" label="ForecastEnabled" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK75r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK8Jr0Eea8XYHADQQ_aA" label="UserPreferencesActivityRemindersPopup" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK8Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK8pr0Eea8XYHADQQ_aA" label="UserPreferencesEventRemindersCheckboxDefault" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK85r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK9Jr0Eea8XYHADQQ_aA" label="UserPreferencesTaskRemindersCheckboxDefault" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK9Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK9pr0Eea8XYHADQQ_aA" label="UserPreferencesReminderSoundOff" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK95r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK-Jr0Eea8XYHADQQ_aA" label="UserPreferencesDisableAllFeedsEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK-Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK-pr0Eea8XYHADQQ_aA" label="UserPreferencesDisableFollowersEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK-5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK_Jr0Eea8XYHADQQ_aA" label="UserPreferencesDisableProfilePostEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK_Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPK_pr0Eea8XYHADQQ_aA" label="UserPreferencesDisableChangeCommentEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPK_5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLAJr0Eea8XYHADQQ_aA" label="UserPreferencesDisableLaterCommentEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLAZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLApr0Eea8XYHADQQ_aA" label="UserPreferencesDisProfPostCommentEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLA5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLBJr0Eea8XYHADQQ_aA" label="UserPreferencesHideCSNGetChatterMobileTask" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLBZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLBpr0Eea8XYHADQQ_aA" label="UserPreferencesDisableMentionsPostEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLB5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLCJr0Eea8XYHADQQ_aA" label="UserPreferencesDisMentionsCommentEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLCZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLCpr0Eea8XYHADQQ_aA" label="UserPreferencesHideCSNDesktopTask" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLC5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLDJr0Eea8XYHADQQ_aA" label="UserPreferencesHideChatterOnboardingSplash" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLDZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLDpr0Eea8XYHADQQ_aA" label="UserPreferencesHideSecondChatterOnboardingSplash" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLD5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLEJr0Eea8XYHADQQ_aA" label="UserPreferencesDisCommentAfterLikeEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLEZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLEpr0Eea8XYHADQQ_aA" label="UserPreferencesDisableLikeEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLE5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLFJr0Eea8XYHADQQ_aA" label="UserPreferencesSortFeedByComment" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLFZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLFpr0Eea8XYHADQQ_aA" label="UserPreferencesDisableMessageEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLF5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLGJr0Eea8XYHADQQ_aA" label="UserPreferencesDisableBookmarkEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLGZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLGpr0Eea8XYHADQQ_aA" label="UserPreferencesDisableSharePostEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLG5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLHJr0Eea8XYHADQQ_aA" label="UserPreferencesEnableAutoSubForFeeds" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLHZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLHpr0Eea8XYHADQQ_aA" label="UserPreferencesDisableFileShareNotificationsForApi" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLH5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLIJr0Eea8XYHADQQ_aA" label="UserPreferencesShowTitleToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLIZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLIpr0Eea8XYHADQQ_aA" label="UserPreferencesShowManagerToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLI5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLJJr0Eea8XYHADQQ_aA" label="UserPreferencesShowEmailToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLJZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLJpr0Eea8XYHADQQ_aA" label="UserPreferencesShowWorkPhoneToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLJ5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLKJr0Eea8XYHADQQ_aA" label="UserPreferencesShowMobilePhoneToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLKZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLKpr0Eea8XYHADQQ_aA" label="UserPreferencesShowFaxToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLK5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLLJr0Eea8XYHADQQ_aA" label="UserPreferencesShowStreetAddressToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLLZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLLpr0Eea8XYHADQQ_aA" label="UserPreferencesShowCityToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLL5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLMJr0Eea8XYHADQQ_aA" label="UserPreferencesShowStateToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLMZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLMpr0Eea8XYHADQQ_aA" label="UserPreferencesShowPostalCodeToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLM5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLNJr0Eea8XYHADQQ_aA" label="UserPreferencesShowCountryToExternalUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLNZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLNpr0Eea8XYHADQQ_aA" label="UserPreferencesShowProfilePicToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLN5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLOJr0Eea8XYHADQQ_aA" label="UserPreferencesShowTitleToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLOZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLOpr0Eea8XYHADQQ_aA" label="UserPreferencesShowCityToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLO5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLPJr0Eea8XYHADQQ_aA" label="UserPreferencesShowStateToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLPZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLPpr0Eea8XYHADQQ_aA" label="UserPreferencesShowPostalCodeToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLP5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLQJr0Eea8XYHADQQ_aA" label="UserPreferencesShowCountryToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLQZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLQpr0Eea8XYHADQQ_aA" label="UserPreferencesHideS1BrowserUI" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLQ5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLRJr0Eea8XYHADQQ_aA" label="UserPreferencesDisableEndorsementEmail" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLRZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLRpr0Eea8XYHADQQ_aA" label="UserPreferencesCacheDiagnostics" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLR5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLSJr0Eea8XYHADQQ_aA" label="UserPreferencesShowEmailToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLSZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLSpr0Eea8XYHADQQ_aA" label="UserPreferencesShowManagerToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLS5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLTJr0Eea8XYHADQQ_aA" label="UserPreferencesShowWorkPhoneToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLTZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLTpr0Eea8XYHADQQ_aA" label="UserPreferencesShowMobilePhoneToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLT5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLUJr0Eea8XYHADQQ_aA" label="UserPreferencesShowFaxToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLUZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLUpr0Eea8XYHADQQ_aA" label="UserPreferencesShowStreetAddressToGuestUsers" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLU5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLVJr0Eea8XYHADQQ_aA" label="UserPreferencesLightningExperiencePreferred" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLVZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLVpr0Eea8XYHADQQ_aA" label="UserPreferencesHideEndUserOnboardingAssistantModal" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLV5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLWJr0Eea8XYHADQQ_aA" label="UserPreferencesHideLightningMigrationModal" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLWZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLWpr0Eea8XYHADQQ_aA" label="UserPreferencesHideSfxWelcomeMat" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLW5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLXJr0Eea8XYHADQQ_aA" label="UserPreferencesHideBiggerPhotoCallout" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLXZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLXpr0Eea8XYHADQQ_aA" label="ContactId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClPLX5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLYJr0Eea8XYHADQQ_aA" label="AccountId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClPLYZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLYpr0Eea8XYHADQQ_aA" label="CallCenterId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClPLY5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLZJr0Eea8XYHADQQ_aA" label="Extension" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClPLZZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLZpr0Eea8XYHADQQ_aA" label="PortalRole" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClPLZ5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLaJr0Eea8XYHADQQ_aA" label="IsPortalEnabled" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLaZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLapr0Eea8XYHADQQ_aA" label="IsPortalSelfRegistered" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLa5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLbJr0Eea8XYHADQQ_aA" label="FederationIdentifier" length="512" talendType="id_String">
+        <initialValue xmi:id="_ClPLbZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLbpr0Eea8XYHADQQ_aA" label="AboutMe" length="1000" talendType="id_String">
+        <initialValue xmi:id="_ClPLb5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLcJr0Eea8XYHADQQ_aA" label="FullPhotoUrl" length="1024" talendType="id_String">
+        <initialValue xmi:id="_ClPLcZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLcpr0Eea8XYHADQQ_aA" label="SmallPhotoUrl" length="1024" talendType="id_String">
+        <initialValue xmi:id="_ClPLc5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLdJr0Eea8XYHADQQ_aA" label="MediumPhotoUrl" length="1024" talendType="id_String">
+        <initialValue xmi:id="_ClPLdZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLdpr0Eea8XYHADQQ_aA" label="DigestFrequency" length="40" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPLd5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLeJr0Eea8XYHADQQ_aA" label="DefaultGroupNotificationFrequency" length="40" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPLeZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLepr0Eea8XYHADQQ_aA" label="LastViewedDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPLe5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLfJr0Eea8XYHADQQ_aA" label="LastReferencedDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPLfZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLfpr0Eea8XYHADQQ_aA" label="BannerPhotoUrl" length="1024" talendType="id_String">
+        <initialValue xmi:id="_ClPLf5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLgJr0Eea8XYHADQQ_aA" label="IsProfilePhotoActive" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLgZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLgpr0Eea8XYHADQQ_aA" label="IdentificadorPaIs__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPLg5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLhJr0Eea8XYHADQQ_aA" label="CorreoElectronicoContactoLinio__c" length="80" talendType="id_String">
+        <initialValue xmi:id="_ClPLhZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLhpr0Eea8XYHADQQ_aA" label="TeamMP__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPLh5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLiJr0Eea8XYHADQQ_aA" label="HeadKAM__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLiZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLipr0Eea8XYHADQQ_aA" label="KAM__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLi5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLjJr0Eea8XYHADQQ_aA" label="HeadPSC__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLjZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLjpr0Eea8XYHADQQ_aA" label="PSC__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLj5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLkJr0Eea8XYHADQQ_aA" label="HeadIncubation__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLkZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLkpr0Eea8XYHADQQ_aA" label="Incubation__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLk5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLlJr0Eea8XYHADQQ_aA" label="LeadGenerator__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLlZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLlpr0Eea8XYHADQQ_aA" label="HeadHunting__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLl5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLmJr0Eea8XYHADQQ_aA" label="Hunting__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLmZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLmpr0Eea8XYHADQQ_aA" label="LinioUniversityAnalyst__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLm5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLnJr0Eea8XYHADQQ_aA" label="SOD__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLnZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLnpr0Eea8XYHADQQ_aA" label="HeadPerformanceManager__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLn5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLoJr0Eea8XYHADQQ_aA" label="Head_of_Linio_University__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLoZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLopr0Eea8XYHADQQ_aA" label="MonedaPago__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPLo5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLpJr0Eea8XYHADQQ_aA" label="Compliance__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLpZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLppr0Eea8XYHADQQ_aA" label="FRM_funcion_usuario__c" length="1300" talendType="id_String">
+        <initialValue xmi:id="_ClPLp5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLqJr0Eea8XYHADQQ_aA" label="Perfil_Formulado__c" length="1300" talendType="id_String">
+        <initialValue xmi:id="_ClPLqZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLqpr0Eea8XYHADQQ_aA" label="Funcion_Formulado__c" length="1300" talendType="id_String">
+        <initialValue xmi:id="_ClPLq5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLrJr0Eea8XYHADQQ_aA" label="IDExternoCorreoElectronico__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_ClPLrZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLrpr0Eea8XYHADQQ_aA" label="Inbound_Manager_INTL__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLr5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLsJr0Eea8XYHADQQ_aA" label="Inbound_Manager__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPLsZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLspr0Eea8XYHADQQ_aA" label="AprobadorLinioPlus__c" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClPLs5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLtJr0Eea8XYHADQQ_aA" label="Funcion_Texto__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_ClPLtZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLtpr0Eea8XYHADQQ_aA" label="Perfil_texto__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_ClPLt5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLuJr0Eea8XYHADQQ_aA" label="Tipo_de_usuario_Front_Back__c" length="1300" talendType="id_String">
+        <initialValue xmi:id="_ClPLuZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLupr0Eea8XYHADQQ_aA" label="URLEncuesta__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPLu5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLvJr0Eea8XYHADQQ_aA" label="agent_birthday__c" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_ClPLvZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLvpr0Eea8XYHADQQ_aA" label="agent_identification__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_ClPLv5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLwJr0Eea8XYHADQQ_aA" label="agent_start_date__c" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_ClPLwZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLwpr0Eea8XYHADQQ_aA" label="antique__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPLw5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLxJr0Eea8XYHADQQ_aA" label="contractor__c" length="45" talendType="id_String">
+        <initialValue xmi:id="_ClPLxZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLxpr0Eea8XYHADQQ_aA" label="position_employed_sac__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPLx5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLyJr0Eea8XYHADQQ_aA" label="process_sac__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPLyZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLypr0Eea8XYHADQQ_aA" label="shift_pattern__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_ClPLy5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLzJr0Eea8XYHADQQ_aA" label="subproceso_sac__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPLzZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPLzpr0Eea8XYHADQQ_aA" label="Target__c" length="18" talendType="id_Double">
+        <initialValue xmi:id="_ClPLz5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL0Jr0Eea8XYHADQQ_aA" label="Part_Time__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPL0Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL0pr0Eea8XYHADQQ_aA" label="Usuario_compartido__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPL05r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL1Jr0Eea8XYHADQQ_aA" label="PaisGestion__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPL1Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL1pr0Eea8XYHADQQ_aA" label="AprobadorCupones__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPL15r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL2Jr0Eea8XYHADQQ_aA" label="aprobador_de_cupones__c" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClPL2Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL2pr0Eea8XYHADQQ_aA" label="Prueba__c" length="4099" precision="4" talendType="id_String">
+        <initialValue xmi:id="_ClPL25r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL3Jr0Eea8XYHADQQ_aA" label="NivelAtencion__c" length="1300" talendType="id_String">
+        <initialValue xmi:id="_ClPL3Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL3pr0Eea8XYHADQQ_aA" label="AliasChat__c" length="40" talendType="id_String">
+        <initialValue xmi:id="_ClPL35r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL4Jr0Eea8XYHADQQ_aA" label="Turno__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPL4Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL4pr0Eea8XYHADQQ_aA" label="CanalAtencion__c" length="1300" talendType="id_String">
+        <initialValue xmi:id="_ClPL45r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL5Jr0Eea8XYHADQQ_aA" label="LiberarLicenciaCS__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPL5Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_ClPL5pr0Eea8XYHADQQ_aA" id="_qUzFUJrzEea8XYHADQQ_aA" label="et4ae5__ET4AEConfig__c" moduleName="et4ae5__ET4AEConfig__c">
+    <tables xmi:id="_ClPL55r0Eea8XYHADQQ_aA" name="et4ae5__ET4AEConfig__c" id="_qUzFUZrzEea8XYHADQQ_aA" label="et4ae5__ET4AEConfig__c">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL6Jr0Eea8XYHADQQ_aA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPL6Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL6pr0Eea8XYHADQQ_aA" label="IsDeleted" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPL65r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL7Jr0Eea8XYHADQQ_aA" label="Name" length="38" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPL7Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL7pr0Eea8XYHADQQ_aA" label="SetupOwnerId" length="18" talendType="id_String">
+        <initialValue xmi:id="_ClPL75r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL8Jr0Eea8XYHADQQ_aA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPL8Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL8pr0Eea8XYHADQQ_aA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPL85r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL9Jr0Eea8XYHADQQ_aA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPL9Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL9pr0Eea8XYHADQQ_aA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPL95r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL-Jr0Eea8XYHADQQ_aA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPL-Zr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL-pr0Eea8XYHADQQ_aA" label="et4ae5__Endpoint__c" length="255" talendType="id_String">
+        <initialValue xmi:id="_ClPL-5r0Eea8XYHADQQ_aA"/>
+      </feature>
+    </tables>
+  </modules>
+  <modules xmi:id="_ClPL_Jr0Eea8XYHADQQ_aA" id="_Cg5c8Jr0Eea8XYHADQQ_aA" label="PruebaETL__c" moduleName="PruebaETL__c">
+    <tables xmi:id="_ClPL_Zr0Eea8XYHADQQ_aA" name="PruebaETL__c" id="_Cg5c8Zr0Eea8XYHADQQ_aA" label="PruebaETL__c">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPL_pr0Eea8XYHADQQ_aA" label="Id" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPL_5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMAJr0Eea8XYHADQQ_aA" label="OwnerId" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPMAZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMApr0Eea8XYHADQQ_aA" label="IsDeleted" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPMA5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMBJr0Eea8XYHADQQ_aA" label="Name" length="80" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPMBZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMBpr0Eea8XYHADQQ_aA" label="CreatedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPMB5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMCJr0Eea8XYHADQQ_aA" label="CreatedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPMCZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMCpr0Eea8XYHADQQ_aA" label="LastModifiedDate" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPMC5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMDJr0Eea8XYHADQQ_aA" label="LastModifiedById" length="18" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_ClPMDZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMDpr0Eea8XYHADQQ_aA" label="SystemModstamp" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_ClPMD5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMEJr0Eea8XYHADQQ_aA" label="LastActivityDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_ClPMEZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMEpr0Eea8XYHADQQ_aA" label="Fecha__c" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_ClPME5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMFJr0Eea8XYHADQQ_aA" label="Nombre__c" length="50" talendType="id_String">
+        <initialValue xmi:id="_ClPMFZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMFpr0Eea8XYHADQQ_aA" label="Cantidad__c" length="18" talendType="id_Double">
+        <initialValue xmi:id="_ClPMF5r0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMGJr0Eea8XYHADQQ_aA" label="Share__c" length="18" talendType="id_Double">
+        <initialValue xmi:id="_ClPMGZr0Eea8XYHADQQ_aA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ClPMGpr0Eea8XYHADQQ_aA" label="Activo__c" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_ClPMG5r0Eea8XYHADQQ_aA"/>
+      </feature>
+    </tables>
+  </modules>
+</TalendMetadata:SalesforceSchemaConnection>
