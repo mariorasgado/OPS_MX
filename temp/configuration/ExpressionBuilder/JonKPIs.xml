@@ -1,0 +1,42 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_2=>" expression="Var.CSIN_OUT__c.contains(&quot;OUT&quot;)?0:&#xD;&#xA;Var.CSTipo__c.contains(&quot;Spam&quot;)?0:&#xA;&#xA;Var.CategoriaOriginal__c.contains(&quot;transferencia&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;telesales&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sinvalor&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;Spam&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sin valor&quot;)?0:&#xA;&#xD;&#xA;Var.CSSubcategoria__c.contains(&quot;spam&quot;)?0:1">
+  <variables name="row1.Id" value="null" talendType="id_String"/>
+  <variables name="row1.CaseNumber" value="null" talendType="id_String"/>
+  <variables name="row1.CreatedDate" value="null" talendType="id_Date"/>
+  <variables name="row1.CSIdentificadorPais__c" value="null" talendType="id_String"/>
+  <variables name="row1.Pa_s_del_Usuario__c" value="null" talendType="id_String"/>
+  <variables name="row1.LastModifiedById" value="null" talendType="id_String"/>
+  <variables name="row1.Origin" value="null" talendType="id_String"/>
+  <variables name="row1.Status" value="null" talendType="id_String"/>
+  <variables name="row1.Subestado__c" value="null" talendType="id_String"/>
+  <variables name="row1.CSSKUs_Texto__c" value="null" talendType="id_String"/>
+  <variables name="row1.CSSubcategoria__c" value="null" talendType="id_String"/>
+  <variables name="row1.CategoriaOriginal__c" value="null" talendType="id_String"/>
+  <variables name="row1.EstatusItem__c" value="null" talendType="id_String"/>
+  <variables name="row1.Proceso__c" value="null" talendType="id_String"/>
+  <variables name="row1.NumeroItemID__c" value="null" talendType="id_String"/>
+  <variables name="row1.NumeroOrdenManual__c" value="null" talendType="id_String"/>
+  <variables name="row1.TotalContactosCaso__c" value="0" talendType="id_Float"/>
+  <variables name="row1.TotalContactosCasoInbound__c" value="0" talendType="id_Float"/>
+  <variables name="row1.CSIN_OUT__c" value="null" talendType="id_String"/>
+  <variables name="row1.Subestado_Back_office__c" value="null" talendType="id_String"/>
+  <variables name="row1.OwnerId" value="null" talendType="id_String"/>
+  <variables name="row1.CreatedById" value="null" talendType="id_String"/>
+  <variables name="row1.LastModifiedDate" value="null" talendType="id_Date"/>
+  <variables name="row1.ClosedDate" value="null" talendType="id_Date"/>
+  <variables name="row1.Priority" value="null" talendType="id_String"/>
+  <variables name="row1.ParentId" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Fecha_Ingreso_Cola_Garant_as__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.CategoriaTicketPrincipal__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.CSAsignadoA__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.CSTipo__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Bandera_escalamientos__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.TicketEscalado__c" value="null" talendType="id_Boolean" nullable="true"/>
+  <variables name="row1.TicketReabierto__c" value="null" talendType="id_Boolean" nullable="true"/>
+  <variables name="row1.Origin==null?&quot;N/A&quot;:row1.Origin " value="null" talendType="id_String"/>
+  <variables name="row1.CSIN_OUT__c==null?&quot;IN&quot;:row1.CSIN_OUT__c " value="null" talendType="id_String"/>
+  <variables name="row1.CSTipo__c==null?&quot;N/A&quot;:row1.CSTipo__c " value="null" talendType="id_String"/>
+  <variables name="row1.CSSubcategoria__c==null?&quot;N/A&quot;:row1.CSSubcategoria__c " value="null" talendType="id_String"/>
+  <variables name="row1.CategoriaOriginal__c==null?&quot;N/A&quot;:row1.CategoriaOriginal__c " value="null" talendType="id_String"/>
+  <variables name="Var.CSIN_OUT__c==&quot;OUT&quot;?0:&#xD;&#xA;Var.CSTipo__c.contains(&quot;Spam&quot;)?0:&#xA;&#xA;Var.CategoriaOriginal__c.contains(&quot;transferencia&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;telesales&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sinvalor&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;Spam&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sin valor&quot;)?0:&#xA;&#xD;&#xA;Var.CSSubcategoria__c.contains(&quot;spam&quot;)?0:1 " value="0" talendType="id_Integer"/>
+</expression:EMFExpression>

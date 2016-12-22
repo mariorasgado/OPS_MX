@@ -131,7 +131,7 @@
     <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;Case&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,&#xA;    CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Pa_s_del_Usuario__c,&#xA;    LastModifiedById,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSKUs_Texto__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    EstatusItem__c,&#xA;    Proceso__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    TotalContactosCaso__c,&#xA;    TotalContactosCasoInbound__c,&#xA;    CSIN_OUT__c,&#xA;    Subestado_Back_office__c,&#xA;    OwnerId,&#xA;    CreatedById,&#xA;    LastModifiedDate,&#xA;    ClosedDate,&#xA;    Priority,&#xA;    ParentId,&#xA;    Fecha_Ingreso_Cola_Garant_as__c,&#xA;    CategoriaTicketPrincipal__c,&#xA;    CSAsignadoA__c,&#xA;    CSTipo__c,Bandera_escalamientos__c, TicketEscalado__c,TicketReabierto__c,Severidad__c &#xD;&#xA;FROM&#xA;    Case &#xA;&#xD;&#xA;WHERE&#xA;   (CSIdentificadorPais__c IN (&#xA;&#x9;&#x9;'Customer Service MX',&#xA;        'Customer Service MXCP','Tienda HP MX'))      &#xD;&#xA; AND CreatedDate>= &quot;+context.UpDate+&quot;&#xD;&#xA;AND CSTipo__c LIKE '%Solicitud%'&#xA;&#xD;&#xA;AND CSSubcategoria__c LIKE '%Cancelación en línea%'&#xD;&#xA;AND  Origin IN ('Teléfono','Email','Chat','Twitter','Facebook')&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,&#xA;    CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Pa_s_del_Usuario__c,&#xA;    LastModifiedById,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSKUs_Texto__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    EstatusItem__c,&#xA;    Proceso__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    TotalContactosCaso__c,&#xA;    TotalContactosCasoInbound__c,&#xA;    CSIN_OUT__c,&#xA;    Subestado_Back_office__c,&#xA;    OwnerId,&#xA;    CreatedById,&#xA;    LastModifiedDate,&#xA;    ClosedDate,&#xA;    Priority,&#xA;    ParentId,&#xA;    Fecha_Ingreso_Cola_Garant_as__c,&#xA;    CategoriaTicketPrincipal__c,&#xA;    CSAsignadoA__c,&#xA;    CSTipo__c,Bandera_escalamientos__c, TicketEscalado__c,TicketReabierto__c,Severidad__c,Subcategoria2__c&#xD;&#xA;FROM&#xA;    Case &#xA;&#xD;&#xA;WHERE&#xA;   (CSIdentificadorPais__c IN (&#xA;&#x9;&#x9;'Customer Service MX',&#xA;        'Customer Service MXCP','Tienda HP MX'))      &#xD;&#xA; AND CreatedDate>= &quot;+context.UpDate+&quot;&#xD;&#xA;AND CSTipo__c LIKE '%Solicitud%'&#xA;&#xD;&#xA;AND Subcategoria2__c LIKE '%Con guía internacional%'&#xD;&#xA;AND CSSubcategoria__c LIKE '%Cancelación en línea%'&#xD;&#xA;AND  Origin IN ('Teléfono','Email','Chat','Twitter','Facebook')&#xD;&#xA;&quot;"/>
     <elementParameter field="CHECK" name="QUERY_ALL" value="false" show="false"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="500" show="false"/>
     <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
@@ -183,6 +183,7 @@
       <column comment="" key="false" length="5" name="TicketEscalado__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="5" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="TicketReabierto__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="5" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="Severidad__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="25" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Subcategoria2__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="false"/>
       <column comment="" key="false" length="0" name="IsDeleted" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
       <column comment="" key="false" length="18" name="ContactId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
@@ -657,6 +658,7 @@
       <column comment="" key="false" length="-1" name="ClosedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="TotalContactosCasoInbound__c" nullable="true" pattern="" precision="3" sourceType="" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="Severidad__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="25" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Subcategoria2__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
@@ -666,7 +668,7 @@
         <mapperTableEntries name="CSTipo__c" expression="row1.CSTipo__c==null?&quot;N/A&quot;:row1.CSTipo__c " type="id_String"/>
         <mapperTableEntries name="CSSubcategoria__c" expression="row1.CSSubcategoria__c==null?&quot;N/A&quot;:row1.CSSubcategoria__c " type="id_String"/>
         <mapperTableEntries name="CategoriaOriginal__c" expression="row1.CategoriaOriginal__c==null?&quot;N/A&quot;:row1.CategoriaOriginal__c " type="id_String"/>
-        <mapperTableEntries name="IN_Contact" expression="Var.CSIN_OUT__c==&quot;OUT&quot;?0:&#xD;&#xA;Var.CSTipo__c.contains(&quot;Spam&quot;)?0:&#xA;&#xA;Var.CategoriaOriginal__c.contains(&quot;transferencia&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;telesales&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sinvalor&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;Spam&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sin valor&quot;)?0:&#xA;&#xD;&#xA;Var.CSSubcategoria__c.contains(&quot;spam&quot;)?0:1 " type="id_Integer"/>
+        <mapperTableEntries name="IN_Contact" expression="Var.CSIN_OUT__c.contains(&quot;OUT&quot;)?0:&#xD;&#xA;Var.CSTipo__c.contains(&quot;Spam&quot;)?0:&#xA;&#xA;Var.CategoriaOriginal__c.contains(&quot;transferencia&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;telesales&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sinvalor&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;Spam&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sin valor&quot;)?0:&#xA;&#xD;&#xA;Var.CSSubcategoria__c.contains(&quot;spam&quot;)?0:1 " type="id_Integer"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="TicketsEscalados">
         <mapperTableEntries name="Id" expression="row1.Id " type="id_String" nullable="true"/>
@@ -686,6 +688,7 @@
         <mapperTableEntries name="ClosedDate" expression="row1.ClosedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="TotalContactosCasoInbound__c" expression="row1.TotalContactosCasoInbound__c " type="id_Float" nullable="true"/>
         <mapperTableEntries name="Severidad__c" expression="row1.Severidad__c " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Subcategoria2__c" expression="row1.Subcategoria2__c " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Id" type="id_String"/>
@@ -722,6 +725,7 @@
         <mapperTableEntries name="TicketEscalado__c" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="TicketReabierto__c" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="Severidad__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Subcategoria2__c" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -841,6 +845,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Subcategoria2__c"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
@@ -868,6 +877,7 @@
       <column comment="" key="false" length="-1" name="ClosedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="TotalContactosCasoInbound__c" nullable="true" pattern="" precision="3" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="Severidad__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="25" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Subcategoria2__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="OrderedMails" name="REJECT">
       <column comment="" key="true" length="18" name="Id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="18" usefulColumn="true"/>
@@ -887,6 +897,7 @@
       <column comment="" key="false" length="-1" name="ClosedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="TotalContactosCasoInbound__c" nullable="true" pattern="" precision="3" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="Severidad__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="25" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Subcategoria2__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -961,7 +972,7 @@
       <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="Id" expression="row22.Id " type="id_String" nullable="true"/>
@@ -1087,6 +1098,11 @@
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSalesforceInput_1" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Subcategoria2__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
@@ -1120,6 +1136,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="Severidad__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Subcategoria2__c"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>

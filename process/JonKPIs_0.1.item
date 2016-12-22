@@ -1740,7 +1740,7 @@
         <mapperTableEntries name="CSTipo__c" expression="row1.CSTipo__c==null?&quot;N/A&quot;:row1.CSTipo__c " type="id_String"/>
         <mapperTableEntries name="CSSubcategoria__c" expression="row1.CSSubcategoria__c==null?&quot;N/A&quot;:row1.CSSubcategoria__c " type="id_String"/>
         <mapperTableEntries name="CategoriaOriginal__c" expression="row1.CategoriaOriginal__c==null?&quot;N/A&quot;:row1.CategoriaOriginal__c " type="id_String"/>
-        <mapperTableEntries name="IN_Contact" expression="Var.CSIN_OUT__c==&quot;OUT&quot;?0:&#xD;&#xA;Var.CSTipo__c.contains(&quot;Spam&quot;)?0:&#xA;&#xA;Var.CategoriaOriginal__c.contains(&quot;transferencia&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;telesales&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sinvalor&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;Spam&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sin valor&quot;)?0:&#xA;&#xD;&#xA;Var.CSSubcategoria__c.contains(&quot;spam&quot;)?0:1 " type="id_Integer"/>
+        <mapperTableEntries name="IN_Contact" expression="Var.CSIN_OUT__c.contains(&quot;OUT&quot;)?0:&#xD;&#xA;Var.CSTipo__c.contains(&quot;Spam&quot;)?0:&#xA;&#xA;Var.CategoriaOriginal__c.contains(&quot;transferencia&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;telesales&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sinvalor&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;Spam&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sin valor&quot;)?0:&#xA;&#xD;&#xA;Var.CSSubcategoria__c.contains(&quot;spam&quot;)?0:1 " type="id_Integer"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="TicketsEscalados">
         <mapperTableEntries name="Id" expression="row1.Id " type="id_String" nullable="true"/>
