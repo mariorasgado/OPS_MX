@@ -980,9 +980,11 @@
       <column comment="" key="false" length="0" name="DT_LastMovement" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="DT_CreatedDate_Status" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="DSC_Carrier" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="outFinal">
         <mapperTableEntries name="DSC_Owner_Name" expression=" row11.Name " type="id_String" nullable="true"/>
@@ -998,6 +1000,8 @@
         <mapperTableEntries name="DT_LastMovement" expression="DateUnixTimeStamp.SimpleDTZFromDateMX(out1.LastMovement) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="DT_CreatedDate_Status" expression="DateUnixTimeStamp.SimpleDTZFromDateMX(out1.CreatedDate_Status) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="DSC_Carrier" expression="out1.PaqueteriaIncidecia__c " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CategoriaOriginal__c" expression="out1.CategoriaOriginal__c " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CSSubcategoria__c" expression="out1.CSSubcategoria__c " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Id" type="id_String" nullable="true"/>
@@ -1270,6 +1274,8 @@
       <column comment="" key="false" length="100" name="Last_Movemente_Clasification" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Created_Date_Status_Clasification" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="1" name="IN_order_delayed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
@@ -1292,6 +1298,8 @@
         <mapperTableEntries name="Last_Movemente_Clasification" expression="MX_Processing.ClassificationByTime(outFinal.DT_LastMovement) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Created_Date_Status_Clasification" expression="MX_Processing.ClassificationByTime(outFinal.DT_CreatedDate_Status) " type="id_String" nullable="true"/>
         <mapperTableEntries name="IN_order_delayed" expression="row19.order_delayed " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CategoriaOriginal__c" expression="outFinal.CategoriaOriginal__c " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CSSubcategoria__c" expression="outFinal.CSSubcategoria__c " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="outFinal" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="DSC_Owner_Name" type="id_String" nullable="true"/>
@@ -1307,6 +1315,8 @@
         <mapperTableEntries name="DT_LastMovement" type="id_Date" nullable="true"/>
         <mapperTableEntries name="DT_CreatedDate_Status" type="id_Date" nullable="true"/>
         <mapperTableEntries name="DSC_Carrier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CategoriaOriginal__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CSSubcategoria__c" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row17" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Id" expression="" type="id_String"/>
@@ -1435,6 +1445,16 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CategoriaOriginal__c"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSSubcategoria__c"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
@@ -1462,6 +1482,8 @@
       <column comment="" key="false" length="100" name="Last_Movemente_Clasification" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Created_Date_Status_Clasification" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="1" name="IN_order_delayed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="121" name="DSC_Owner_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1481,6 +1503,8 @@
       <column comment="" key="false" length="100" name="Last_Movemente_Clasification" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Created_Date_Status_Clasification" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="1" name="IN_order_delayed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -2512,6 +2536,12 @@
       <elementValue elementRef="TRACE_COLUMN" value="DSC_Carrier"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CategoriaOriginal__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSSubcategoria__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="outFinal" show="false"/>
@@ -2547,6 +2577,12 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="IN_order_delayed"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CategoriaOriginal__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSSubcategoria__c"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
