@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="Var.CSIN_OUT__c.contains(&quot;OUT&quot;)?0:&#xD;&#xA;Var.CSTipo__c.contains(&quot;Spam&quot;)?0:&#xA;&#xA;Var.CategoriaOriginal__c.contains(&quot;transferencia&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;telesales&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sinvalor&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;Spam&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sin valor&quot;)?0:&#xA;&#xD;&#xA;Var.CSSubcategoria__c.contains(&quot;spam&quot;)?0:1">
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="row1.CSAsignadoA__c">
   <variables name="row1.Id" value="null" talendType="id_String"/>
   <variables name="row1.CaseNumber" value="null" talendType="id_String"/>
   <variables name="row1.CreatedDate" value="null" talendType="id_Date"/>
@@ -33,12 +33,7 @@
   <variables name="row1.Bandera_escalamientos__c" value="null" talendType="id_String" nullable="true"/>
   <variables name="row1.TicketEscalado__c" value="null" talendType="id_Boolean" nullable="true"/>
   <variables name="row1.TicketReabierto__c" value="null" talendType="id_Boolean" nullable="true"/>
-  <variables name="row1.Severidad__c" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row1.Origin==null?&quot;N/A&quot;:row1.Origin " value="null" talendType="id_String"/>
-  <variables name="row1.CSIN_OUT__c==null?&quot;IN&quot;:row1.CSIN_OUT__c " value="null" talendType="id_String"/>
-  <variables name="row1.CSTipo__c==null?&quot;N/A&quot;:row1.CSTipo__c " value="null" talendType="id_String"/>
-  <variables name="row1.CSSubcategoria__c==null?&quot;N/A&quot;:row1.CSSubcategoria__c " value="null" talendType="id_String"/>
-  <variables name="row1.CategoriaOriginal__c==null?&quot;N/A&quot;:row1.CategoriaOriginal__c " value="null" talendType="id_String"/>
-  <variables name="Var.CSIN_OUT__c==&quot;OUT&quot;?0:&#xD;&#xA;Var.CSTipo__c.contains(&quot;Spam&quot;)?0:&#xA;&#xA;Var.CategoriaOriginal__c.contains(&quot;transferencia&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;telesales&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sinvalor&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;Spam&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sin valor&quot;)?0:&#xA;&#xD;&#xA;Var.CSSubcategoria__c.contains(&quot;spam&quot;)?0:1 " value="0" talendType="id_Integer"/>
-  <variables name="Var.CSIN_OUT__c.contains(&quot;OUT&quot;)?0:&#xD;&#xA;Var.CSTipo__c.contains(&quot;Spam&quot;)?0:&#xA;&#xA;Var.CategoriaOriginal__c.contains(&quot;transferencia&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;telesales&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sinvalor&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;Spam&quot;)||&#xA;Var.CategoriaOriginal__c.contains(&quot;sin valor&quot;)?0:&#xA;&#xD;&#xA;Var.CSSubcategoria__c.contains(&quot;spam&quot;)?0:1 " value="0" talendType="id_Integer"/>
+  <variables name="row2.Id" value="null" talendType="id_String"/>
+  <variables name="row2.Name" value="null" talendType="id_String"/>
+  <variables name="row2.IdentificadorPaIs__c" value="null" talendType="id_String"/>
 </expression:EMFExpression>
