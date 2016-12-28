@@ -559,7 +559,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-S2ncBbWEeaHCZ0DkWwxuQ" show="false"/>
@@ -597,7 +597,7 @@
       <column comment="" key="false" length="19" name="Max" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="14" offsetLabelY="-4" posX="224" posY="192">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="14" offsetLabelY="-4" posX="224" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generate according to input schema and output schema&#xA;//System.out.println(input_row.Max.substring(0,10)+&quot;T&quot;+input_row.Max.substring(11,19)+&quot;Z&quot;);&#xD;&#xA;//context.UpDate=input_row.Max.substring(0,10)+&quot;T&quot;+input_row.Max.substring(11,19)+&quot;Z&quot;;&#xA;context.UpDate=&quot;2016-10-01T00:00:00Z&quot;;&#xA;&#xA;System.out.println(context.UpDate);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -646,7 +646,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generate according to input schema and output schema&#xD;&#xA;//context.UpDate=input_row.Max.substring(0,10)+&quot;T&quot;+input_row.Max.substring(11,19)+&quot;Z&quot;;&#xA;context.UpDate=&quot;2016-10-01T00:00:00Z&quot;;&#xA;System.out.println(context.UpDate);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generate according to input schema and output schema&#xD;&#xA;//context.UpDate=input_row.Max.substring(0,10)+&quot;T&quot;+input_row.Max.substring(11,19)+&quot;Z&quot;;&#xA;context.UpDate=&quot;2016-09-01T00:00:00Z&quot;;&#xA;System.out.println(context.UpDate);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2">
@@ -671,7 +671,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xD;&#xA;o.*,&#xD;&#xA;FIND_IN_SET( &#xD;&#xA;o.Time &#xD;&#xA;, ( &#xD;&#xA;SELECT GROUP_CONCAT(Time ORDER BY Time) &#xD;&#xA;FROM DWH.STGChats i &#xD;&#xA;WHERE i.Name_trans = o.Name_trans &#xD;&#xA;) &#xD;&#xA;) AS ranking &#xD;&#xA;FROM operations_test.STGChats o &#xD;&#xA;WHERE Name_trans&lt;>''&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xD;&#xA;o.*,&#xD;&#xA;FIND_IN_SET( &#xD;&#xA;o.Time &#xD;&#xA;, ( &#xD;&#xA;SELECT GROUP_CONCAT(Time ORDER BY Time) &#xD;&#xA;FROM DWH.STGChats i &#xD;&#xA;WHERE i.Name_trans = o.Name_trans &#xD;&#xA;) &#xD;&#xA;) AS ranking &#xD;&#xA;FROM operations_test.STG_Chats o &#xD;&#xA;WHERE Name_trans&lt;>''&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -782,7 +782,7 @@
     <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;Case&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,CaseNumber&#xD;&#xA;&#xA;FROM&#xA;    Case&#xD;&#xA;&#xA;WHERE&#xA;&#xD;&#xA; (CSIdentificadorPais__c NOT IN ('Market Place' , 'Market Place Cerrado',&#xA;            'Market Place PE',&#xA;            'Market Place Cerrado PE',&#xA;            'Soporte SalesForce',&#xA;            'Market Place CO',&#xA;            'Market Place Cerrado CO',&#xA;            'Market Place CL',&#xA;            'Market Place Cerrado CL',&#xA;            'Market Place Admin',&#xA;            'Market Place INT',&#xA;            'Customer Service VE Casos Especiales',&#xA;            'Guias IL México',&#xA;            'Guías IL Colombia',&#xA;            'Guías IL Perú',&#xA;            'Telesales REG')) &#xD;&#xA;AND CreatedDate>=&quot;+context.UpDate"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,CaseNumber&#xD;&#xA;&#xA;FROM&#xA;    Case&#xD;&#xA;&#xA;WHERE&#xA;&#xD;&#xA;CSIdentificadorPais__c IN ('Customer Service MXCP') &#xD;&#xA;AND CreatedDate>=&quot;+context.UpDate"/>
     <elementParameter field="CHECK" name="QUERY_ALL" value="false"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="500"/>
     <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
@@ -1410,7 +1410,7 @@
         <mapperTableEntries name="Wait_time" expression="copyOfrow2.WaitTime==null?99: copyOfrow2.WaitTime " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Chat_time" expression="copyOfrow2.ChatDuration ==null?0:copyOfrow2.ChatDuration" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CaseNumber" expression="copyOfrow2.CaseNumber" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Country_Attend" expression="copyOfrow2.PaisAtencion__c==null?&quot;N/A&quot;:&#xD;&#xA;(copyOfrow2.PaisAtencion__c.equalsIgnoreCase(&quot;VE&quot;)?&quot;VEN&quot;:&#xD;&#xA;(copyOfrow2.PaisAtencion__c.contains(&quot;MX&quot;)?&quot;MEX&quot;:&#xD;&#xA;(copyOfrow2.PaisAtencion__c.equalsIgnoreCase(&quot;CO&quot;)?&quot;COL&quot;:&#xD;&#xA;(copyOfrow2.PaisAtencion__c.equalsIgnoreCase(&quot;PE&quot;)?&quot;PER&quot;:&#xD;&#xA;(copyOfrow2.PaisAtencion__c.equalsIgnoreCase(&quot;CL&quot;)?&quot;CHL&quot;:&#xD;&#xA;(copyOfrow2.PaisAtencion__c.equalsIgnoreCase(&quot;AR&quot;)?&quot;ARG&quot;:&#xD;&#xA;(copyOfrow2.PaisAtencion__c.equalsIgnoreCase(&quot;PA&quot;)?&quot;PAN&quot;:&#xD;&#xA;(copyOfrow2.PaisAtencion__c.equalsIgnoreCase(&quot;EC&quot;)?&quot;ECU&quot;:&quot;N/A&quot;)))))))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Country_Attend" expression="copyOfrow2.PaisAtencion__c " type="id_String" nullable="true"/>
         <mapperTableEntries name="Country_Source" expression="copyOfrow2.PaisChat__c " type="id_String" nullable="true"/>
         <mapperTableEntries name="Venture_Source" expression="copyOfrow2.PaisChat__c==null?-1:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;VE&quot;)?1:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;MX&quot;)?1:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;CP&quot;)?2:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;LM&quot;)?3:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;LP&quot;)?3:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;CO&quot;)?1:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;PE&quot;)?1:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;CL&quot;)?1:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;AR&quot;)?1:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;PA&quot;)?1:&#xD;&#xA;(copyOfrow2.PaisChat__c.equalsIgnoreCase(&quot;EC&quot;)?1:&#xD;&#xA;(copyOfrow2.PaisChat__c.contains(&quot;HP&quot;)?4:&#xD;&#xA;(copyOfrow2.PaisChat__c.contains(&quot;LM&quot;)?3:&#xD;&#xA;(copyOfrow2.PaisChat__c.contains(&quot;LP&quot;)?3:-1&#xD;&#xA;)))))))))))))) " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="IN_Answered" expression="copyOfrow2.IN_Answered " type="id_Integer" nullable="true"/>
@@ -1938,630 +1938,7 @@
       <column comment="" key="false" length="50" name="CreatedDate_System" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_OcNaoMiiEeac2NlbUF19XA-tMap_1-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="OutIncoming" name="OutIncoming">
-      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="3000" name="Subject" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4000" name="ToAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="0" name="Incoming" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="MessageDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="DateAnswered" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedMain" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Datediff" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="In_SLA" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Venture" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate_System" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FLOW" label="Print" name="Print">
-      <column comment="" defaultValue="0" key="false" length="18" name="Id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="18" name="ParentId_1" nullable="true" originalDbColumnName="ParentId" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="MessageDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="In_SLA" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Datediff" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="MapperData">
-      <uiProperties/>
-      <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="row31.MessageDate " type="id_Date"/>
-        <mapperTableEntries name="var2" expression=" " type="id_String"/>
-      </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="OutIncoming">
-        <mapperTableEntries name="Id" expression="row31.Id " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ParentId" expression="row31.ParentId" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedById" expression="row32.CreatedById==null?row31.CreatedById:row32.CreatedById " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedDate" expression="row31.CreatedDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Subject" expression="row31.Subject" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FromName" expression="row31.FromName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FromAddress" expression="row31.FromAddress" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ToAddress" expression="row31.ToAddress" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Incoming" expression="row31.Incoming" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="MessageDate" expression="row31.MessageDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Status" expression="row31.Status" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DateAnswered" expression="DateUnixTimeStamp.DatesCompar(DateUnixTimeStamp.SimpleDTZFromDate(row32.CreatedDate),DateUnixTimeStamp.SimpleDTZFromDate(row31.CreatedDate)) " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CreatedMain" expression="Var.var1 " type="id_Date"/>
-        <mapperTableEntries name="Datediff" expression="row32.CreatedDate==null?-1:&#xD;&#xA;DateUnixTimeStamp.DateDiff(DateUnixTimeStamp.SimpleDTZFromDate(row32.CreatedDate),Var.var1) " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="In_SLA" expression="row32.MessageDate==null?0:&#xD;&#xA;DateUnixTimeStamp.DateDiff(DateUnixTimeStamp.SimpleDTZFromDate(row32.MessageDate),Var.var1)&lt;=20?1:0 " type="id_Integer"/>
-        <mapperTableEntries name="Venture" expression="&quot;&quot;" type="id_String"/>
-        <mapperTableEntries name="CreatedDate_System" expression="row31.CreatedDate " type="id_Date"/>
-      </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Print">
-        <mapperTableEntries name="Id" expression="row31.Id " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ParentId_1" expression="row31.ParentId " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ParentId" expression="row32.ParentId " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedDate" expression="row32.CreatedDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="MessageDate" expression="row32.MessageDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="In_SLA" expression="row32.MessageDate==null?0:&#xD;&#xA;DateUnixTimeStamp.DateDiff(DateUnixTimeStamp.SimpleDTZFromDate(row32.MessageDate),Var.var1)&lt;=20?1:0  " type="id_Integer"/>
-        <mapperTableEntries name="Datediff" expression="row32.CreatedDate==null?-1:&#xD;&#xA;DateUnixTimeStamp.DateDiff(DateUnixTimeStamp.SimpleDTZFromDate(row32.CreatedDate),Var.var1)  " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="CreatedById" expression="row32.CreatedById==null?row31.CreatedById:row32.CreatedById " type="id_String" nullable="true"/>
-      </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row32" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ParentId" expression="row31.ParentId " type="id_String" nullable="true" operator="="/>
-        <mapperTableEntries name="CreatedById" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LastModifiedDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Subject" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FromName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FromAddress" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ToAddress" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Incoming" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="MessageDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LastModifiedById" type="id_String" nullable="true"/>
-      </inputTables>
-    </nodeData>
-  </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;calendar_cs&quot;"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext&#xD;&#xA;from customer_service_mx.calendar_cs&#xD;&#xA;where channel='Emails' &#xD;&#xA;UNION ALL&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext from customer_service_co.calendar_cs&#xD;&#xA;where channel='Emails'&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext from customer_service_ar.calendar_cs&#xD;&#xA;where channel='Emails'&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext from customer_service_cl.calendar_cs&#xD;&#xA;where channel='Emails'&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext from customer_service_cp.calendar_cs&#xD;&#xA;where channel='Emails'&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext from customer_service_ec.calendar_cs&#xD;&#xA;where channel='Emails'&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext from customer_service_lm.calendar_cs&#xD;&#xA;where channel='Emails'&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext from customer_service_lp.calendar_cs&#xD;&#xA;where channel='Emails'&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext from customer_service_pa.calendar_cs&#xD;&#xA;where channel='Emails'&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext from customer_service_pe.calendar_cs&#xD;&#xA;where channel='Emails'&#xD;&#xA;UNION ALL&#xD;&#xA;SELECT id,date,country,is_workingday,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_start),'%Y-%m-%d %H:%i') as dateINIT,&#xD;&#xA;STR_TO_DATE(concat(date,' ',time_end),'%Y-%m-%d %H:%i') as dateFINISH,&#xD;&#xA;STR_TO_DATE(concat(next_working_date,' ',time_start_nwd),'%Y-%m-%d %H:%i') as dateNext from customer_service_ve.calendar_cs&#xD;&#xA;where channel='Emails';&#xD;&#xA;&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="is_workingday"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="dateINIT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="dateFINISH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="dateNext"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="Calendars"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMysqlInput_1">
-      <column comment="" defaultValue="" key="false" length="11" name="id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="45" name="is_workingday" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="dateINIT" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="dateFINISH" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="dateNext" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
-    <elementParameter field="TABLE" name="CONDITIONS"/>
-    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="OutIncoming" name="tFilterRow_1">
-      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="3000" name="Subject" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4000" name="ToAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="0" name="Incoming" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="MessageDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="DateAnswered" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CaseNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Email_User" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketOrigin" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketStatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketSubstatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="OrderNumber" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="80" name="AttendedCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="TicketCreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CSIdentificadorPais__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="time_start" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="time_end" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedMain" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Datediff" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="In_SLA" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumeroItemID__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Venture" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ClosedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Agent_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate_System" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CSSubcategoria__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DTZ" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CategoriaOriginal__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FILTER" label="OutIncoming" name="FILTER">
-      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="3000" name="Subject" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4000" name="ToAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="0" name="Incoming" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="MessageDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="DateAnswered" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CaseNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Email_User" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketOrigin" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketStatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketSubstatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="OrderNumber" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="80" name="AttendedCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="TicketCreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CSIdentificadorPais__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="time_start" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="time_end" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedMain" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Datediff" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="In_SLA" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumeroItemID__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Venture" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ClosedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Agent_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate_System" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CSSubcategoria__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DTZ" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CategoriaOriginal__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="OutIncoming" name="REJECT">
-      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="3000" name="Subject" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4000" name="ToAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="0" name="Incoming" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="MessageDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="DateAnswered" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CaseNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Email_User" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketOrigin" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketStatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketSubstatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="OrderNumber" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="80" name="AttendedCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="TicketCreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CSIdentificadorPais__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="time_start" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="time_end" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedMain" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Datediff" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="In_SLA" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumeroItemID__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Venture" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ClosedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Agent_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate_System" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CSSubcategoria__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DTZ" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CategoriaOriginal__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
-    <elementParameter field="TABLE" name="GROUPBYS">
-      <elementValue elementRef="OUTPUT_COLUMN" value="Id"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Id"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="OPERATIONS">
-      <elementValue elementRef="OUTPUT_COLUMN" value="ParentId"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="ParentId"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="CreatedById"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="CreatedById"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="CreatedDate"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="CreatedDate"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="Subject"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Subject"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="FromName"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="FromName"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="FromAddress"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="FromAddress"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="ToAddress"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="ToAddress"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="Incoming"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Incoming"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="MessageDate"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="MessageDate"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="Status"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Status"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="DateAnswered"/>
-      <elementValue elementRef="FUNCTION" value="min"/>
-      <elementValue elementRef="INPUT_COLUMN" value="DateAnswered"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="CategoriaOriginal__c"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="CategoriaOriginal__c"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="CaseNumber"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="CaseNumber"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="Email_User"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Email_User"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="TicketOrigin"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="TicketOrigin"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="TicketStatus"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="TicketStatus"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="TicketSubstatus"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="TicketSubstatus"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="OrderNumber"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="OrderNumber"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="AttendedCountry"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="AttendedCountry"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="TicketCreatedDate"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="TicketCreatedDate"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="CSIdentificadorPais__c"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="CSIdentificadorPais__c"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="time_start"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="time_start"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="time_end"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="time_end"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="date"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="date"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="CreatedMain"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="CreatedMain"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="Datediff"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Datediff"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="In_SLA"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="In_SLA"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="NumeroItemID__c"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="NumeroItemID__c"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="Venture"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Venture"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="Id"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Id"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="ClosedDate"/>
-      <elementValue elementRef="FUNCTION" value="min"/>
-      <elementValue elementRef="INPUT_COLUMN" value="ClosedDate"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="Agent_id"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Agent_id"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="CreatedDate_System"/>
-      <elementValue elementRef="FUNCTION" value="last"/>
-      <elementValue elementRef="INPUT_COLUMN" value="CreatedDate_System"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="DTZ"/>
-      <elementValue elementRef="FUNCTION" value="min"/>
-      <elementValue elementRef="INPUT_COLUMN" value="DTZ"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="CSSubcategoria__c"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="CSSubcategoria__c"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="Name"/>
-      <elementValue elementRef="FUNCTION" value="first"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Name"/>
-      <elementValue elementRef="IGNORE_NULL" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
-    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
-    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
-    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="GroupCase"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="OutIncoming" name="tAggregateRow_1">
-      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="3000" name="Subject" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4000" name="ToAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="0" name="Incoming" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="MessageDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="DateAnswered" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CaseNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Email_User" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketOrigin" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketStatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketSubstatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="OrderNumber" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="80" name="AttendedCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="TicketCreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CSIdentificadorPais__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="time_start" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="time_end" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedMain" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Datediff" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="In_SLA" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumeroItemID__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Venture" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ClosedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Agent_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate_System" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CSSubcategoria__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DTZ" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CategoriaOriginal__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_OcNaoMiiEeac2NlbUF19XA-tMap_2-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="OutIncoming" name="copyOfOutIncoming">
-      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="3000" name="Subject" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="FromAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4000" name="ToAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="0" name="Incoming" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="MessageDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="DateAnswered" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CaseNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Email_User" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketOrigin" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketStatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TicketSubstatus" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="OrderNumber" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="80" name="AttendedCountry" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="TicketCreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CSIdentificadorPais__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="time_start" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="time_end" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedMain" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Datediff" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="In_SLA" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NumeroItemID__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Venture" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ClosedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Agent_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate_System" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CSSubcategoria__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DTZ" nullable="false" pattern="" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CategoriaOriginal__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FLOW" label="Print" name="copyOfPrint">
-      <column comment="" key="false" length="18" name="Id_1" nullable="false" originalDbColumnName="Id" pattern="" precision="-1" sourceType="" type="id_String" originalLength="18" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="date" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="Id_2" nullable="false" originalDbColumnName="Id" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="DateUnixTimeStamp.CreatedMain(DateUnixTimeStamp.SimpleDTZFromDate(OutIncoming.CreatedDate),row34.dateINIT,row34.dateFINISH,row34.is_workingday ,row34.dateNext) " type="id_Date"/>
-        <mapperTableEntries name="var3" expression="DateUnixTimeStamp.SimpleDTZFromDate(OutIncoming.MessageDate)" type="id_Date"/>
-        <mapperTableEntries name="var2" expression="Relational.ISNULL(row33.CSIdentificadorPais__c)?&quot;&quot;:row33.CSIdentificadorPais__c.contains(&quot;MXCP&quot;)?&quot;Club Premier&quot;:(row33.CSIdentificadorPais__c.contains(&quot;COLM&quot;)?&quot;Life Miles&quot;:(row33.CSIdentificadorPais__c.contains(&quot;PELM&quot;)?&quot;Life Miles&quot;:&quot;&quot;)) " type="id_String"/>
-      </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="copyOfOutIncoming">
-        <mapperTableEntries name="Id" expression="OutIncoming.Id " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ParentId" expression="OutIncoming.ParentId " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedById" expression="OutIncoming.CreatedById " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedDate" expression="Var.var1 " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Subject" expression="OutIncoming.Subject " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FromName" expression="OutIncoming.FromName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FromAddress" expression="OutIncoming.FromAddress " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ToAddress" expression="OutIncoming.ToAddress " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Incoming" expression="OutIncoming.Incoming " type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="MessageDate" expression="DateUnixTimeStamp.SimpleDTZFromDate(OutIncoming.MessageDate )" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Status" expression="OutIncoming.Status " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DateAnswered" expression="OutIncoming.DateAnswered " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CaseNumber" expression="row33.CaseNumber " type="id_String"/>
-        <mapperTableEntries name="Email_User" expression="row35.Email " type="id_String" nullable="true"/>
-        <mapperTableEntries name="TicketOrigin" expression="row33.Origin " type="id_String"/>
-        <mapperTableEntries name="TicketStatus" expression="row33.Status " type="id_String"/>
-        <mapperTableEntries name="TicketSubstatus" expression="row33.Subestado__c " type="id_String"/>
-        <mapperTableEntries name="OrderNumber" expression="row33.NumeroOrdenManual__c " type="id_String"/>
-        <mapperTableEntries name="AttendedCountry" expression="row35.IdentificadorPaIs__c " type="id_String"/>
-        <mapperTableEntries name="TicketCreatedDate" expression="row33.CreatedDate " type="id_Date"/>
-        <mapperTableEntries name="CSIdentificadorPais__c" expression="DateUnixTimeStamp.countryFix(row33.CSIdentificadorPais__c) " type="id_String"/>
-        <mapperTableEntries name="time_start" expression="row34.dateINIT " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="time_end" expression="row34.dateFINISH" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="date" expression="row34.date " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedMain" expression="Var.var1 " type="id_Date"/>
-        <mapperTableEntries name="Datediff" expression="DateUnixTimeStamp.DateDiff(DateUnixTimeStamp.SimpleDTZFromDate(row32.CreatedDate),Var.var1) " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="In_SLA" expression="DateUnixTimeStamp.DateDiff(DateUnixTimeStamp.SimpleDTZFromDate(row32.MessageDate),Var.var1)&lt;=20?1:0 " type="id_Integer"/>
-        <mapperTableEntries name="NumeroItemID__c" expression="row33.NumeroItemID__c " type="id_String"/>
-        <mapperTableEntries name="Venture" expression="Var.var2" type="id_String"/>
-        <mapperTableEntries name="ClosedDate" expression="row33.ClosedDate " type="id_Date"/>
-        <mapperTableEntries name="Agent_id" expression="row35.agent_identification__c " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedDate_System" expression="OutIncoming.CreatedDate_System " type="id_Date"/>
-        <mapperTableEntries name="CSSubcategoria__c" expression="row33.CSSubcategoria__c==null?&quot; &quot;:row33.CSSubcategoria__c " type="id_String"/>
-        <mapperTableEntries name="DTZ" expression="Var.var3 " type="id_Date"/>
-        <mapperTableEntries name="CategoriaOriginal__c" expression="row33.CategoriaOriginal__c " type="id_String"/>
-        <mapperTableEntries name="Name" expression="row35.Name " type="id_String"/>
-      </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="copyOfPrint">
-        <mapperTableEntries name="Id_1" expression="row33.Id " type="id_String"/>
-        <mapperTableEntries name="date" expression="row34.date " type="id_String" nullable="true"/>
-        <mapperTableEntries name="country" expression="row34.country " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Id_2" expression="row35.Id " type="id_String"/>
-      </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="OutIncoming" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ParentId" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedById" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Subject" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FromName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FromAddress" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ToAddress" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Incoming" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="MessageDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DateAnswered" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CreatedMain" type="id_Date"/>
-        <mapperTableEntries name="Datediff" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="In_SLA" type="id_Integer"/>
-        <mapperTableEntries name="Venture" type="id_String"/>
-        <mapperTableEntries name="CreatedDate_System" type="id_Date"/>
-      </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row35" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Id" expression="OutIncoming.CreatedById " type="id_String" operator="="/>
-        <mapperTableEntries name="Name" type="id_String"/>
-        <mapperTableEntries name="IdentificadorPaIs__c" type="id_String"/>
-        <mapperTableEntries name="Email" type="id_String" nullable="true"/>
-        <mapperTableEntries name="agent_identification__c" type="id_String" nullable="true"/>
-      </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row33" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Id" expression="OutIncoming.ParentId " type="id_String" operator="="/>
-        <mapperTableEntries name="CaseNumber" type="id_String"/>
-        <mapperTableEntries name="CreatedDate" type="id_Date"/>
-        <mapperTableEntries name="CSIdentificadorPais__c" type="id_String"/>
-        <mapperTableEntries name="Origin" type="id_String"/>
-        <mapperTableEntries name="Status" type="id_String"/>
-        <mapperTableEntries name="Subestado__c" type="id_String"/>
-        <mapperTableEntries name="CSSubcategoria__c" type="id_String"/>
-        <mapperTableEntries name="CategoriaOriginal__c" type="id_String"/>
-        <mapperTableEntries name="NumeroItemID__c" type="id_String"/>
-        <mapperTableEntries name="NumeroOrdenManual__c" type="id_String"/>
-        <mapperTableEntries name="ClosedDate" type="id_Date"/>
-      </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row34" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="id" type="id_Integer"/>
-        <mapperTableEntries name="date" expression="DateUnixTimeStamp.DateOnly(OutIncoming.CreatedDate) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="country" expression="DateUnixTimeStamp.countryFix(row33.CSIdentificadorPais__c) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="is_workingday" type="id_String" nullable="true"/>
-        <mapperTableEntries name="dateINIT" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="dateFINISH" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="dateNext" type="id_Date" nullable="true"/>
-      </inputTables>
-    </nodeData>
-  </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="608">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_2" show="false"/>
@@ -2616,7 +1993,254 @@
       <column comment="" key="false" length="10" name="LastModifiedById" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="608">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_OcNaoMiiEeac2NlbUF19XA-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="OutIncoming" name="copyOfOutFact">
+      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="3000" name="Subject" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="FromName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="FromAddress" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="ToAddress" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Incoming" nullable="true" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MessageDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LastModifiedById" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CaseNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ClosedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfOutFact">
+        <mapperTableEntries name="Id" expression="row2.Id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ParentId" expression="row2.ParentId " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CreatedById" expression="row2.CreatedById " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CreatedDate" expression="DateUnixTimeStamp.SimpleDTZFromDateMX(row2.CreatedDate) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LastModifiedDate" expression="row2.LastModifiedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Subject" expression="row2.Subject " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FromName" expression="row2.FromName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FromAddress" expression="row2.FromAddress " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ToAddress" expression="row2.ToAddress " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Incoming" expression="row2.Incoming " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="MessageDate" expression="row2.MessageDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Status" expression="row2.Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LastModifiedById" expression="row2.LastModifiedById " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CaseNumber" expression="row3.CaseNumber " type="id_String"/>
+        <mapperTableEntries name="ClosedDate" expression="row3.ClosedDate " type="id_Date"/>
+        <mapperTableEntries name="Name" expression="row4.Name " type="id_String"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ParentId" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CreatedById" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CreatedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LastModifiedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Subject" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FromName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FromAddress" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ToAddress" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Incoming" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="MessageDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LastModifiedById" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Id" expression="row2.ParentId " type="id_String" operator="="/>
+        <mapperTableEntries name="CaseNumber" type="id_String"/>
+        <mapperTableEntries name="CreatedDate" type="id_Date"/>
+        <mapperTableEntries name="CSIdentificadorPais__c" type="id_String"/>
+        <mapperTableEntries name="Origin" type="id_String"/>
+        <mapperTableEntries name="Status" type="id_String"/>
+        <mapperTableEntries name="Subestado__c" type="id_String"/>
+        <mapperTableEntries name="CSSubcategoria__c" type="id_String"/>
+        <mapperTableEntries name="CategoriaOriginal__c" type="id_String"/>
+        <mapperTableEntries name="NumeroItemID__c" type="id_String"/>
+        <mapperTableEntries name="NumeroOrdenManual__c" type="id_String"/>
+        <mapperTableEntries name="ClosedDate" type="id_Date"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Id" expression="row2.CreatedById " type="id_String" operator="="/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="IdentificadorPaIs__c" type="id_String"/>
+        <mapperTableEntries name="Email" type="id_String" nullable="true"/>
+        <mapperTableEntries name="agent_identification__c" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;operations_test&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mario.rasgado&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="rybtc1D0en7vSNCI95RnovQYYk8nNyOl"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CLP_Mails&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;autoReconnect=true&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ParentId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedById"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Subject"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FromName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FromAddress"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ToAddress"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Incoming"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MessageDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastModifiedById"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CaseNumber"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ClosedDate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="OutIncoming" name="tMysqlOutput_1">
+      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="3000" name="Subject" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="FromName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="FromAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="ToAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Incoming" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MessageDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LastModifiedById" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CaseNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ClosedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="OutIncoming" name="REJECT">
+      <column comment="" key="false" length="18" name="Id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastModifiedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="3000" name="Subject" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="FromName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="FromAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="ToAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Incoming" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MessageDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LastModifiedById" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CaseNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ClosedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_3" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Rq7jkBOvEeaN4s27YySL8w" show="false"/>
@@ -2640,7 +2264,7 @@
     <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;Case&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    ClosedDate &#xA;FROM&#xA;    Case&#xD;&#xA;&#xA;WHERE&#xA;&#xD;&#xA;CSIdentificadorPais__c IN ('MXCP') &#xD;&#xA;AND &#xD;&#xA;LastModifiedDate>&quot;+context.UpDate+&quot;&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    ClosedDate &#xA;FROM&#xA;    Case&#xD;&#xA;&#xA;WHERE&#xA;&#xD;&#xA;CSIdentificadorPais__c IN ('Customer Service MXCP') &#xD;&#xA;AND &#xD;&#xA;LastModifiedDate>&quot;+context.UpDate+&quot;&#xD;&#xA;&quot;"/>
     <elementParameter field="CHECK" name="QUERY_ALL" value="false" show="false"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="500" show="false"/>
     <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
@@ -3115,7 +2739,7 @@
       <column comment="" key="false" length="3" name="ConteoItems__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
     </metadata>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="608">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_4" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_1" show="false"/>
@@ -3160,311 +2784,6 @@
       <column comment="" key="false" length="80" name="IdentificadorPaIs__c" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="agent_identification__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_OcNaoMiiEeac2NlbUF19XA-tMap_3-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="OutIncoming" name="copyOfOutFact">
-      <column comment="" key="true" length="18" name="NK_Mails" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedMain" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="50" name="FK_employee" nullable="true" pattern="" precision="0" sourceType="INT" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_AttendedCountry" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Status" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Substatus" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Order_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Ticket_Number" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="250" name="FK_Item_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="NU_Time_Answer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="IN_SLA" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="1" name="IN_Answered_Same_Day" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="DT_Reply" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="FK_VentureVenture" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FK_Time" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IN_Answered" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IN_Closed" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Agent_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate_System" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="121" name="DSC_Agent_Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="DateUnixTimeStamp.DateDiff(Mails.CreatedDate,Mails.DateAnswered) " type="id_Integer"/>
-      </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="copyOfOutFact">
-        <mapperTableEntries name="NK_Mails" expression="Mails.Id " type="id_String"/>
-        <mapperTableEntries name="CreatedMain" expression="Mails.CreatedMain " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="FK_employee" expression="Mails.Email_User " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FK_Country" expression="Mails.CSIdentificadorPais__c " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FK_AttendedCountry" expression="Mails.AttendedCountry " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FK_Status" expression="Mails.Status " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FK_Substatus" expression="Mails.TicketSubstatus ==null?&quot;null&quot;:&#xD;&#xA;Mails.TicketSubstatus.length()>30?&#xD;&#xA;Mails.TicketSubstatus.substring(0,30):&#xD;&#xA;Mails.TicketSubstatus.substring(0,Mails.TicketSubstatus.length()) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FK_Order_Number" expression="Mails.OrderNumber " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FK_Ticket_Number" expression="Mails.CaseNumber " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FK_Item_id" expression="Mails.NumeroItemID__c==null?&quot;null&quot;:&#xD;&#xA;Mails.NumeroItemID__c.length()>100?&#xD;&#xA;Mails.NumeroItemID__c.substring(0,100):&#xD;&#xA;Mails.NumeroItemID__c.substring(0,Mails.NumeroItemID__c.length()) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NU_Time_Answer" expression="Var.var1 " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="IN_SLA" expression="Var.var1&lt;=7200?1:0" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="IN_Answered_Same_Day" expression="Mails.DateAnswered.compareTo(Mails.CreatedDate)==0?1:0 " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="DT_Reply" expression="Mails.DateAnswered " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="FK_VentureVenture" expression="Mails.Venture " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FK_Time" expression="Mails.DateAnswered.getHours()*60+Mails.DateAnswered.getMinutes() " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="IN_Answered" expression="DateUnixTimeStamp.DatesComparString(Mails.DateAnswered)" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="IN_Closed" expression="DateUnixTimeStamp.DatesComparStringClosed(Mails.ClosedDate) " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Agent_id" expression="Mails.CreatedById " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedDate" expression="Mails.CreatedDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CreatedDate_System" expression="Mails.CreatedDate_System " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="DSC_Agent_Name" expression="Mails.Name " type="id_String"/>
-      </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Mails" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ParentId" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedById" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Subject" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FromName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FromAddress" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ToAddress" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Incoming" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="MessageDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DateAnswered" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CaseNumber" type="id_String"/>
-        <mapperTableEntries name="Email_User" type="id_String" nullable="true"/>
-        <mapperTableEntries name="TicketOrigin" type="id_String"/>
-        <mapperTableEntries name="TicketStatus" type="id_String"/>
-        <mapperTableEntries name="TicketSubstatus" type="id_String"/>
-        <mapperTableEntries name="OrderNumber" type="id_String"/>
-        <mapperTableEntries name="AttendedCountry" type="id_String"/>
-        <mapperTableEntries name="TicketCreatedDate" type="id_Date"/>
-        <mapperTableEntries name="CSIdentificadorPais__c" type="id_String"/>
-        <mapperTableEntries name="time_start" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="time_end" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedMain" type="id_Date"/>
-        <mapperTableEntries name="Datediff" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="In_SLA" type="id_Integer"/>
-        <mapperTableEntries name="NumeroItemID__c" type="id_String"/>
-        <mapperTableEntries name="Venture" type="id_String"/>
-        <mapperTableEntries name="ClosedDate" type="id_Date"/>
-        <mapperTableEntries name="Agent_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedDate_System" type="id_Date"/>
-        <mapperTableEntries name="CSSubcategoria__c" type="id_String"/>
-        <mapperTableEntries name="DTZ" type="id_Date"/>
-        <mapperTableEntries name="CategoriaOriginal__c" type="id_String"/>
-        <mapperTableEntries name="Name" type="id_String"/>
-      </inputTables>
-    </nodeData>
-  </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;operations_test&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;mario.rasgado&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="rybtc1D0en7vSNCI95RnovQYYk8nNyOl"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CLP_Mails&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;autoReconnect=true&quot;"/>
-    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
-    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
-    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
-    <elementParameter field="TABLE" name="ADD_COLS"/>
-    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Mails"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedMain"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_employee"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Country"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_AttendedCountry"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Status"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Substatus"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Order_Number"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Ticket_Number"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Item_id"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NU_Time_Answer"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IN_SLA"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IN_Answered_Same_Day"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DT_Reply"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_VentureVenture"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Time"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IN_Answered"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IN_Closed"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Agent_id"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedDate"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedDate_System"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Agent_Name"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
-    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="OutIncoming" name="tMysqlOutput_1">
-      <column comment="" key="true" length="18" name="NK_Mails" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedMain" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="50" name="FK_employee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Country" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_AttendedCountry" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Status" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Substatus" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Order_Number" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Ticket_Number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="250" name="FK_Item_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="NU_Time_Answer" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="IN_SLA" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="1" name="IN_Answered_Same_Day" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="DT_Reply" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="FK_VentureVenture" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FK_Time" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IN_Answered" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IN_Closed" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Agent_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate_System" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="121" name="DSC_Agent_Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="OutIncoming" name="REJECT">
-      <column comment="" key="true" length="18" name="NK_Mails" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedMain" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="50" name="FK_employee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Country" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_AttendedCountry" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Status" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Substatus" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Order_Number" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FK_Ticket_Number" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="250" name="FK_Item_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="NU_Time_Answer" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="IN_SLA" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="1" name="IN_Answered_Same_Day" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="0" key="false" length="0" name="DT_Reply" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="FK_VentureVenture" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FK_Time" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IN_Answered" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IN_Closed" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Agent_id" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate_System" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="121" name="DSC_Agent_Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row50" lineStyle="0" metaname="tSalesforceInput_6" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_6" target="tMap_4">
@@ -3572,6 +2891,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row23" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_2" target="tSalesforceInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row38" lineStyle="0" metaname="tMysqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_3" target="tJavaRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row38" show="false"/>
@@ -3623,36 +2945,55 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="OutIncoming" lineStyle="0" metaname="OutIncoming" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSalesforceInput_2" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfOutFact" lineStyle="0" metaname="copyOfOutFact" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMysqlOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="DateTMO"/>
+      <elementValue elementRef="TRACE_COLUMN" value="DSC_Agent_Name"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OutIncoming" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row34" lineStyle="8" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMap_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row34" show="false"/>
-  </connection>
-  <connection connectorName="FILTER" label="row36" lineStyle="0" metaname="tFilterRow_1" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_1" target="tAggregateRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row36" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="Mails" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Mails" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="copyOfOutIncoming" lineStyle="0" metaname="copyOfOutIncoming" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFilterRow_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="DTZ"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ParentId"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DateTMO"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Status"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="CategoriaOriginal__c"/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastModifiedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FromName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MessageDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FromAddress"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreatedById"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Incoming"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastModifiedById"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Subject"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ToAddress"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CaseNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ClosedDate"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="Name"/>
@@ -3660,28 +3001,15 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfOutIncoming" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row32" lineStyle="8" metaname="tSalesforceInput_2" offsetLabelX="2" offsetLabelY="32" source="tSalesforceInput_2" target="tMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row32" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row33" lineStyle="8" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMap_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row33" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row35" lineStyle="8" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tMap_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row35" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="copyOfOutFact" lineStyle="0" metaname="copyOfOutFact" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMysqlOutput_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="DSC_Agent_Name"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfOutFact" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_6" show="false"/>
@@ -3709,7 +3037,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
