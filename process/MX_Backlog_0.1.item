@@ -603,7 +603,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT curdate() as DT_Consult,'IL Artículos en WH pendientes por procesar > 24hrs' as KPI_name,count(*)+0.0 as Data FROM DWH.DWH_FACT_INVERSE_LOGISTICS_D&#xD;&#xA;where IN_Closed=0&#xD;&#xA;AND NK_Country='MEX'&#xD;&#xA;and DSC_Current_Money_Status not in('RefundNeeded')&#xD;&#xA;AND DSC_Current_Status='retornado'&#xD;&#xA;and DT_Inbound_Inverse=(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-2 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;)&#xD;&#xA;)&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT curdate() as DT_Consult,'IL Artículos en WH pendientes por procesar > 24hrs' as KPI_name,count(*)+0.0 as Data FROM wms_live_mx.inverselogistics_devolucion&#xD;&#xA;where status=6&#xD;&#xA;AND modified_at&lt;=(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-2 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;)&#xD;&#xA;)&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>

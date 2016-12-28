@@ -1942,7 +1942,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="context.UpDate=&quot;2016-10-01T00:00:00Z&quot;;&#xA;System.out.println(context.UpDate);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.UpDate=&quot;2016-12-01T00:00:00Z&quot;;&#xA;System.out.println(context.UpDate);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>

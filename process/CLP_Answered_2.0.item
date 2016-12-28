@@ -255,7 +255,7 @@
       <column comment="" key="false" length="50" name="CreatedDate_System" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout1">
         <mapperTableEntries name="Name_trans" expression="row40.Name " type="id_String"/>
@@ -559,7 +559,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-S2ncBbWEeaHCZ0DkWwxuQ" show="false"/>
@@ -597,7 +597,7 @@
       <column comment="" key="false" length="19" name="Max" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="14" offsetLabelY="-4" posX="224" posY="192">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="14" offsetLabelY="-4" posX="224" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generate according to input schema and output schema&#xA;//System.out.println(input_row.Max.substring(0,10)+&quot;T&quot;+input_row.Max.substring(11,19)+&quot;Z&quot;);&#xD;&#xA;//context.UpDate=input_row.Max.substring(0,10)+&quot;T&quot;+input_row.Max.substring(11,19)+&quot;Z&quot;;&#xA;context.UpDate=&quot;2016-10-01T00:00:00Z&quot;;&#xA;&#xA;System.out.println(context.UpDate);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -1393,7 +1393,7 @@
       <column comment="" key="false" length="19" name="CreatedDate_System" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="&quot; &quot;" type="id_String"/>
       </varTables>
@@ -1636,7 +1636,7 @@
       <column comment="" key="false" length="121" name="DSC_Agent_Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="CreatedDate_System" expression="copyOfout8.CreatedDate_System " type="id_Date" nullable="true"/>
@@ -2023,7 +2023,7 @@
       <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfOutFact">
         <mapperTableEntries name="Id" expression="row2.Id " type="id_String" nullable="true"/>
