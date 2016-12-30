@@ -215,3 +215,6 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 process/Calidad_0.1.properties
+process/Calidad_0.1.properties
+process/MX_Backlog_0.1.properties
+process/WMS_Data_Live_1.3.properties
