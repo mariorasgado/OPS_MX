@@ -960,7 +960,7 @@
       <column comment="" key="false" length="100" name="DSC_Scalated_Ticket" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" originalLength="100" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="Country" expression="DateUnixTimeStamp.countryFix(STG.CSIdentificadorPais__c) " type="id_String"/>
         <mapperTableEntries name="CSIdentificadorPais__c" expression="Relational.ISNULL(STG.CSIdentificadorPais__c)?&quot;&quot;:STG.CSIdentificadorPais__c.contains(&quot;MXCP&quot;)?&quot;Club Premier&quot;:(STG.CSIdentificadorPais__c.contains(&quot;COLM&quot;)?&quot;Life Miles&quot;:(STG.CSIdentificadorPais__c.contains(&quot;PELM&quot;)?&quot;Life Miles&quot;:&quot;&quot;)) " type="id_String"/>
@@ -5706,6 +5706,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row21" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tSalesforceInput_4">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMap_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="ParentId"/>
@@ -5746,23 +5750,19 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tSalesforceInput_4">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="OrderedMails" lineStyle="0" metaname="OrderedMails" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMysqlOutputBulkExec_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OrderedMails" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tMysqlInput_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tMysqlInput_3">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfOrderedMails" lineStyle="0" metaname="copyOfOrderedMails" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMysqlOutputBulkExec_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -5786,6 +5786,10 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfOrderedMails" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_5" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_5" target="tSalesforceInput_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tSalesforceInput_5" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_5" target="tMap_6">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="TicketReincidente__c"/>
@@ -5795,10 +5799,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_5" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_5" target="tSalesforceInput_3">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="OutContactos" lineStyle="10" mergeOrder="1" metaname="OutContactos" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tUnite_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
