@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="64" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/mario.rasgado/Documents/Talend/TOS_DI-Win32-20160912_1228-V6.1.2/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_e8cL4rsyEeaWEPpoLw8QQw" name="DataOperation"/>
+    <routinesParameter id="_e8430LsyEeaWEPpoLw8QQw" name="Mathematical"/>
+    <routinesParameter id="_e8431LsyEeaWEPpoLw8QQw" name="Numeric"/>
+    <routinesParameter id="_e8432LsyEeaWEPpoLw8QQw" name="Relational"/>
+    <routinesParameter id="_e9Co0LsyEeaWEPpoLw8QQw" name="StringHandling"/>
+    <routinesParameter id="_e9Co1LsyEeaWEPpoLw8QQw" name="TalendDataGenerator"/>
+    <routinesParameter id="_e9Co2LsyEeaWEPpoLw8QQw" name="TalendDate"/>
+    <routinesParameter id="_e9MZ0LsyEeaWEPpoLw8QQw" name="TalendString"/>
+    <routinesParameter id="_brhzsBX9Eeaknp0o2OE8iQ" name="DateUnixTimeStamp"/>
+    <routinesParameter id="_D0-TkLWFEea2X8iOUDN24A" name="MX_Processing"/>
+  </parameters>
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API" value="bulk"/>
+    <elementParameter field="CLOSED_LIST" name="LOGIN_TYPE" value="BASIC"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://login.salesforce.com/services/Soap/u/34.0&quot;"/>
+    <elementParameter field="TEXT" name="API_VERSION" value="&quot;34.0&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;bi.bot@linio.com&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="/7FGjQ+3pvFV8DQeFm5XyI3mmFlb4u53ggj5jaZjcwGea+whlvPsrw=="/>
+    <elementParameter field="CHECK" name="USE_SAVE_SESSION" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="SESSION_DIRECTORY" value="&quot;C:/Users/mario.rasgado/Documents/Talend/TOS_DI-Win32-20160912_1228-V6.1.2/workspace&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="OAUTH_CLIENT_SECRET" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_PORT" value="8443" show="false"/>
+    <elementParameter field="FILE" name="OAUTH_TOKEN_FILE" value="&quot;C:/Users/mario.rasgado/Downloads/TOS_DI-20151214_1327-V6.1.1/workspace/token.properties&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="60000" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="CaseHistory"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;CaseHistory&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="&quot;Field='Status'&quot;" show="false"/>
+    <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT NewValue,Field,CaseId,CreatedDate,CreatedById &#xA;FROM CaseHistory&#xA;&#xD;&#xA; WHERE  AND CreatedDate >= 2016-12-01T00:00:00Z AND CreatedDate &lt;= 2016-12-29T00:00:00Z&#xD;&#xA;AND Field = 'Status'&#xD;&#xA;AND CaseId IN&#xD;&#xA;(&#xD;&#xA;SELECT Id&#xD;&#xA;&#xA;FROM&#xA;    Case&#xD;&#xA;WHERE (CSIdentificadorPais__c IN (&#xA;&#x9;&#x9;'Customer Service MX',&#xA;        'Customer Service MXCP','Tienda HP MX'))     &#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;&quot;"/>
+    <elementParameter field="CHECK" name="QUERY_ALL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="LIMIT" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="NORMALIZE_DELIMITER" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLUMNNAME_DELIMITER" value="&quot;_&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_COMPRESSION" value="true"/>
+    <elementParameter field="CHECK" name="USE_HTTP_CHUNKED" value="true" show="false"/>
+    <elementParameter field="CHECK" name="HTTP_TRACEMESSAGE" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="CaseHistory"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CaseHistory" name="tSalesforceInput_2">
+      <column comment="" key="false" length="18" name="Id" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="true" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CaseId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="||"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="NewValue"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="&quot;Seguimiento&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="NewValue"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="&quot;Cerrado&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CaseHistory" name="tFilterRow_1">
+      <column comment="" key="false" length="18" name="Id" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="true" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CaseId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" label="CaseHistory" name="FILTER">
+      <column comment="" key="false" length="18" name="Id" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="true" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CaseId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CaseHistory" name="REJECT">
+      <column comment="" key="false" length="18" name="Id" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="true" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CaseId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_-IMloM6sEea5tOGGJAyAxA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out3">
+      <column comment="" key="false" length="121" name="Modificado_por" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CaseNumber_1" nullable="false" originalDbColumnName="CaseNumber" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue_1" nullable="true" originalDbColumnName="NewValue" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate_1" nullable="true" originalDbColumnName="CreatedDate" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field_1" nullable="true" originalDbColumnName="Field" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Id_1" nullable="true" originalDbColumnName="Id" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Status" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var"/>
+      <outputTables sizeState="INTERMEDIATE" name="out3">
+        <mapperTableEntries name="Modificado_por" expression="row4.Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CaseNumber_1" expression="row3.CaseNumber " type="id_String"/>
+        <mapperTableEntries name="NewValue_1" expression="row2.NewValue " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CreatedDate_1" expression="row2.CreatedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Field_1" expression="row2.Field " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Id_1" expression="row2.Id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" expression="row3.Status " type="id_String"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IsDeleted" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="CaseId" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CreatedById" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CreatedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Field" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NewValue" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Id" expression="row2.CaseId " type="id_String" operator="="/>
+        <mapperTableEntries name="CaseNumber" type="id_String"/>
+        <mapperTableEntries name="CreatedDate" type="id_Date"/>
+        <mapperTableEntries name="CSIdentificadorPais__c" type="id_String"/>
+        <mapperTableEntries name="Pa_s_del_Usuario__c" type="id_String"/>
+        <mapperTableEntries name="LastModifiedById" type="id_String"/>
+        <mapperTableEntries name="Origin" type="id_String"/>
+        <mapperTableEntries name="Status" type="id_String"/>
+        <mapperTableEntries name="Subestado__c" type="id_String"/>
+        <mapperTableEntries name="CSSKUs_Texto__c" type="id_String"/>
+        <mapperTableEntries name="CSSubcategoria__c" type="id_String"/>
+        <mapperTableEntries name="CategoriaOriginal__c" type="id_String"/>
+        <mapperTableEntries name="EstatusItem__c" type="id_String"/>
+        <mapperTableEntries name="Proceso__c" type="id_String"/>
+        <mapperTableEntries name="NumeroItemID__c" type="id_String"/>
+        <mapperTableEntries name="NumeroOrdenManual__c" type="id_String"/>
+        <mapperTableEntries name="TotalContactosCaso__c" type="id_Float"/>
+        <mapperTableEntries name="TotalContactosCasoInbound__c" type="id_Float"/>
+        <mapperTableEntries name="CSIN_OUT__c" type="id_String"/>
+        <mapperTableEntries name="Subestado_Back_office__c" type="id_String"/>
+        <mapperTableEntries name="OwnerId" type="id_String"/>
+        <mapperTableEntries name="CreatedById" type="id_String"/>
+        <mapperTableEntries name="LastModifiedDate" type="id_Date"/>
+        <mapperTableEntries name="ClosedDate" type="id_Date"/>
+        <mapperTableEntries name="Priority" type="id_String"/>
+        <mapperTableEntries name="ParentId" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Fecha_Ingreso_Cola_Garant_as__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CategoriaTicketPrincipal__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CSAsignadoA__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CSTipo__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Bandera_escalamientos__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TicketEscalado__c" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="TicketReabierto__c" type="id_Boolean" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Id" expression="row2.CreatedById " type="id_String" operator="="/>
+        <mapperTableEntries name="Name" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;operations_test&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mario.rasgado&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="rybtc1D0en7vSNCI95RnovQYYk8nNyOl"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;STG_Tickets_History_1&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;autoReconnect=true&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Modificado_por"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CaseNumber_1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NewValue_1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedDate_1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Field_1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id_1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlOutput_1">
+      <column comment="" key="false" length="121" name="Modificado_por" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CaseNumber_1" nullable="false" originalDbColumnName="CaseNumber" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue_1" nullable="true" originalDbColumnName="NewValue" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate_1" nullable="true" originalDbColumnName="CreatedDate" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field_1" nullable="true" originalDbColumnName="Field" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Id_1" nullable="true" originalDbColumnName="Id" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Status" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="121" name="Modificado_por" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CaseNumber_1" nullable="false" originalDbColumnName="CaseNumber" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue_1" nullable="true" originalDbColumnName="NewValue" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate_1" nullable="true" originalDbColumnName="CreatedDate" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field_1" nullable="true" originalDbColumnName="Field" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Id_1" nullable="true" originalDbColumnName="Id" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Status" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API" value="bulk"/>
+    <elementParameter field="CLOSED_LIST" name="LOGIN_TYPE" value="BASIC"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://login.salesforce.com/services/Soap/u/34.0&quot;"/>
+    <elementParameter field="TEXT" name="API_VERSION" value="&quot;34.0&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;bi.bot@linio.com&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="/7FGjQ+3pvFV8DQeFm5XyI3mmFlb4u53ggj5jaZjcwGea+whlvPsrw=="/>
+    <elementParameter field="CHECK" name="USE_SAVE_SESSION" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="SESSION_DIRECTORY" value="&quot;C:/Users/mario.rasgado/Documents/Talend/TOS_DI-Win32-20160912_1228-V6.1.2/workspace&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="OAUTH_CLIENT_SECRET" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_PORT" value="8443" show="false"/>
+    <elementParameter field="FILE" name="OAUTH_TOKEN_FILE" value="&quot;C:/Users/mario.rasgado/Downloads/TOS_DI-20151214_1327-V6.1.1/workspace/token.properties&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="60000" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="Case"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;Case&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,&#xA;   CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Pa_s_del_Usuario__c,&#xA;    LastModifiedById,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSKUs_Texto__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    EstatusItem__c,&#xA;    Proceso__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    TotalContactosCaso__c,&#xA;    TotalContactosCasoInbound__c,&#xA;    CSIN_OUT__c,&#xA;    Subestado_Back_office__c,&#xA;    OwnerId,&#xA;    CreatedById,&#xA;    LastModifiedDate,&#xA;    ClosedDate,&#xA;    Priority,&#xA;    ParentId,&#xA;    Fecha_Ingreso_Cola_Garant_as__c,&#xA;    CategoriaTicketPrincipal__c,&#xA;    CSAsignadoA__c,&#xA;    CSTipo__c,Bandera_escalamientos__c, TicketEscalado__c,TicketReabierto__c &#xA;FROM&#xA;    Case &#xA;&#xD;&#xA;WHERE&#xA;   (CSIdentificadorPais__c IN (&#xA;&#x9;&#x9;'Customer Service MX',&#xA;        'Customer Service MXCP','Tienda HP MX'))     &#xD;&#xA;AND CreatedDate >= 2016-12-01T00:00:00Z&#xD;&#xA;AND CreatedDate &lt;= 2016-12-29T00:00:00Z&#xD;&#xA;&quot;"/>
+    <elementParameter field="CHECK" name="QUERY_ALL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="500" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="LIMIT" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="NORMALIZE_DELIMITER" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLUMNNAME_DELIMITER" value="&quot;_&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_COMPRESSION" value="true"/>
+    <elementParameter field="CHECK" name="USE_HTTP_CHUNKED" value="true" show="false"/>
+    <elementParameter field="CHECK" name="HTTP_TRACEMESSAGE" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Tickets_IN_Contact"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Case" name="tSalesforceInput_1">
+      <column comment="" key="false" length="18" name="Id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="18" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CaseNumber" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="CSIdentificadorPais__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Pa_s_del_Usuario__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LastModifiedById" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Origin" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Status" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Subestado__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CSSKUs_Texto__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="EstatusItem__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Proceso__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="NumeroItemID__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="NumeroOrdenManual__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalContactosCaso__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TotalContactosCasoInbound__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CSIN_OUT__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Subestado_Back_office__c" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="OwnerId" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CreatedById" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LastModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ClosedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Priority" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ParentId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Fecha_Ingreso_Cola_Garant_as__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CategoriaTicketPrincipal__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CSAsignadoA__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CSTipo__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Bandera_escalamientos__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="TicketEscalado__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="5" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="TicketReabierto__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="5" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="ContactId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="AccountId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="AssetId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="ProductId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="EntitlementId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="QuestionId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CommunityId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="BusinessHoursId" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="80" name="SuppliedName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="80" name="SuppliedEmail" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="SuppliedPhone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="80" name="SuppliedCompany" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="Type" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="RecordTypeId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="Status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="Reason" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="Origin" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="IsVisibleInSelfService" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Subject" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="Priority" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="32000" name="Description" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="IsClosed" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="ClosedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="IsEscalated" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="HasCommentsUnreadByOwner" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="HasSelfServiceComments" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="OwnerId" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="IsClosedOnCreate" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="IsSelfServiceClosed" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="SlaStartDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="SlaExitDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="IsStopped" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="StopStartDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LastModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="LastModifiedById" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="SystemModstamp" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LastViewedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LastReferencedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="30" name="MilestoneStatus" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CreatorFullPhotoUrl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CreatorSmallPhotoUrl" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="121" name="CreatorName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Candidato__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Segundo_Nivel_Tipificaci_n__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="Relacionado_a_Cliente__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="URL_guia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="NuevaFechaEntregaWMS__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="50" name="Area__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="BorrarAdjuntos__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="22" name="RUT__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSCategoria__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="13" name="CSCodigoRastreo__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSComentariosResolucion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSDefinicion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Prueba_Antiguedad__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSSubestado_Garantia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSHorasTicketAbierto__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CSIdentificadorPais__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="200" name="CSNumeroGuia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSNumeroOrden__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="CSNumero_guia_WH_Proveedor__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSRazones_de_cancelacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSRazones_de_devolucion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="120" name="CSResolucion_al_cliente__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="Tipo_de_usuario_Front_Back__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CanalQueja__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSSubcategoria__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="CSTelefonoProspecto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSTipo__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="80" name="Email_Prospecto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaReembolso__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="Pa_s_del_Usuario__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="ReferenciaTicket__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Prueba_Cinthya__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CSLinio_Plus__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="32768" name="InformacionAdicionalPlantilla__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="NumeroItemID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSTiempo_Proceso_Reembolsos_CS_FNZ__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSItemsTexto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Market_Place__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="MetodoReembolso__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="9" name="NumeroOrdenManual__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="70" name="Prospecto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="30" name="Prueba_2__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="SC_Tipo_de_Categoria_y_Subcategoria__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSSKUs_Texto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Recuperacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="TipificacionFormulado__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSPaqueteria__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CS_Escalado_a_SIC__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CS_SKU_unico__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="RespuestaDevolucion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSEscalado_a_PROFECO__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CScreated_at_Zendesk__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="10" name="CSgroup_id__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="10" name="CSticket_id__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="8" name="CSresolution_time_Zendesk__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="CSsolved_at_Zendesk__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="CSupdated_at_Zendesk__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSis_active__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="CSlast_login__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSClasificacion_Zendesk__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="SC_RFC__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="30" name="Numero_de_Cuenta__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CLABE_interbancaria__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Compensacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="50" name="Nombre_Titular_Cuenta__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSTipo_de_Cuenta__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Banco__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSfilename_Zendesk__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSurl_Zednesk__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="100" name="Name_cliente_Zendesk__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="100" name="Email_Cliente_Zendesk__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="CSStatus_Zendesk__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="CSOrder_id_Zendesk__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="TipoDevolucion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CSImagen_MXCP__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSRespuesta_Email__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Clasificacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="SeguimientoClubPremier__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Seguimiento__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="22" name="CBU__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CS_Escalado_a_ADC__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="8" name="Cantidad_de_Dinero_Invertida__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSNovedades__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="60" name="Funcion_Propietario__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="Cola_vs_Usuario__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSFecha_de_Reagendamiento__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSEstatus_Seguimiento__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Analista__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Analista_que_Cerr__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSSeguimiento__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSFechaOrden__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CS_SIC__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Titulo__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="ConsolaUtilizada__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="130" name="IdChat__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSFecha_Aprobado_Envio_Guia_IL__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaAsignacionPropietario__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Monto__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="BOB_Supplier_ID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="17" name="SKUs_Texto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="Tienda__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="INDECOPI__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="verifica_cerrado__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="11" name="CUIT_CUIL__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSGestion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="9" name="CSnuevo_numero_de_orden__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="50" name="CSnuevo_item_id__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSsatisfaccion_cliente__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CatBP__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Impedimentos__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSSolucion_Garantia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="200" name="CSNombreProveedor__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="80" name="CSEmail_Proveedor__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSID_Proveedor__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="CSTelefono_Proveedor__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSCiudad_de_destino__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSPrecio_Articulo__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSLifemiles__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="50" name="IdCorreoPersonal__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSvalor_voucher__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSDepartamento_de_destino__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSNPS__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSMetodo_Voucher__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="ProductoRobado__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="200" name="NumeroGuiaEnvio__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="35" name="CSCupon__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="IdLlamada__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="10" name="IdTicket__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaCreacion__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="ResultadoSolicitudLinioPlus__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="CuponFactura__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="200" name="ProductoRecuperado__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Internacional__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSSubestado_Linio_Plus__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="MailMasivo__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="CupuponFacturacion500__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CategoriaSubcategoria__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CategoriaTrunca__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="30" name="OrdenNueva__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="ContactadoAntes2Horas__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Entrega_Prometida__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="NuevaFechaEntrega__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="TicketReabierto__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSTipo_Garantia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="PaqueteriaIncidencia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="MontoRecuperado__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="TipoCompensacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="RazonesNoRecuperacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Seller__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSUsuario_activo__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="ContactoGarantias__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="MetodoPago__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSFecha_Pendientes_Imagenes__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSSubestado_Producto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="TotalChats__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="80" name="CorreoElectronicoLR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Temporal_Relacionado_a_un_cliente__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CSCodigo_Banco__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSMotivo_Rechazo_Garantia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="ProductoLR__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="IsConsoleError__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="DescripcionProductoServicioLR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="MontoReclamadoLR__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="DetalleReclamacionMensajeLR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="AccionesAdoptadasVendedorLR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="NumeroReclamoLR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="ContactoGarantiasInformacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSIN_OUT__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="AccionShipping__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="CSNumero_guia_respuesta_proveedor__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Subestado_Back_office__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="MP_Identificador_de_pais__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="MP_Categoria__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="MP_Subcategoria__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="MP_Comentarios_Internos__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="RelacionadoPedido__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Subestado__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Proceso__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="50" name="Otros__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="ServicioLR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="SubestadosReembolso__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="32768" name="CuerpoEmail__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="EnviarEmailSinPlantilla__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="32768" name="ConsoleErrorComments__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="32768" name="ConsoleHistory__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="2000" name="Acciones_vendedor_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="100" name="Apellidos_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="32000" name="Desc_BienContratado_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="32000" name="Desc_Reclamcion_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Detalle_reclamacion_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Direccion_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Distrito_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Documento_Identidad_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="11" name="NoDocumento_Identidad_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="60" name="Nombre_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="200" name="Padre_Madre_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Servicio_contratad_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="Telefono_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSAplica_nota_credito__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSDireccion_Cliente__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSEstado_WMS__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="40" name="CelularProspecto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Escalado_a_PSC__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSFecha_Recaudo__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="NumeroMonederoElectronico__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="EstatusMonedero__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CuentaLinio__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSMonto_Recaudado__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSMotivo_Rechazo_Finanzas__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSMotivo_Rechazo_Tesoreria__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSNo_Reembolso__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSResponsable_Finanzas__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSSubestado_Reembolso__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSTransaccion_Recaudo__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSMonto_de_Recaudo__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CSImagenLM__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Monto_reclamado_LR__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Pedido_LR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="TipoProveedor__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSNo_Identificacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSTipo_Identificacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="RazonesRetraso__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="EstatusItem__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="TicketPadre__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaAsignacion__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSAsignadoA__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="TicketReincidente__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSTiempo_Solicitud_Reembolso_a_Finanzas__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSFulfillment__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSID_Netsuite__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSMetodo_de_Recaudo__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CSMotivo_Solicitud_Garantia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="EstatusAnteriorItem__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaEstatusItemFinal__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaEstatusAnteriorItem__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="CodigoInternacional__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSTiempo_Aprobacion_Finanzas__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSBL_Finanzas_Recaudos__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="DiasAbiertos__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSTiempo_Realizado_Tesoreria__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSBL_Tesoreria_Realizados__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSTiempo_Realizado_Banco__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSBL_Banco_Exitoso__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSBL_Customer_Service_Gestion__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="TotalComentarios__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="TotalEmails__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="TotalLlamadas__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="ResponsableOperadorLogistico__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="NUmeroSocioCP__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSBL_Reembolsos_Proceso__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaVencimientoGarantia__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="70" name="MarcaProducto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="TotalContactosCaso__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="CSMes_de_creacion_ticket__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Apeticionde__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="Pais__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="5" name="MPPais__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="MontoOrden__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="HorarioContacto__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="TicketEscalado__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="MPIdentificador_pais__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="BL_Inicio_Garant_a_Cr_ticidad__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="TiempoSinContacto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Responsable_del_Ticket__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Franquicia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="modificado_por__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CategoriaTrunca2__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="CSFecha_No_Procede_por_Imagenes__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="VLR_BASE_DEV_IVA_NUEVA_TR__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Solucion_Shipping__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="AsignarACola__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Entrecalles__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="ReferenciasVisuales__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="ComentariosAdicionalesdeReferencia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="MP_Control_Modificacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="100" name="CategoriaOriginal__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="10" name="OrderID__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="CategoriasSoporteSalesForce__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="MPContactEmail__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="SolucionStockout__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="BL_Garantia_Aceptada__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="100" name="Agente_Shipping__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Tipo_de_Reversion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="6" name="No_De_Autorizacion_Reversion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Ha_recibido_voucher_garantia__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Asistencia_tecnica__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="VLR_IVA_NUEVA_TR__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="4" name="ultimos_T_C__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="VLR_TOTAL_NUEVA_TR__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="IdentificadorPaisTelesales__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Hora_de_apertura__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="HoraModificacion__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="HoraCierre__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="Bandera_escalamientos__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Transferencia__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Monto_Transferencia__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Referencia__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Referencia_Transferencia__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Banco_Transferencia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Tipo_de_Orden__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="80" name="AgenteGestion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="80" name="AgenteMetodoVoucher__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="80" name="AgenteSolucionCaso__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="80" name="AgenteSolucionShipping__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaAgendarRecoleccion__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaAprobacionFinanzas__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaAprobadoEnvioGuiaIL__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaAsistenciaTecnica__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaCompensacion__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaGarantiaAceptada__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaGarantiaExitosa__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaGarantiaRechazada__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaGestionGarantia__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaGuiaILEnviada__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaGuiaMovimiento__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaGuiaVencida__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaInicioGarantia__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaInicioReembolso__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaMetodoVoucher__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaNoProcedeImagenes__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaPendienteValidacionProveedor__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaPendientesImagenes__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaRechazoFinanzas__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaRechazoTesoreria__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaRecoleccionAgendada__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaRecoleccionRealizada__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaReembolsoExitoso__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaReembolsoPrioritario__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaReembolsoRealizado__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaRevisionRecaudo__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaSolicitudFinanzas__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaSolucionCaso__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaSolucionShipping__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_de_la_Orden__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="100" name="Id_Transacci_n_PayU__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="TipoSoporte__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1" name="LoyaltyNumber__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="Loyalty__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="MPFechaAsigResp__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Gestion__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Consignacion_Confirmada__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Voucher__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Averias__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Cancelaciones__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Consignaciones__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Devoluciones__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Fraudes__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CreadoCorreoElectronico__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Garant_as__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Orden_Incompleta__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Producto__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Reembolsos__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Quejas__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Reagendamientos__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Reordenamientos__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_Retrasos__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Fecha_Ingreso_Cola_SH__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaHoraPrimerMensaje__c" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="PruebaFinSemana__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Motivo_de_Rembolso__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="CSBlacklist__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="SinTicketFacturacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaRespuesta__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="1500" name="DescripcionRespuesta__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="17" name="MontoCuponLibroReclamaciones__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="17" name="GastosOtros__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="NotificacionEncargado__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Recepcion__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="EnviadoCliente__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="RecibidoCliente__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="TipoProducto__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Responsable__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="TipoCierre__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="Gastos__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="2000" name="SellerProveedor__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="MetodoPagoRecuperacion__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="UtilizoCargadorDatos__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="ProcedeLR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="AreaResponsableLR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="GastosMovilidadLR__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="SubAreaResponsableLR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="MotivosReclamacionLR__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="UsoCargadorDatos__c" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="3" name="DDPointsBI__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="3" name="TPPointsBI__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="3" name="NMVPointsBI__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="3" name="OL6PointsBI__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="TotalPointsBI__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="18" name="TotalContactosCasoInbound__c" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Severidad__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="20" name="Prueba_update_masivo__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="PeticionCliente__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="500" name="MotivoDevolucionEspecifico__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="FechaEntrega__c" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="MPSubestado_Garantia__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="IdPropietarioColaUsuario__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="3" name="ConteoItems__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
+    </metadata>
+  </node>
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API" value="soap"/>
+    <elementParameter field="CLOSED_LIST" name="LOGIN_TYPE" value="BASIC"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://login.salesforce.com/services/Soap/u/34.0&quot;"/>
+    <elementParameter field="TEXT" name="API_VERSION" value="&quot;34.0&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;bi.bot@linio.com&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="/7FGjQ+3pvFV8DQeFm5XyI3mmFlb4u53ggj5jaZjcwGea+whlvPsrw=="/>
+    <elementParameter field="CHECK" name="USE_SAVE_SESSION" value="false"/>
+    <elementParameter field="DIRECTORY" name="SESSION_DIRECTORY" value="&quot;C:/Users/gustavo.sanchez/Talend/TOS_DI-Win32-20160912_1228-V6.1.2/workspace&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="OAUTH_CLIENT_SECRET" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_PORT" value="8443" show="false"/>
+    <elementParameter field="FILE" name="OAUTH_TOKEN_FILE" value="&quot;C:/Users/mario.rasgado/Downloads/TOS_DI-20151214_1327-V6.1.1/workspace/token.properties&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="60000"/>
+    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="Group"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;Group&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="&quot;Type = 'Queue'&quot;"/>
+    <elementParameter field="CHECK" name="MANUAL_QUERY" value="false"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;select FirstName, LastName from Contact&quot;" show="false"/>
+    <elementParameter field="CHECK" name="QUERY_ALL" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="500"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="LIMIT" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="NORMALIZE_DELIMITER" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="COLUMNNAME_DELIMITER" value="&quot;_&quot;"/>
+    <elementParameter field="CHECK" name="NEED_COMPRESSION" value="false"/>
+    <elementParameter field="CHECK" name="USE_HTTP_CHUNKED" value="true"/>
+    <elementParameter field="CHECK" name="HTTP_TRACEMESSAGE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Group"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Group" name="tSalesforceInput_3">
+      <column comment="" key="false" length="18" name="Id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="DeveloperName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="RelatedId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Type" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Email" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="QueueRoutingConfigId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="OwnerId" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DoesSendEmailToMembers" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DoesIncludeBosses" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LastModifiedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="LastModifiedById" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="SystemModstamp" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_jBIfgM3tEea5tOGGJAyAxA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" key="false" length="18" name="Id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out2">
+        <mapperTableEntries name="Id" expression="row15.Id " type="id_String"/>
+        <mapperTableEntries name="Name" expression="row15.Name " type="id_String"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row15" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Id" type="id_String"/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="DeveloperName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RelatedId" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Type" type="id_String"/>
+        <mapperTableEntries name="Email" type="id_String" nullable="true"/>
+        <mapperTableEntries name="QueueRoutingConfigId" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OwnerId" type="id_String"/>
+        <mapperTableEntries name="DoesSendEmailToMembers" type="id_Boolean"/>
+        <mapperTableEntries name="DoesIncludeBosses" type="id_Boolean"/>
+        <mapperTableEntries name="CreatedDate" type="id_Date"/>
+        <mapperTableEntries name="CreatedById" type="id_String"/>
+        <mapperTableEntries name="LastModifiedDate" type="id_Date"/>
+        <mapperTableEntries name="LastModifiedById" type="id_String"/>
+        <mapperTableEntries name="SystemModstamp" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API" value="soap"/>
+    <elementParameter field="CLOSED_LIST" name="LOGIN_TYPE" value="BASIC"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://login.salesforce.com/services/Soap/u/34.0&quot;"/>
+    <elementParameter field="TEXT" name="API_VERSION" value="&quot;34.0&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;bi.bot@linio.com&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="/7FGjQ+3pvFV8DQeFm5XyI3mmFlb4u53ggj5jaZjcwGea+whlvPsrw=="/>
+    <elementParameter field="CHECK" name="USE_SAVE_SESSION" value="false"/>
+    <elementParameter field="DIRECTORY" name="SESSION_DIRECTORY" value="&quot;C:/Users/gustavo.sanchez/Talend/TOS_DI-Win32-20160912_1228-V6.1.2/workspace&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="OAUTH_CLIENT_SECRET" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_PORT" value="8443" show="false"/>
+    <elementParameter field="FILE" name="OAUTH_TOKEN_FILE" value="&quot;C:/Users/mario.rasgado/Downloads/TOS_DI-20151214_1327-V6.1.1/workspace/token.properties&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="60000"/>
+    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="User"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;User&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;select Id,Name,IdentificadorPaIs__c,Email,agent_identification__c from User&quot;"/>
+    <elementParameter field="CHECK" name="QUERY_ALL" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="LIMIT" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="NORMALIZE_DELIMITER" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="COLUMNNAME_DELIMITER" value="&quot;_&quot;"/>
+    <elementParameter field="CHECK" name="NEED_COMPRESSION" value="false"/>
+    <elementParameter field="CHECK" name="USE_HTTP_CHUNKED" value="true"/>
+    <elementParameter field="CHECK" name="HTTP_TRACEMESSAGE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="User"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="User" name="tSalesforceInput_4">
+      <column comment="" key="false" length="18" name="Id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="IdentificadorPaIs__c" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="agent_identification__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_jBIfgM3tEea5tOGGJAyAxA-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfout3">
+      <column comment="" key="false" length="18" name="Id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfout3">
+        <mapperTableEntries name="Id" expression="row14.Id " type="id_String"/>
+        <mapperTableEntries name="Name" expression="row14.Name " type="id_String"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row14" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Id" type="id_String"/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="IdentificadorPaIs__c" type="id_String"/>
+        <mapperTableEntries name="Email" type="id_String" nullable="true"/>
+        <mapperTableEntries name="agent_identification__c" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUnite_1">
+      <column comment="" key="false" length="18" name="Id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.UpDate=&quot;2016-12-01T00:00:00Z&quot;;&#xA;System.out.println(context.UpDate);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSalesforceInput_2" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_2" target="tFilterRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row2" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMysqlOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Modificado_por"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NewValue_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CaseNumber_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreatedDate_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Field_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Id_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tSalesforceInput_1" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="10" mergeOrder="1" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfout3" lineStyle="10" mergeOrder="2" metaname="copyOfout3" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

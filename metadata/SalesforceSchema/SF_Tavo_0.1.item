@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:SalesforceSchemaConnection xmi:id="_fxMWsM7HEea5tOGGJAyAxA" name="SF_Tavo" dataPackage="_fxMWsc7HEea5tOGGJAyAxA" webServiceUrl="https://login.salesforce.com/services/Soap/u/34.0" userName="customerexperiencemx@linio.com" password="xRaSbRV6z03nio89NmJnt9udijpTUjUj" batchSize="250" timeOut="60000" webServiceUrlTextForOAuth="https://login.salesforce.com/services/oauth2" salesforceVersion="34.0" loginType="basic"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_fxMWsc7HEea5tOGGJAyAxA" name="default" dataManager="_fxMWsM7HEea5tOGGJAyAxA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_fxMWss7HEea5tOGGJAyAxA" id="_JYiIEM7GEea5tOGGJAyAxA" label="metadata"/>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

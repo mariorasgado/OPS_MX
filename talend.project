@@ -478,6 +478,19 @@
       <relatedItems xmi:id="_mneTEM34Eea5tOGGJAyAxA" id="_F8xvECQxEeasy_Aj2qHcOw - User" version="Latest" type="schema"/>
       <relatedItems xmi:id="_iQJRAM35Eea5tOGGJAyAxA" id="_F8xvECQxEeasy_Aj2qHcOw" version="Latest" type="property"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_o5rAIM6xEea5tOGGJAyAxA">
+      <baseItem xmi:id="_o5rAIc6xEea5tOGGJAyAxA" id="_-IMloM6sEea5tOGGJAyAxA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_o5rAIs6xEea5tOGGJAyAxA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_o5rAI86xEea5tOGGJAyAxA" id="DateUnixTimeStamp" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_o5rAJM6xEea5tOGGJAyAxA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_o5rAJc6xEea5tOGGJAyAxA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_o5rAJs6xEea5tOGGJAyAxA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_o5rAJ86xEea5tOGGJAyAxA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_o5rAKM6xEea5tOGGJAyAxA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_o5rAKc6xEea5tOGGJAyAxA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_o5rAKs6xEea5tOGGJAyAxA" id="MX_Processing" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_o5rAK86xEea5tOGGJAyAxA" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_e5FV4LsyEeaWEPpoLw8QQw" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_e5FV4bsyEeaWEPpoLw8QQw" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
     <migrationTask xmi:id="_e5FV4rsyEeaWEPpoLw8QQw" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
