@@ -1,0 +1,39 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_4=>" expression="DateUnixTimeStamp.SimpleDTZFromDateMX(Tickets.LastModifiedDate)">
+  <variables name="Tickets.Id" value="null" talendType="id_String"/>
+  <variables name="Tickets.CaseNumber" value="null" talendType="id_String"/>
+  <variables name="Tickets.CreatedDate" value="null" talendType="id_Date"/>
+  <variables name="Tickets.LastModifiedById" value="null" talendType="id_String"/>
+  <variables name="Tickets.Origin" value="null" talendType="id_String"/>
+  <variables name="Tickets.Status" value="null" talendType="id_String"/>
+  <variables name="Tickets.CSSubcategoria__c" value="null" talendType="id_String"/>
+  <variables name="Tickets.CategoriaOriginal__c" value="null" talendType="id_String"/>
+  <variables name="Tickets.NumeroOrdenManual__c" value="null" talendType="id_String"/>
+  <variables name="Tickets.TotalContactosCaso__c" value="0" talendType="id_Float"/>
+  <variables name="Tickets.TotalContactosCasoInbound__c" value="0" talendType="id_Float"/>
+  <variables name="Tickets.OwnerId" value="null" talendType="id_String"/>
+  <variables name="Tickets.CreatedById" value="null" talendType="id_String"/>
+  <variables name="Tickets.LastModifiedDate" value="null" talendType="id_Date"/>
+  <variables name="Tickets.ClosedDate" value="null" talendType="id_Date"/>
+  <variables name="Tickets.ParentId" value="null" talendType="id_String" nullable="true"/>
+  <variables name="Tickets.Fecha_Ingreso_Cola_Garant_as__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="Tickets.CSAsignadoA__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="Tickets.PaqueteriaIncidencia__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.Id" value="null" talendType="id_String"/>
+  <variables name="row3.Name" value="null" talendType="id_String"/>
+  <variables name="row4.Id" value="null" talendType="id_String"/>
+  <variables name="row4.Name" value="null" talendType="id_String"/>
+  <variables name="row4.IdentificadorPaIs__c" value="null" talendType="id_String"/>
+  <variables name="row4.Email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.agent_identification__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.Id" value="null" talendType="id_String"/>
+  <variables name="row5.Name" value="null" talendType="id_String"/>
+  <variables name="row5.IdentificadorPaIs__c" value="null" talendType="id_String"/>
+  <variables name="row5.Email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.agent_identification__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.Id" value="null" talendType="id_String"/>
+  <variables name="row6.Name" value="null" talendType="id_String"/>
+  <variables name="row6.IdentificadorPaIs__c" value="null" talendType="id_String"/>
+  <variables name="row6.Email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row6.agent_identification__c" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>
