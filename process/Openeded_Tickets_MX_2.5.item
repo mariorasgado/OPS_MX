@@ -126,7 +126,7 @@
     <routinesParameter id="_g-_KQC3LEeajD5KLqZcjog" name="rutina_nati"/>
     <routinesParameter id="_4z9MYLjVEeaBzMFDdYR67Q" name="MX_Processing"/>
   </parameters>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="384">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_2" show="false"/>
@@ -148,7 +148,7 @@
     <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;Case&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,&#xA;    CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Pa_s_del_Usuario__c,&#xA;    LastModifiedById,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSKUs_Texto__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    EstatusItem__c,&#xA;    Proceso__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    TotalContactosCaso__c,&#xA;    TotalContactosCasoInbound__c,&#xA;    CSIN_OUT__c,&#xA;    Subestado_Back_office__c,&#xA;    OwnerId,&#xA;    CreatedById,&#xA;    LastModifiedDate,&#xA;    ClosedDate,&#xA;    Priority,&#xA;    ParentId,&#xA;    Fecha_Ingreso_Cola_Garant_as__c,&#xA;    CategoriaTicketPrincipal__c,&#xA;    CSAsignadoA__c,&#xA;    CSTipo__c,PaqueteriaIncidencia__c &#xA;FROM&#xA;    Case&#xA;&#xD;&#xA;WHERE&#xA;    (CSIdentificadorPais__c IN (&#xA;'Customer Service MX',&#xA;        'Customer Service MXCP','Tienda HP MX'))&#xA;&#xD;&#xA;AND Status IN ('Abierto','Pendiente','Seguimiento')&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,&#xA;    CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Pa_s_del_Usuario__c,&#xA;    LastModifiedById,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSKUs_Texto__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    EstatusItem__c,&#xA;    Proceso__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    TotalContactosCaso__c,&#xA;    TotalContactosCasoInbound__c,&#xA;    CSIN_OUT__c,&#xA;    Subestado_Back_office__c,&#xA;    OwnerId,&#xA;    CreatedById,&#xA;    LastModifiedDate,&#xA;    ClosedDate,&#xA;    Priority,&#xA;    ParentId,&#xA;    Fecha_Ingreso_Cola_Garant_as__c,&#xA;    CategoriaTicketPrincipal__c,&#xA;    CSAsignadoA__c,&#xA;    CSTipo__c,PaqueteriaIncidencia__c  FROM&#xA;    Case&#xA;&#xD;&#xA;WHERE&#xA;    (CSIdentificadorPais__c IN (&#xA;'Customer Service MX',&#xA;        'Customer Service MXCP','Tienda HP MX'))&#xA;&#xD;&#xA;AND Status IN ('Abierto','Pendiente','Seguimiento')&#xD;&#xA;&quot;"/>
     <elementParameter field="CHECK" name="QUERY_ALL" value="false" show="false"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="500" show="false"/>
     <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
@@ -642,7 +642,7 @@
       <column comment="" key="false" length="3" name="ConteoItems__c" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="384">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -672,9 +672,10 @@
       <column comment="" key="false" length="18" name="LastMover" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CreatedById" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="PaqueteriaIncidecia__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Id" expression="row1.Id " type="id_String" nullable="true"/>
@@ -695,6 +696,7 @@
         <mapperTableEntries name="LastMover" expression="row5.CreatedById " type="id_String" nullable="true"/>
         <mapperTableEntries name="CreatedById" expression="row1.CreatedById " type="id_String"/>
         <mapperTableEntries name="PaqueteriaIncidecia__c" expression="row1.PaqueteriaIncidencia__c " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Fecha_de_Asignacion_Propietario" expression="row1.Fecha_Ingreso_Cola_Garant_as__c " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Id" type="id_String"/>
@@ -751,7 +753,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_3" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -801,7 +803,7 @@
       <column comment="" key="false" length="255" name="OldValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="256">
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
     <elementParameter field="TABLE" name="GROUPBYS">
       <elementValue elementRef="OUTPUT_COLUMN" value="CaseId"/>
@@ -853,7 +855,7 @@
       <column comment="" key="false" length="255" name="OldValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="544">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_4" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -903,7 +905,7 @@
       <column comment="" key="false" length="255" name="OldValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="544">
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_2" show="false"/>
     <elementParameter field="TABLE" name="GROUPBYS">
       <elementValue elementRef="OUTPUT_COLUMN" value="CaseId"/>
@@ -955,7 +957,7 @@
       <column comment="" key="false" length="255" name="OldValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="384">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -982,6 +984,7 @@
       <column comment="" key="false" length="50" name="DSC_Carrier" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
@@ -1002,6 +1005,7 @@
         <mapperTableEntries name="DSC_Carrier" expression="out1.PaqueteriaIncidecia__c " type="id_String" nullable="true"/>
         <mapperTableEntries name="CategoriaOriginal__c" expression="out1.CategoriaOriginal__c " type="id_String" nullable="true"/>
         <mapperTableEntries name="CSSubcategoria__c" expression="out1.CSSubcategoria__c " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Fecha_de_Asignacion_Propietario" expression="out1.Fecha_de_Asignacion_Propietario " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Id" type="id_String" nullable="true"/>
@@ -1022,6 +1026,7 @@
         <mapperTableEntries name="LastMover" type="id_String" nullable="true"/>
         <mapperTableEntries name="CreatedById" type="id_String"/>
         <mapperTableEntries name="PaqueteriaIncidecia__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Fecha_de_Asignacion_Propietario" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Id" expression="out1.OwnerId " type="id_String" operator="="/>
@@ -1057,7 +1062,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="512">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_6" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_1" show="false"/>
@@ -1104,7 +1109,7 @@
       <column comment="" key="false" length="-1" name="agent_identification__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="256">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_7" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_1" show="false"/>
@@ -1151,7 +1156,7 @@
       <column comment="" key="false" length="-1" name="agent_identification__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="512">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_8" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_1" show="false"/>
@@ -1198,7 +1203,7 @@
       <column comment="" key="false" length="-1" name="agent_identification__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="256">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_9" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_1" show="false"/>
@@ -1245,7 +1250,7 @@
       <column comment="" key="false" length="-1" name="agent_identification__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="384">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="992" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1276,6 +1281,7 @@
       <column comment="" defaultValue="" key="false" length="1" name="IN_order_delayed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
@@ -1300,6 +1306,7 @@
         <mapperTableEntries name="IN_order_delayed" expression="row19.order_delayed " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CategoriaOriginal__c" expression="outFinal.CategoriaOriginal__c " type="id_String" nullable="true"/>
         <mapperTableEntries name="CSSubcategoria__c" expression="outFinal.CSSubcategoria__c " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Fecha_de_Asignacion_Propietario" expression="outFinal.Fecha_de_Asignacion_Propietario " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="outFinal" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="DSC_Owner_Name" type="id_String" nullable="true"/>
@@ -1317,6 +1324,7 @@
         <mapperTableEntries name="DSC_Carrier" type="id_String" nullable="true"/>
         <mapperTableEntries name="CategoriaOriginal__c" type="id_String" nullable="true"/>
         <mapperTableEntries name="CSSubcategoria__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Fecha_de_Asignacion_Propietario" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row17" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Id" expression="" type="id_String"/>
@@ -1329,7 +1337,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="384">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -1455,6 +1463,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fecha_de_Asignacion_Propietario"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
@@ -1484,6 +1497,7 @@
       <column comment="" defaultValue="" key="false" length="1" name="IN_order_delayed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="121" name="DSC_Owner_Name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1505,11 +1519,12 @@
       <column comment="" defaultValue="" key="false" length="1" name="IN_order_delayed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="640">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_12" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1566,7 +1581,7 @@
       <column comment="" key="false" length="0" name="SystemModstamp" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="640">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1607,7 +1622,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="672">
+  <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnite_1">
@@ -1615,7 +1630,7 @@
       <column comment="" key="false" length="121" name="Name" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="736">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_11" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_1" show="false"/>
@@ -1662,7 +1677,7 @@
       <column comment="" key="false" length="-1" name="agent_identification__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="736">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="768">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1693,7 +1708,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_5" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_2" show="false"/>
@@ -1746,7 +1761,7 @@
       <column comment="" key="false" length="30" name="Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="768" posY="128">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1798,7 +1813,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="32">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_10" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_2" show="false"/>
@@ -1851,7 +1866,7 @@
       <column comment="" key="false" length="30" name="Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="128">
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_4" show="false"/>
     <elementParameter field="TABLE" name="GROUPBYS">
       <elementValue elementRef="OUTPUT_COLUMN" value="Id"/>
@@ -1878,7 +1893,7 @@
       <column comment="" defaultValue="0" key="false" length="18" name="ParentId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="544">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -2511,6 +2526,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="PaqueteriaIncidecia__c"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Fecha_de_Asignacion_Propietario"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
@@ -2540,6 +2558,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="CSSubcategoria__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Fecha_de_Asignacion_Propietario"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -2583,6 +2604,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="CSSubcategoria__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Fecha_de_Asignacion_Propietario"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
