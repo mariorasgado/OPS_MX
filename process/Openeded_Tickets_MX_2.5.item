@@ -1158,7 +1158,10 @@
   </node>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a860f77... Cambios Vacaciones Tavo
   <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_8" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -1206,6 +1209,9 @@
       <column comment="" key="false" length="-1" name="agent_identification__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+<<<<<<< HEAD
+>>>>>>> parent of a860f77... Cambios Vacaciones Tavo
+=======
 >>>>>>> parent of a860f77... Cambios Vacaciones Tavo
   <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="256">
 =======
@@ -1337,10 +1343,13 @@
       <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <column comment="" key="false" length="0" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
 =======
       <column comment="" key="false" length="50" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
 >>>>>>> origin/master
+=======
+>>>>>>> parent of a860f77... Cambios Vacaciones Tavo
 =======
 >>>>>>> parent of a860f77... Cambios Vacaciones Tavo
     </metadata>
@@ -1369,10 +1378,13 @@
         <mapperTableEntries name="CSSubcategoria__c" expression="outFinal.CSSubcategoria__c " type="id_String" nullable="true"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <mapperTableEntries name="Fecha_de_Asignacion_Propietario" expression="row21.CreatedDate " type="id_Date" nullable="true"/>
 =======
         <mapperTableEntries name="Fecha_de_Asignacion_Propietario" expression="outFinal.Fecha_de_Asignacion_Propietario " type="id_String" nullable="true"/>
 >>>>>>> origin/master
+=======
+>>>>>>> parent of a860f77... Cambios Vacaciones Tavo
 =======
 >>>>>>> parent of a860f77... Cambios Vacaciones Tavo
       </outputTables>
@@ -1562,10 +1574,13 @@
       <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <column comment="" key="false" length="0" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
 =======
       <column comment="" key="false" length="50" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
 >>>>>>> origin/master
+=======
+>>>>>>> parent of a860f77... Cambios Vacaciones Tavo
 =======
 >>>>>>> parent of a860f77... Cambios Vacaciones Tavo
     </metadata>
@@ -1591,10 +1606,13 @@
       <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <column comment="" key="false" length="0" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
 =======
       <column comment="" key="false" length="50" name="Fecha_de_Asignacion_Propietario" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
 >>>>>>> origin/master
+=======
+>>>>>>> parent of a860f77... Cambios Vacaciones Tavo
 =======
 >>>>>>> parent of a860f77... Cambios Vacaciones Tavo
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
