@@ -1,0 +1,41 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_3=>" expression="DateUnixTimeStamp.SimpleDTZFromDateMX(out1.FechaAsignacionPropietario__c)">
+  <variables name="out1.Id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.CSIdentificadorPais__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.CaseNumber" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.Status" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.CreatedDate" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="out1.CreatedDate_Status" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="out1.Field" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.NumeroOrdenManual__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.CategoriaOriginal__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.CSSubcategoria__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.LastModifiedById" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.CSAsignadoA__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.OwnerId" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.modificado_por__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.LastMovement" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="out1.LastMover" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.CreatedById" value="null" talendType="id_String"/>
+  <variables name="out1.PaqueteriaIncidecia__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="out1.FechaAsignacionPropietario__c" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row7.Id" value="null" talendType="id_String"/>
+  <variables name="row7.Name" value="null" talendType="id_String"/>
+  <variables name="row7.IdentificadorPaIs__c" value="null" talendType="id_String"/>
+  <variables name="row7.Email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row7.agent_identification__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.Id" value="null" talendType="id_String"/>
+  <variables name="row8.Name" value="null" talendType="id_String"/>
+  <variables name="row8.IdentificadorPaIs__c" value="null" talendType="id_String"/>
+  <variables name="row8.Email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.agent_identification__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row10.Id" value="null" talendType="id_String"/>
+  <variables name="row10.Name" value="null" talendType="id_String"/>
+  <variables name="row10.IdentificadorPaIs__c" value="null" talendType="id_String"/>
+  <variables name="row10.Email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row10.agent_identification__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row11.Id" value="null" talendType="id_String"/>
+  <variables name="row11.Name" value="null" talendType="id_String"/>
+  <variables name="row9.Id" value="null" talendType="id_String"/>
+  <variables name="row9.Name" value="null" talendType="id_String"/>
+</expression:EMFExpression>
