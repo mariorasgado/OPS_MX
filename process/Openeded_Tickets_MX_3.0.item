@@ -1245,7 +1245,7 @@
         <mapperTableEntries name="DSC_Creator" expression="outFinal.DSC_Creator" type="id_String" nullable="true"/>
         <mapperTableEntries name="DSC_Asignado_a" expression="outFinal.DSC_Asignado_a" type="id_String" nullable="true"/>
         <mapperTableEntries name="NU_CaseNumber" expression="outFinal.NU_CaseNumber" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Id" expression="outFinal.Id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Id" expression="StringHandling.LEFT(outFinal.Id,15) " type="id_String" nullable="true"/>
         <mapperTableEntries name="NU_Orden" expression="outFinal.NU_Orden" type="id_String" nullable="true"/>
         <mapperTableEntries name="DSC_Categoria_Subcategoria" expression="outFinal.DSC_Categoria_Subcategoria" type="id_String" nullable="true"/>
         <mapperTableEntries name="DSC_Ultimo_modificador" expression="outFinal.DSC_Ultimo_modificador" type="id_String" nullable="true"/>
