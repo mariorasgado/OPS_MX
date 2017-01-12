@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_wJ2U8NKdEeaFDfuLUriJ_g" comment="connectionComment" label="connectionLabel" dataPackage="_wJ2U8dKdEeaFDfuLUriJ_g" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_wJ2U8dKdEeaFDfuLUriJ_g" dataManager="_wJ2U8NKdEeaFDfuLUriJ_g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_wJ2U8tKdEeaFDfuLUriJ_g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2U89KdEeaFDfuLUriJ_g" name="Id" id="23188" label="Id" length="18" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_wJ2U9NKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2U9dKdEeaFDfuLUriJ_g" name="IsDeleted" id="23189" label="IsDeleted" sourceType="BIT" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_wJ2U9tKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2U99KdEeaFDfuLUriJ_g" name="Name" id="23190" label="Name" length="80" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_wJ2U-NKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2U-dKdEeaFDfuLUriJ_g" name="CreatedDate" id="23191" label="CreatedDate" sourceType="DATETIME" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_wJ2U-tKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2U-9KdEeaFDfuLUriJ_g" name="CreatedById" id="23192" label="CreatedById" length="18" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_wJ2U_NKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2U_dKdEeaFDfuLUriJ_g" name="LastModifiedDate" id="23193" label="LastModifiedDate" sourceType="DATETIME" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_wJ2U_tKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2U_9KdEeaFDfuLUriJ_g" name="LastModifiedById" id="23194" label="LastModifiedById" length="18" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_wJ2VANKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VAdKdEeaFDfuLUriJ_g" name="SystemModstamp" id="23195" label="SystemModstamp" sourceType="DATETIME" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;">
+        <initialValue xmi:id="_wJ2VAtKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VA9KdEeaFDfuLUriJ_g" name="ResultadoEncuestaCalidad__c" id="23196" label="ResultadoEncuestaCalidad__c" length="18" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_wJ2VBNKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VBdKdEeaFDfuLUriJ_g" name="CategoriaFormulado__c" id="23197" label="CategoriaFormulado__c" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ2VBtKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VB9KdEeaFDfuLUriJ_g" name="Categoria__c" id="23198" label="Categoria__c" length="2" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ2VCNKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VCdKdEeaFDfuLUriJ_g" name="Peso__c" id="23199" label="Peso__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ2VCtKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VC9KdEeaFDfuLUriJ_g" name="Pregunta__c" id="23200" label="Pregunta__c" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ2VDNKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VDdKdEeaFDfuLUriJ_g" name="Respuesta__c" id="23201" label="Respuesta__c" length="15000" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ2VDtKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VD9KdEeaFDfuLUriJ_g" name="InformacionAdicional__c" id="23202" label="InformacionAdicional__c" length="200" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ2VENKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VEdKdEeaFDfuLUriJ_g" name="Subcategoria__c" id="23203" label="Subcategoria__c" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ2VEtKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VE9KdEeaFDfuLUriJ_g" name="Name_Agente" id="23204" label="Name_Agente" length="121" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ2VFNKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ2VFdKdEeaFDfuLUriJ_g" name="Agente__c" id="23205" label="Agente__c" length="18" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ2VFtKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28ANKdEeaFDfuLUriJ_g" name="Canal__c" id="23206" label="Canal__c" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28AdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28AtKdEeaFDfuLUriJ_g" name="Categoria__Resultado" id="23207" label="Categoria__Resultado" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28A9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28BNKdEeaFDfuLUriJ_g" name="CausaRaiz__c" id="23208" label="CausaRaiz__c" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28BdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28BtKdEeaFDfuLUriJ_g" name="EstadoTicket__c" id="23209" label="EstadoTicket__c" length="40" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28B9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28CNKdEeaFDfuLUriJ_g" name="Lider__c" id="23210" label="Lider__c" length="18" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28CdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28CtKdEeaFDfuLUriJ_g" name="NotaCalidad__c" id="23211" label="NotaCalidad__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ28C9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28DNKdEeaFDfuLUriJ_g" name="Calificacion__c" id="23212" label="Calificacion__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ28DdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28DtKdEeaFDfuLUriJ_g" name="Nota__c" id="23213" label="Nota__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ28D9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28ENKdEeaFDfuLUriJ_g" name="PerfilRUC__c" id="23214" label="PerfilRUC__c" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28EdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28EtKdEeaFDfuLUriJ_g" name="RangoTicket__c" id="23215" label="RangoTicket__c" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_wJ28E9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28FNKdEeaFDfuLUriJ_g" name="Subcategoria__Resultado" id="23216" label="Subcategoria__Resultado" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28FdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28FtKdEeaFDfuLUriJ_g" name="SubtotalPreguntasCriticas__c" id="23217" label="SubtotalPreguntasCriticas__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ28F9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28GNKdEeaFDfuLUriJ_g" name="SubtotalPreguntasNoCriticas__c" id="23218" label="SubtotalPreguntasNoCriticas__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ28GdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28GtKdEeaFDfuLUriJ_g" name="Ticket__c" id="23219" label="Ticket__c" length="18" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28G9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28HNKdEeaFDfuLUriJ_g" name="TipoMonitoreo__c" id="23220" label="TipoMonitoreo__c" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28HdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28HtKdEeaFDfuLUriJ_g" name="Tipo__c" id="23221" label="Tipo__c" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28H9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28INKdEeaFDfuLUriJ_g" name="MotivoContacto__c" id="23222" label="MotivoContacto__c" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28IdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28ItKdEeaFDfuLUriJ_g" name="SubtotalPuntosExtra__c" id="23223" label="SubtotalPuntosExtra__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ28I9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28JNKdEeaFDfuLUriJ_g" name="Pais__c" id="23224" label="Pais__c" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28JdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28JtKdEeaFDfuLUriJ_g" name="CorreoAgente__c" id="23225" label="CorreoAgente__c" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28J9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28KNKdEeaFDfuLUriJ_g" name="IdentificadorPais__c" id="23226" label="IdentificadorPais__c" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28KdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28KtKdEeaFDfuLUriJ_g" name="IdentificadorAgente__c" id="23227" label="IdentificadorAgente__c" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28K9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28LNKdEeaFDfuLUriJ_g" name="IdLlamada__c" id="23228" label="IdLlamada__c" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28LdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28LtKdEeaFDfuLUriJ_g" name="AspectosDestacar__c" id="23229" label="AspectosDestacar__c" length="20000" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28L9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28MNKdEeaFDfuLUriJ_g" name="OportunidadesMejora__c" id="23230" label="OportunidadesMejora__c" length="20000" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28MdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28MtKdEeaFDfuLUriJ_g" name="EmailFormulaLider__c" id="23231" label="EmailFormulaLider__c" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28M9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28NNKdEeaFDfuLUriJ_g" name="EmailFormulaManager__c" id="23232" label="EmailFormulaManager__c" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28NdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28NtKdEeaFDfuLUriJ_g" name="EmailManager__c" id="23233" label="EmailManager__c" length="80" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28N9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28ONKdEeaFDfuLUriJ_g" name="EmailLider__c" id="23234" label="EmailLider__c" length="80" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28OdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28OtKdEeaFDfuLUriJ_g" name="TotalPreguntas__c" id="23235" label="TotalPreguntas__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ28O9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28PNKdEeaFDfuLUriJ_g" name="FinalizacionCalculosGuia__c" id="23236" label="FinalizacionCalculosGuia__c" sourceType="BIT" talendType="id_Boolean" nullable="false">
+        <initialValue xmi:id="_wJ28PdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28PtKdEeaFDfuLUriJ_g" name="MensajeResultado__c" id="23237" label="MensajeResultado__c" length="1300" sourceType="TEXT" talendType="id_String">
+        <initialValue xmi:id="_wJ28P9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28QNKdEeaFDfuLUriJ_g" name="PuntosAtencion__c" id="23238" label="PuntosAtencion__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ28QdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28QtKdEeaFDfuLUriJ_g" name="PuntosSolucion__c" id="23239" label="PuntosSolucion__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ28Q9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28RNKdEeaFDfuLUriJ_g" name="PuntosRegistro__c" id="23240" label="PuntosRegistro__c" length="18" sourceType="DOUBLE" talendType="id_Double">
+        <initialValue xmi:id="_wJ28RdKdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28RtKdEeaFDfuLUriJ_g" name="Name_Analyst" id="23241" label="Name_Analyst" length="121" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_wJ28R9KdEeaFDfuLUriJ_g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wJ28SNKdEeaFDfuLUriJ_g" name="Name_Lider" id="629887" label="Name_Lider" length="121" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_wJ28SdKdEeaFDfuLUriJ_g"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

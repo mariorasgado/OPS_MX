@@ -3,6 +3,7 @@ package routines;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /*
@@ -207,6 +208,99 @@ public class MX_Processing {
     	}
     	catch(Exception e){
     		return "Algo paso :S";
+    	}
+    }
+    /**
+     * ontime_index: Regresa el index para perfect orders
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(in_store_pickup,date_store_pickup,date_delivered_promised,date_1st_attempt,date_delivered) input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static String ontime_index (int in_store_pickup, Date date_store_pickup,Date date_delivered_promised,Date date_1st_attempt,Date date_delivered) throws ParseException{
+    	try{
+    		String ret="A";
+    		Date date = new Date();
+    		//System.out.println(dateFormat.format(date));
+    		Calendar calendar = Calendar.getInstance();
+    		calendar.setTime(date_delivered_promised); // Configuramos la fecha que se recibe
+    		calendar.add(Calendar.HOUR, 23);  // numero de días a añadir, o restar en caso de días<0
+    		date_delivered_promised=calendar.getTime(); // Devuelve el objeto Date con los nuevos días añadidos
+    		Date compare_pickup=new Date();
+    		compare_pickup=date_1st_attempt==null?date_store_pickup==null?date:date_store_pickup:date_1st_attempt;
+    		Date compare_no_pickup=new Date();
+    		compare_no_pickup=date_1st_attempt==null?date_delivered==null?date:date_delivered:date_1st_attempt;
+    		switch(in_store_pickup){
+    		case 1:
+    			if(compare_pickup.compareTo(date_delivered_promised)<=0){
+    				ret="A";
+    			}
+    			else{
+    				ret="B";
+    			}
+    			break;
+    		case 0:
+    			if(compare_no_pickup.compareTo(date_delivered_promised)<=0){
+    				ret="A";
+    			}
+    			else{
+    				ret="B";
+    			}
+    			break;
+    		}
+    		return ret;
+    	}
+    	catch(Exception e)
+    	{
+    		return "N";
+    	}
+    }
+    /**
+     * touchpoint_index: Regresa el index para perfect orders
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(in_store_pickup,date_store_pickup,date_delivered_promised,date_1st_attempt,date_delivered) input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static String touchpoint_index (int in_store_pickup, Date date_store_pickup,Date date_delivered_promised,Date date_1st_attempt,Date date_delivered) throws ParseException{
+    	try{
+    		String ret="A";
+    		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd 00:00:00");
+    		Date date = new Date();
+    		System.out.println(dateFormat.format(date));
+    		switch(in_store_pickup){
+    		case 1:
+    			if((date_1st_attempt==null?date_store_pickup==null?date:date_store_pickup:date_1st_attempt).compareTo(date_delivered_promised)==1){
+    				ret="A";
+    			}
+    			else{
+    				ret="B";
+    			}
+    			break;
+    		case 0:
+    			if((date_1st_attempt==null?date_delivered==null?date:date_delivered:date_1st_attempt).compareTo(date_delivered_promised)==1){
+    				ret="A";
+    			}
+    			else{
+    				ret="B";
+    			}
+    			break;
+    		}
+    		return ret;
+    	}
+    	catch(Exception e)
+    	{
+    		return "Null";
     	}
     }
 }
