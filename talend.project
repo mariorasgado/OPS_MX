@@ -582,6 +582,20 @@
       <relatedItems xmi:id="_pn0V2dNiEea_zur7zBlIwA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_pn0V2tNiEea_zur7zBlIwA" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_M1EO8Nm_Eeaq3M_KICPtIw">
+      <baseItem xmi:id="_M1EO8dm_Eeaq3M_KICPtIw" id="_Myy-ENm_Eeaq3M_KICPtIw" version="1.0" type="job"/>
+      <relatedItems xmi:id="_M1EO8tm_Eeaq3M_KICPtIw" id="_dHOP8DcKEeaD5edjj0zvew" version="Latest" type="context"/>
+      <relatedItems xmi:id="_M1EO89m_Eeaq3M_KICPtIw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_M1EO9Nm_Eeaq3M_KICPtIw" id="DateUnixTimeStamp" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_M1EO9dm_Eeaq3M_KICPtIw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_M1EO9tm_Eeaq3M_KICPtIw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_M1EO99m_Eeaq3M_KICPtIw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_M1EO-Nm_Eeaq3M_KICPtIw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_M1EO-dm_Eeaq3M_KICPtIw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_M1EO-tm_Eeaq3M_KICPtIw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_M1EO-9m_Eeaq3M_KICPtIw" id="MX_Processing" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_M1EO_Nm_Eeaq3M_KICPtIw" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_e5FV4LsyEeaWEPpoLw8QQw" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_e5FV4bsyEeaWEPpoLw8QQw" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
     <migrationTask xmi:id="_e5FV4rsyEeaWEPpoLw8QQw" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
