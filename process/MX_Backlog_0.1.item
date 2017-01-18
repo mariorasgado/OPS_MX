@@ -2,8 +2,8 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="68" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="36" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="32" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -351,7 +351,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;Select&#xD;&#xA;curdate() as DT_Consult,'#Entregas retrasadas ' AS kpi_Name,&#xD;&#xA;count(*)+ 0.0  as data&#xD;&#xA;from operations_test.MX_WMS_Data_Live a&#xD;&#xA;inner join wms_live_mx.itens_venda b&#xD;&#xA;on a.itens_venda_id=b.itens_venda_id&#xD;&#xA;where date(promised_delivered_date)&lt;= &#xD;&#xA;(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-4 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;)&#xD;&#xA;)  and (a.ultimostatus not in ('fallo_entrega_notificada','fallo_entrega','entregado') and a.ultimostatus in ('en_reparto',&#xD;&#xA;'excepcion_entrega_cliente','in_store_pickup','intento_entrega','first_movement') or a.ultimostatus is null)&#xD;&#xA;and Actual_Delivered_Date ='9999-12-31 00:00:00'&#xD;&#xA;and a.status  in ( 'Expedido')&#xD;&#xA;and ShipmentType not in ('International')&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;Select&#xD;&#xA;curdate() as DT_Consult,'#Entregas retrasadas ' AS kpi_Name,&#xD;&#xA;count(*)+ 0.0  as data&#xD;&#xA;from operations_test.MX_WMS_Data_Live a&#xD;&#xA;inner join wms_live_mx.itens_venda b&#xD;&#xA;on a.itens_venda_id=b.itens_venda_id&#xD;&#xA;where date(promised_delivered_date)&lt;= &#xD;&#xA;(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-4 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;)&#xD;&#xA;)  and (a.ultimostatus not in ('fallo_entrega_notificada','fallo_entrega','entregado') and a.ultimostatus in ('en_reparto',&#xD;&#xA;'excepcion_entrega_cliente','intento_entrega','first_movement') or a.ultimostatus is null)&#xD;&#xA;and Actual_Delivered_Date ='9999-12-31 00:00:00'&#xD;&#xA;and a.status  in ( 'Expedido')&#xD;&#xA;and ShipmentType not in ('International')&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -477,7 +477,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;Select&#xD;&#xA;curdate() as DT_Consult,CONCAT('#Entregas retrasadas ',&#xD;&#xA;case 1 when ultimostatus in ('entregado','excepcion_entrega_cliente','fallo_entrega_notificada','intento_entrega','in_store_pickup','fallo_entrega') then 'con intento'&#xD;&#xA;else 'sin intento' end) AS kpi_Name,&#xD;&#xA;count(*)+ 0.0  as data&#xD;&#xA;from operations_test.MX_WMS_Data_Live a&#xD;&#xA;inner join wms_live_mx.itens_venda b&#xD;&#xA;on a.itens_venda_id=b.itens_venda_id&#xD;&#xA;where date(promised_delivered_date)&lt;= &#xD;&#xA;(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-4 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;)&#xD;&#xA;) and (a.ultimostatus not in ('fallo_entrega_notificada','fallo_entrega','entregado') and a.ultimostatus in ('en_reparto',&#xD;&#xA;'excepcion_entrega_cliente','in_store_pickup','intento_entrega','first_movement') or a.ultimostatus is null)&#xD;&#xA;and Actual_Delivered_Date ='9999-12-31 00:00:00'&#xD;&#xA;and a.status  in ( 'Expedido')&#xD;&#xA;and ShipmentType not in ('International')&#xD;&#xA;#and numero_order not like '9%'&#xD;&#xA;group by &#xD;&#xA;case 1 when &#xD;&#xA;ultimostatus in ('entregado','excepcion_entrega_cliente','fallo_entrega_notificada','intento_entrega','in_store_pickup','fallo_entrega')&#xD;&#xA; then 'con intento'&#xD;&#xA;else 'sin intento'&#xD;&#xA;end&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;Select&#xD;&#xA;curdate() as DT_Consult,CONCAT('#Entregas retrasadas ',&#xD;&#xA;case 1 when ultimostatus in ('entregado','excepcion_entrega_cliente','fallo_entrega_notificada','intento_entrega','fallo_entrega') then 'con intento'&#xD;&#xA;else 'sin intento' end) AS kpi_Name,&#xD;&#xA;count(*)+ 0.0  as data&#xD;&#xA;from operations_test.MX_WMS_Data_Live a&#xD;&#xA;inner join wms_live_mx.itens_venda b&#xD;&#xA;on a.itens_venda_id=b.itens_venda_id&#xD;&#xA;where date(promised_delivered_date)&lt;= &#xD;&#xA;(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-4 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;)&#xD;&#xA;) and (a.ultimostatus not in ('fallo_entrega_notificada','fallo_entrega','entregado') and a.ultimostatus in ('en_reparto',&#xD;&#xA;'excepcion_entrega_cliente','intento_entrega','first_movement') or a.ultimostatus is null)&#xD;&#xA;and Actual_Delivered_Date ='9999-12-31 00:00:00'&#xD;&#xA;and a.status  in ( 'Expedido')&#xD;&#xA;and ShipmentType not in ('International')&#xD;&#xA;#and numero_order not like '9%'&#xD;&#xA;group by &#xD;&#xA;case 1 when &#xD;&#xA;ultimostatus in ('entregado','excepcion_entrega_cliente','fallo_entrega_notificada','intento_entrega','fallo_entrega')&#xD;&#xA; then 'con intento'&#xD;&#xA;else 'sin intento'&#xD;&#xA;end&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -834,6 +834,48 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMysqlInput_18">
+      <column comment="" key="false" length="-1" name="DT_Consult" nullable="false" pattern="" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="KPI_name" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Data" nullable="false" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="1248">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_19" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wms_live_mx&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Check Track&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;Select curdate() as DT_Consult,concat('Check Track >= 3 días Local') as KPI_Name,count(itens_venda_id)+ 0.0  as data&#xD;&#xA;&#xD;&#xA;from operations_test.MX_WMS_Data_Live&#xD;&#xA;where date(Date_Check_Track)&lt;= &#xD;&#xA;(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-4 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;))&#xD;&#xA;and status = 'check_track'&#xD;&#xA;and ShipmentType = 'National'&#xD;&#xA;&#xD;&#xA;union all&#xD;&#xA;&#xD;&#xA;Select curdate() as DT_Consult,concat('Check Track >= 10 días Internacional') as KPI_Name,count(itens_venda_id)+ 0.0  as data&#xD;&#xA;&#xD;&#xA;from operations_test.MX_WMS_Data_Live&#xD;&#xA;where date(Date_Check_Track)&lt;= &#xD;&#xA;(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-11 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;))&#xD;&#xA;and status = 'check_track'&#xD;&#xA;and ShipmentType = 'National';&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;autoReconnect=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT_Consult"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KPI_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlInput_19">
       <column comment="" key="false" length="-1" name="DT_Consult" nullable="false" pattern="" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="KPI_name" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="Data" nullable="false" pattern="" precision="-1" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
@@ -1565,6 +1607,10 @@
   <connection connectorName="FLOW" label="row19" lineStyle="10" mergeOrder="13" metaname="tMysqlInput_18" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_18" target="tUnite_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row20" lineStyle="10" mergeOrder="14" metaname="tMysqlInput_19" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_19" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tMysqlInput_9" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_9" target="tMap_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
