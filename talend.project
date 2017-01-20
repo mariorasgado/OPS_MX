@@ -635,6 +635,38 @@
       <relatedItems xmi:id="_zOpjat25EearHc-2lGYqLg" id="MX_Processing" version="Latest" type="routine"/>
       <relatedItems xmi:id="_zOpja925EearHc-2lGYqLg" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_1qmWkN9oEeabmMlcHxxZVQ">
+      <baseItem xmi:id="_1qmWkd9oEeabmMlcHxxZVQ" id="_AsOqIN57EeaUy7kMQN2-Qw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_1qmWkt9oEeabmMlcHxxZVQ" id="_dHOP8DcKEeaD5edjj0zvew" version="Latest" type="context"/>
+      <relatedItems xmi:id="_1qmWk99oEeabmMlcHxxZVQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWlN9oEeabmMlcHxxZVQ" id="Response" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWld9oEeabmMlcHxxZVQ" id="cyberreccomendation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWlt9oEeabmMlcHxxZVQ" id="in_condition" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWl99oEeabmMlcHxxZVQ" id="Tickets_table_insert" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWmN9oEeabmMlcHxxZVQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWmd9oEeabmMlcHxxZVQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWmt9oEeabmMlcHxxZVQ" id="afs_fact" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWm99oEeabmMlcHxxZVQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWnN9oEeabmMlcHxxZVQ" id="TimezoneConversion_Time" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWnd9oEeabmMlcHxxZVQ" id="CybersourceBin" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWnt9oEeabmMlcHxxZVQ" id="TimezoneConversion_Date" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWn99oEeabmMlcHxxZVQ" id="AFS_Score" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWoN9oEeabmMlcHxxZVQ" id="cybersourcecard_brand" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWod9oEeabmMlcHxxZVQ" id="MX_Processing" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWot9oEeabmMlcHxxZVQ" id="cost_local_value" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWo99oEeabmMlcHxxZVQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWpN9oEeabmMlcHxxZVQ" id="CybersourceReasonMex" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWpd9oEeabmMlcHxxZVQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWpt9oEeabmMlcHxxZVQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWp99oEeabmMlcHxxZVQ" id="CybersourceReason" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWqN9oEeabmMlcHxxZVQ" id="DateUnixTimeStamp" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWqd9oEeabmMlcHxxZVQ" id="cybersourcecard" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWqt9oEeabmMlcHxxZVQ" id="peru_visanet" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWq99oEeabmMlcHxxZVQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWrN9oEeabmMlcHxxZVQ" id="kjkl" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qmWrd9oEeabmMlcHxxZVQ" id="SalesForce_tickets_split_items" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_1qm9oN9oEeabmMlcHxxZVQ" id="rutina_nati" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_e5FV4LsyEeaWEPpoLw8QQw" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_e5FV4bsyEeaWEPpoLw8QQw" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
     <migrationTask xmi:id="_e5FV4rsyEeaWEPpoLw8QQw" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
