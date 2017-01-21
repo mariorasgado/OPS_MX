@@ -1,7 +1,0 @@
-<?xml version="1.1" encoding="UTF-8"?>
-<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_7=>" expression="DateUnixTimeStamp.SimpleDTZFromDateMX(row12.FechaCreacion__c)">
-  <variables name="row12.CreatedDate" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row12.CreatedById" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row12.Id" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row12.FechaCreacion__c" value="null" talendType="id_Date" nullable="true"/>
-</expression:EMFExpression>
