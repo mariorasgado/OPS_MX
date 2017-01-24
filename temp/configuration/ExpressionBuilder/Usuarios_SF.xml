@@ -1,0 +1,21 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="row1.DelegatedApproverId">
+  <variables name="row1.Name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Funcion_Formulado__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Username" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.IdentificadorPaIs__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Tipo_de_usuario_Front_Back__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.PaisGestion__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.DelegatedApproverId" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.Name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.Funcion_Formulado__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.Id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.Username" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.Email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.IdentificadorPaIs__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.Tipo_de_usuario_Front_Back__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.PaisGestion__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.DelegatedApproverId" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>

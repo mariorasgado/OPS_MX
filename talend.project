@@ -479,6 +479,9 @@
       <relatedItems xmi:id="_UHb1e83vEea5tOGGJAyAxA" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_mneTEM34Eea5tOGGJAyAxA" id="_F8xvECQxEeasy_Aj2qHcOw - User" version="Latest" type="schema"/>
       <relatedItems xmi:id="_iQJRAM35Eea5tOGGJAyAxA" id="_F8xvECQxEeasy_Aj2qHcOw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_MsvPgOJpEea60PPRDkTXvA" id="_hHnrEBbQEeaHCZ0DkWwxuQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_MsvPgeJpEea60PPRDkTXvA" id="_oZB2sBOwEeaOBsvOT9u_GQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_MsvPguJpEea60PPRDkTXvA" id="_oZB2sBOwEeaOBsvOT9u_GQ - DWH_DIM_CATEGORY_CS" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_o5rAIM6xEea5tOGGJAyAxA">
       <baseItem xmi:id="_o5rAIc6xEea5tOGGJAyAxA" id="_-IMloM6sEea5tOGGJAyAxA" version="0.1" type="job"/>
@@ -666,6 +669,11 @@
       <relatedItems xmi:id="_1qmWrN9oEeabmMlcHxxZVQ" id="kjkl" version="Latest" type="routine"/>
       <relatedItems xmi:id="_1qmWrd9oEeabmMlcHxxZVQ" id="SalesForce_tickets_split_items" version="Latest" type="routine"/>
       <relatedItems xmi:id="_1qm9oN9oEeabmMlcHxxZVQ" id="rutina_nati" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_N7lxsOGMEea-usr4fnESHQ" id="_Rq7jkBOvEeaN4s27YySL8w" version="Latest" type="property"/>
+      <relatedItems xmi:id="_N7lxseGMEea-usr4fnESHQ" id="_Rq7jkBOvEeaN4s27YySL8w - Case" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_HN-wkOGUEeaLcc40zSQgqA" id="_Rq7jkBOvEeaN4s27YySL8w - Responsable_Actual__c" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_D_XNkOGWEeaLcc40zSQgqA" id="_F8xvECQxEeasy_Aj2qHcOw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_hKb2AOJZEea60PPRDkTXvA" id="_Rq7jkBOvEeaN4s27YySL8w - Account" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_e5FV4LsyEeaWEPpoLw8QQw" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_e5FV4bsyEeaWEPpoLw8QQw" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
