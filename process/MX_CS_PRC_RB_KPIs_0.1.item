@@ -259,6 +259,7 @@
       <column comment="" defaultValue="" key="false" length="23" name="NU_Closed_PRC" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="21" name="NU_CasosEspeciales" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_CerradosCasosEspeciales" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="27" name="Promedio_2do_Nivel" nullable="true" pattern="" precision="4" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
       <uiProperties shellMaximized="true"/>
@@ -293,6 +294,7 @@
         <mapperTableEntries name="NU_Closed_PRC" expression="row11.NU_Cerrados " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NU_CasosEspeciales" expression="row14.NU_CasosEspeciales " type="id_Integer"/>
         <mapperTableEntries name="NU_CerradosCasosEspeciales" expression="row14.Closed " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Promedio_2do_Nivel" expression="row31.Promedio " type="id_Float" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row16" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Date" type="id_Date" nullable="true"/>
@@ -373,6 +375,12 @@
         <mapperTableEntries name="NU_ReabiertosCasosEspeciales" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Closed" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Date" expression="row16.Date " type="id_Date" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row31" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Fecha" expression="row16.Date " type="id_Date" nullable="true" operator="="/>
+        <mapperTableEntries name="Promedio" expression="" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Total" type="id_Long"/>
+        <mapperTableEntries name="Correctos" type="id_Float" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -843,6 +851,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Promedio_2do_Nivel"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
@@ -882,6 +895,7 @@
       <column comment="" defaultValue="" key="false" length="23" name="NU_Closed_PRC" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="21" name="NU_CasosEspeciales" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_CerradosCasosEspeciales" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="27" name="Promedio_2do_Nivel" nullable="true" pattern="" precision="4" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="true" length="6" name="DT_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
@@ -913,6 +927,7 @@
       <column comment="" defaultValue="" key="false" length="23" name="NU_Closed_PRC" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="21" name="NU_CasosEspeciales" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_CerradosCasosEspeciales" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="27" name="Promedio_2do_Nivel" nullable="true" pattern="" precision="4" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -1208,8 +1223,54 @@
       <column comment="" key="false" length="10" name="Date" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="1408">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_18" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;operations_test&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mario.rasgado&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="rybtc1D0en7vSNCI95RnovQYYk8nNyOl"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;2do Nivel&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;select Fecha,sum(Correcto='SI')/Count(*) as Promedio,Count(*) as Total,sum(Correcto='SI') as Correctos from&#xD;&#xA;(select distinct a.ResultadoEncuestaCalidad__c,date(a.CreatedDate) as Fecha,a.Calificacion__c as Calificacion_2donivel,&#xD;&#xA;b.Calificacion__c as Calificacion_Monitor,IF(a.Calificacion__c=b.Calificacion__c,'SI','NO') as Correcto&#xD;&#xA;from&#xD;&#xA;(SELECT distinct ResultadoEncuestaCalidad__c,CreatedDate,Name_Analyst,TipoMonitoreo__c,Name_Agente,Ticket__c,concat(Name_Agente,Ticket__c),Calificacion__c&#xD;&#xA;FROM operations_test.CSDetalleResultadoCalidad__c&#xD;&#xA;where TipoMonitoreo__c = '2do nivel') a&#xD;&#xA;inner join operations_test.CSDetalleResultadoCalidad__c b&#xD;&#xA;on concat(a.Name_Agente,a.Ticket__c) = concat(b.Name_Analyst,b.Ticket__c)) c&#xD;&#xA;group by Fecha&#xD;&#xA;;&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;autoReconnect=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fecha"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Promedio"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Correctos"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlInput_18">
+      <column comment="" key="false" length="10" name="Fecha" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="27" name="Promedio" nullable="true" pattern="" precision="4" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="21" name="Total" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="23" name="Correctos" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="API" value="bulk"/>
@@ -1259,6 +1320,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_12" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -1333,6 +1395,7 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_14" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1405,6 +1468,7 @@
   </node>
   <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_7" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="API" value="soap"/>
@@ -1451,6 +1515,7 @@
   </node>
   <node componentName="tMysqlOutputBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutputBulkExec_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
@@ -1494,6 +1559,7 @@
   </node>
   <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="API" value="bulk"/>
@@ -2012,6 +2078,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -2120,6 +2187,7 @@
   </node>
   <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TABLE" name="GROUPBYS">
       <elementValue elementRef="OUTPUT_COLUMN" value="CaseId"/>
       <elementValue elementRef="INPUT_COLUMN" value="CaseId"/>
@@ -2172,6 +2240,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_8" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -2261,6 +2330,7 @@
   </node>
   <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_8" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_F8xvECQxEeasy_Aj2qHcOw" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -2320,6 +2390,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -2380,6 +2451,7 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -2558,182 +2630,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_10" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_F8xvECQxEeasy_Aj2qHcOw" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="API" value="soap"/>
-    <elementParameter field="CLOSED_LIST" name="LOGIN_TYPE" value="BASIC"/>
-    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://login.salesforce.com/services/Soap/u/34.0&quot;"/>
-    <elementParameter field="TEXT" name="API_VERSION" value="&quot;34.0&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;bi.bot@linio.com&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="/7FGjQ+3pvFV8DQeFm5XyI3mmFlb4u53ggj5jaZjcwGea+whlvPsrw=="/>
-    <elementParameter field="CHECK" name="USE_SAVE_SESSION" value="false"/>
-    <elementParameter field="DIRECTORY" name="SESSION_DIRECTORY" value="&quot;C:/Users/gustavo.sanchez/Desktop/operations_mx/workspace&quot;" show="false"/>
-    <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="OAUTH_CLIENT_SECRET" value="0RMsyjmybrE=" show="false"/>
-    <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="OAUTH_CALLBACK_PORT" value="8443" show="false"/>
-    <elementParameter field="FILE" name="OAUTH_TOKEN_FILE" value="&quot;C:/Users/gustavo.sanchez/Desktop/operations_mx/workspace/token.properties&quot;" show="false"/>
-    <elementParameter field="TEXT" name="TIMEOUT" value="600000"/>
-    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="User"/>
-    <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;User&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;select &#xD;&#xA;Name,&#xA;Funcion_Formulado__c,&#xA;Id,&#xA;Username,&#xA;Email,&#xA;IdentificadorPaIs__c,&#xA;Tipo_de_usuario_Front_Back__c,&#xA;PaisGestion__c,DelegatedApproverId&#xD;&#xA;from User&quot;"/>
-    <elementParameter field="CHECK" name="QUERY_ALL" value="false"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="250"/>
-    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
-    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
-    <elementParameter field="TEXT" name="LIMIT" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="NORMALIZE_DELIMITER" value="&quot;;&quot;"/>
-    <elementParameter field="TEXT" name="COLUMNNAME_DELIMITER" value="&quot;_&quot;"/>
-    <elementParameter field="CHECK" name="NEED_COMPRESSION" value="false"/>
-    <elementParameter field="CHECK" name="USE_HTTP_CHUNKED" value="true"/>
-    <elementParameter field="CHECK" name="HTTP_TRACEMESSAGE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="LABEL" value="User"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="User" name="tSalesforceInput_10">
-      <column comment="" key="false" length="121" name="Name" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Funcion_Formulado__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="Id" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="80" name="Username" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IdentificadorPaIs__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Tipo_de_usuario_Front_Back__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PaisGestion__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="DelegatedApproverId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="LiberarLicenciaCS__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="false"/>
-      <column comment="" key="false" length="255" name="Turno__c" nullable="true" precision="0" type="id_String" usefulColumn="false"/>
-      <column comment="" key="false" length="0" name="EscalaN1__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="false"/>
-      <column comment="" key="false" length="1300" name="NivelAtencion__c" nullable="true" precision="0" type="id_String" usefulColumn="false"/>
-      <column comment="" key="false" length="0" name="Inbound_Manager_INTL__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="false"/>
-      <column comment="" key="false" length="0" name="LicenciaChat__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="false"/>
-    </metadata>
-  </node>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-32">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_6" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="API" value="bulk"/>
-    <elementParameter field="CLOSED_LIST" name="LOGIN_TYPE" value="BASIC"/>
-    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://login.salesforce.com/services/Soap/u/34.0&quot;"/>
-    <elementParameter field="TEXT" name="API_VERSION" value="&quot;34.0&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;bi.bot@linio.com&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="/7FGjQ+3pvFV8DQeFm5XyI3mmFlb4u53ggj5jaZjcwGea+whlvPsrw=="/>
-    <elementParameter field="CHECK" name="USE_SAVE_SESSION" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="SESSION_DIRECTORY" value="&quot;C:/Users/mario.rasgado/Documents/Talend/TOS_DI-Win32-20160912_1228-V6.1.2/workspace&quot;" show="false"/>
-    <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="OAUTH_CLIENT_SECRET" value="0RMsyjmybrE=" show="false"/>
-    <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="OAUTH_CALLBACK_PORT" value="8443" show="false"/>
-    <elementParameter field="FILE" name="OAUTH_TOKEN_FILE" value="&quot;C:/Users/mario.rasgado/Downloads/TOS_DI-20151214_1327-V6.1.1/workspace/token.properties&quot;" show="false"/>
-    <elementParameter field="TEXT" name="TIMEOUT" value="60000" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="CaseHistory"/>
-    <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;CaseHistory&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONDITION" value="&quot;Field='Status'&quot;" show="false"/>
-    <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT NewValue,Field,CaseId,CreatedDate,CreatedById &#xA;FROM CaseHistory&#xA;&#xD;&#xA; WHERE Field='Status' &#xD;&#xA;AND CreatedDate>=&quot;+context.UpDate+&quot;&#xD;&#xA;&quot;"/>
-    <elementParameter field="CHECK" name="QUERY_ALL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="1000" show="false"/>
-    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
-    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
-    <elementParameter field="TEXT" name="LIMIT" value="-1" show="false"/>
-    <elementParameter field="TEXT" name="NORMALIZE_DELIMITER" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="COLUMNNAME_DELIMITER" value="&quot;_&quot;" show="false"/>
-    <elementParameter field="CHECK" name="NEED_COMPRESSION" value="true"/>
-    <elementParameter field="CHECK" name="USE_HTTP_CHUNKED" value="true" show="false"/>
-    <elementParameter field="CHECK" name="HTTP_TRACEMESSAGE" value="false"/>
-    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="CaseHistory"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="CaseHistory" name="tSalesforceInput_6">
-      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CaseId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Field" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_1" show="false"/>
-    <elementParameter field="TABLE" name="CRITERIA">
-      <elementValue elementRef="COLNAME" value="CreatedDate"/>
-      <elementValue elementRef="SORT" value="date"/>
-      <elementValue elementRef="ORDER" value="desc"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
-    <elementParameter field="DIRECTORY" name="TEMPFILE" value="&quot;C:/Users/mario.rasgado/Downloads/TOS_DI-20151214_1327-V6.1.1/workspace/temp&quot;" show="false"/>
-    <elementParameter field="CHECK" name="CREATEDIR" value="true" show="false"/>
-    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="1000000" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="SortHistory"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="CaseHistory" name="tSortRow_1">
-      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CaseId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Field" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="0">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="||"/>
-    <elementParameter field="TABLE" name="CONDITIONS">
-      <elementValue elementRef="INPUT_COLUMN" value="NewValue"/>
-      <elementValue elementRef="FUNCTION" value=""/>
-      <elementValue elementRef="OPERATOR" value="=="/>
-      <elementValue elementRef="RVALUE" value="&quot;cerrado&quot;"/>
-      <elementValue elementRef="INPUT_COLUMN" value="NewValue"/>
-      <elementValue elementRef="FUNCTION" value=""/>
-      <elementValue elementRef="OPERATOR" value="=="/>
-      <elementValue elementRef="RVALUE" value="&quot;seguimiento&quot;"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="CaseHistory" name="tFilterRow_1">
-      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CaseId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Field" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FILTER" label="CaseHistory" name="FILTER">
-      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CaseId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Field" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="CaseHistory" name="REJECT">
-      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CaseId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Field" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="context.UpDate=&quot;2016-10-01T00:00:00Z&quot;;&#xA;context.UpDateNormal=&quot;2016-10-01T00:00:00Z&quot;;&#xA;System.out.println(context.UpDate);"/>
@@ -2743,6 +2639,7 @@
   </node>
   <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="API" value="bulk"/>
@@ -3247,6 +3144,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -3364,6 +3262,7 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -3523,6 +3422,7 @@
   </node>
   <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_9" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="API" value="soap"/>
@@ -3604,6 +3504,7 @@
   </node>
   <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_5" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Rq7jkBOvEeaN4s27YySL8w" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -3651,6 +3552,7 @@
   </node>
   <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="832">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="API" value="bulk"/>
@@ -4167,6 +4069,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="832">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -4272,6 +4175,7 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="832">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -5010,6 +4914,185 @@
       <column comment="" key="false" length="40" name="Ext__pc" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_10" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_F8xvECQxEeasy_Aj2qHcOw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API" value="soap"/>
+    <elementParameter field="CLOSED_LIST" name="LOGIN_TYPE" value="BASIC"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://login.salesforce.com/services/Soap/u/34.0&quot;"/>
+    <elementParameter field="TEXT" name="API_VERSION" value="&quot;34.0&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;bi.bot@linio.com&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="/7FGjQ+3pvFV8DQeFm5XyI3mmFlb4u53ggj5jaZjcwGea+whlvPsrw=="/>
+    <elementParameter field="CHECK" name="USE_SAVE_SESSION" value="false"/>
+    <elementParameter field="DIRECTORY" name="SESSION_DIRECTORY" value="&quot;C:/Users/gustavo.sanchez/Desktop/operations_mx/workspace&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="OAUTH_CLIENT_SECRET" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_PORT" value="8443" show="false"/>
+    <elementParameter field="FILE" name="OAUTH_TOKEN_FILE" value="&quot;C:/Users/gustavo.sanchez/Desktop/operations_mx/workspace/token.properties&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="600000"/>
+    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="User"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;User&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;select &#xD;&#xA;Name,&#xA;Funcion_Formulado__c,&#xA;Id,&#xA;Username,&#xA;Email,&#xA;IdentificadorPaIs__c,&#xA;Tipo_de_usuario_Front_Back__c,&#xA;PaisGestion__c,DelegatedApproverId&#xD;&#xA;from User&quot;"/>
+    <elementParameter field="CHECK" name="QUERY_ALL" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="250"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="LIMIT" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="NORMALIZE_DELIMITER" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="COLUMNNAME_DELIMITER" value="&quot;_&quot;"/>
+    <elementParameter field="CHECK" name="NEED_COMPRESSION" value="false"/>
+    <elementParameter field="CHECK" name="USE_HTTP_CHUNKED" value="true"/>
+    <elementParameter field="CHECK" name="HTTP_TRACEMESSAGE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="User"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="User" name="tSalesforceInput_10">
+      <column comment="" key="false" length="121" name="Name" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Funcion_Formulado__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="Id" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Username" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdentificadorPaIs__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Tipo_de_usuario_Front_Back__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PaisGestion__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DelegatedApproverId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LiberarLicenciaCS__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="255" name="Turno__c" nullable="true" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="EscalaN1__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="1300" name="NivelAtencion__c" nullable="true" precision="0" type="id_String" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="Inbound_Manager_INTL__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="false"/>
+      <column comment="" key="false" length="0" name="LicenciaChat__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="false"/>
+    </metadata>
+  </node>
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API" value="bulk"/>
+    <elementParameter field="CLOSED_LIST" name="LOGIN_TYPE" value="BASIC"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://login.salesforce.com/services/Soap/u/34.0&quot;"/>
+    <elementParameter field="TEXT" name="API_VERSION" value="&quot;34.0&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;bi.bot@linio.com&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="/7FGjQ+3pvFV8DQeFm5XyI3mmFlb4u53ggj5jaZjcwGea+whlvPsrw=="/>
+    <elementParameter field="CHECK" name="USE_SAVE_SESSION" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="SESSION_DIRECTORY" value="&quot;C:/Users/mario.rasgado/Documents/Talend/TOS_DI-Win32-20160912_1228-V6.1.2/workspace&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="OAUTH_CLIENT_SECRET" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_PORT" value="8443" show="false"/>
+    <elementParameter field="FILE" name="OAUTH_TOKEN_FILE" value="&quot;C:/Users/mario.rasgado/Downloads/TOS_DI-20151214_1327-V6.1.1/workspace/token.properties&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="60000" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="CaseHistory"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;CaseHistory&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONDITION" value="&quot;Field='Status'&quot;" show="false"/>
+    <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT NewValue,Field,CaseId,CreatedDate,CreatedById &#xA;FROM CaseHistory&#xA;&#xD;&#xA; WHERE Field='Status' &#xD;&#xA;AND CreatedDate>=&quot;+context.UpDate+&quot;&#xD;&#xA;&quot;"/>
+    <elementParameter field="CHECK" name="QUERY_ALL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="LIMIT" value="-1" show="false"/>
+    <elementParameter field="TEXT" name="NORMALIZE_DELIMITER" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLUMNNAME_DELIMITER" value="&quot;_&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_COMPRESSION" value="true"/>
+    <elementParameter field="CHECK" name="USE_HTTP_CHUNKED" value="true" show="false"/>
+    <elementParameter field="CHECK" name="HTTP_TRACEMESSAGE" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="CaseHistory"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CaseHistory" name="tSalesforceInput_6">
+      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CaseId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="||"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="NewValue"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="&quot;cerrado&quot;"/>
+      <elementValue elementRef="INPUT_COLUMN" value="NewValue"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="&quot;seguimiento&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CaseHistory" name="tFilterRow_1">
+      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CaseId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" label="CaseHistory" name="FILTER">
+      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CaseId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CaseHistory" name="REJECT">
+      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CaseId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TABLE" name="CRITERIA">
+      <elementValue elementRef="COLNAME" value="CreatedDate"/>
+      <elementValue elementRef="SORT" value="date"/>
+      <elementValue elementRef="ORDER" value="desc"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMPFILE" value="&quot;C:/Users/mario.rasgado/Downloads/TOS_DI-20151214_1327-V6.1.1/workspace/temp&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATEDIR" value="true" show="false"/>
+    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="1000000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="SortHistory"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CaseHistory" name="tSortRow_1">
+      <column comment="" key="false" length="18" name="Id" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="IsDeleted" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CaseId" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CreatedDate" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Field" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="NewValue" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
@@ -5074,6 +5157,12 @@
       <elementValue elementRef="TRACE_COLUMN" value="NU_CerradosCasosEspeciales"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Segundo_Nivel"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Promedio_2do_Nivel"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout2_0" show="false"/>
@@ -5134,19 +5223,27 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row31" lineStyle="8" metaname="tMysqlInput_18" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_18" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row31" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row22" lineStyle="0" metaname="tSalesforceInput_1" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tMap_12">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_1" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tSalesforceInput_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_12" target="tMysqlOutputBulkExec_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row23" lineStyle="8" metaname="tMysqlInput_14" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_14" target="tMap_12">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row23" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row24" lineStyle="8" metaname="tSalesforceInput_7" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_7" target="tMap_12">
@@ -5156,13 +5253,16 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row24" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSalesforceInput_2" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_2" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_2" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_2" target="tSalesforceInput_4">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="TicketsEscalados" lineStyle="0" metaname="TicketsEscalados" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_8">
@@ -5172,46 +5272,31 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="TicketsEscalados" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row18" lineStyle="8" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out4" lineStyle="0" metaname="out4" offsetLabelX="0" offsetLabelY="0" source="tMap_8" target="tMysqlOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row19" lineStyle="8" metaname="tSalesforceInput_8" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_8" target="tMap_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="8" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tMap_8">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row20" lineStyle="0" metaname="tSalesforceInput_10" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_10" target="tMap_5">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="DelegatedApproverId"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row21" lineStyle="0" metaname="tSalesforceInput_6" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_6" target="tFilterRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row21" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row25" lineStyle="0" metaname="tSortRow_1" offsetLabelX="0" offsetLabelY="0" source="tSortRow_1" target="tAggregateRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row25" show="false"/>
-  </connection>
-  <connection connectorName="FILTER" label="row26" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_1" target="tSortRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row26" show="false"/>
-  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSalesforceInput_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row28" lineStyle="0" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tMap_3">
@@ -5221,9 +5306,11 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row28" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tSalesforceInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfcopyOfTicketsEscalados" lineStyle="0" metaname="copyOfcopyOfTicketsEscalados" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMysqlOutput_3">
@@ -5245,10 +5332,12 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfTicketsEscalados" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row15" lineStyle="8" metaname="tSalesforceInput_9" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_9" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row30" lineStyle="8" metaname="tSalesforceInput_5" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_5" target="tMap_3">
@@ -5258,13 +5347,16 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row30" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row29" lineStyle="0" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row29" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMysqlInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out5" lineStyle="0" metaname="out5" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMysqlOutput_4">
@@ -5274,7 +5366,33 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row20" lineStyle="0" metaname="tSalesforceInput_10" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_10" target="tMap_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="DelegatedApproverId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row21" lineStyle="0" metaname="tSalesforceInput_6" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_6" target="tFilterRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row21" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row26" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_1" target="tSortRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row26" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row25" lineStyle="0" metaname="tSortRow_1" offsetLabelX="0" offsetLabelY="0" source="tSortRow_1" target="tAggregateRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row25" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1" show="false"/>
@@ -5314,6 +5432,21 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_11" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_10" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
