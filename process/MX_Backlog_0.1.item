@@ -2,8 +2,8 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="68" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="68" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -1442,7 +1442,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;Select curdate() as DT_Consult,concat('Check Track >= 3 días Local') as KPI_Name,count(itens_venda_id)+ 0.0  as data&#xD;&#xA;&#xD;&#xA;from operations_test.MX_WMS_Data_Live&#xD;&#xA;where date(Date_Check_Track)&lt;= &#xD;&#xA;(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-4 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;))&#xD;&#xA;and status = 'check_track'&#xD;&#xA;and ShipmentType = 'National'&#xD;&#xA;&#xD;&#xA;union all&#xD;&#xA;&#xD;&#xA;Select curdate() as DT_Consult,concat('Check Track >= 10 días Internacional') as KPI_Name,count(itens_venda_id)+ 0.0  as data&#xD;&#xA;&#xD;&#xA;from operations_test.MX_WMS_Data_Live&#xD;&#xA;where date(Date_Check_Track)&lt;= &#xD;&#xA;(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-11 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;))&#xD;&#xA;and status = 'check_track'&#xD;&#xA;and ShipmentType = 'National';&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;Select curdate() as DT_Consult,concat('Check Track >= 3 días Local') as KPI_Name,count(itens_venda_id)+ 0.0  as data&#xD;&#xA;&#xD;&#xA;from operations_test.MX_WMS_Data_Live&#xD;&#xA;where date(Date_Check_Track)&lt; &#xD;&#xA;(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-4 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;))&#xD;&#xA;and status = 'check_track'&#xD;&#xA;and ShipmentType = 'National'&#xD;&#xA;&#xD;&#xA;union all&#xD;&#xA;&#xD;&#xA;Select curdate() as DT_Consult,concat('Check Track >= 10 días Internacional') as KPI_Name,count(itens_venda_id)+ 0.0  as data&#xD;&#xA;&#xD;&#xA;from operations_test.MX_WMS_Data_Live&#xD;&#xA;where date(Date_Check_Track)&lt; &#xD;&#xA;(&#xD;&#xA;SELECT date from operations_test.Backlog_Calendar where serial_number IN&#xD;&#xA;(&#xD;&#xA;SELECT serial_number-11 FROM operations_test.Backlog_Calendar&#xD;&#xA;WHERE date=curdate()&#xD;&#xA;))&#xD;&#xA;and status = 'check_track'&#xD;&#xA;and ShipmentType = 'International';&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
