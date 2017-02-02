@@ -1,28 +1,35 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_4=>" expression="DateUnixTimeStamp.SimpleDTZFromDateMX(row40.RequestTime)">
-  <variables name="row50.AgentId" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row50.CreatedById" value="null" talendType="id_String"/>
-  <variables name="row50.CreatedDate" value="null" talendType="id_Date"/>
-  <variables name="row50.Detail" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row50.Id" value="null" talendType="id_String"/>
-  <variables name="row50.LastModifiedById" value="null" talendType="id_String"/>
-  <variables name="row50.LastModifiedDate" value="null" talendType="id_Date"/>
-  <variables name="row50.LiveChatTranscriptId" value="null" talendType="id_String"/>
-  <variables name="row50.Name" value="null" talendType="id_String"/>
-  <variables name="row50.Time" value="null" talendType="id_Date"/>
-  <variables name="row50.Type" value="null" talendType="id_String"/>
-  <variables name="row40.Abandoned" value="null" talendType="id_Integer" nullable="true"/>
-  <variables name="row40.CaseId" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row40.ChatDuration" value="null" talendType="id_Integer" nullable="true"/>
-  <variables name="row40.Encuesta_Chat__c" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row40.HabilidadPais__c" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row40.Id" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row40.Name" value="null" talendType="id_String"/>
-  <variables name="row40.NumeroOrdenManual__c" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row40.PaisAtencion__c" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row40.PaisChat__c" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row40.RequestTime" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row40.Status" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row40.Transferencia__c" value="false" talendType="id_Boolean"/>
-  <variables name="row40.WaitTime" value="null" talendType="id_Integer" nullable="true"/>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_3=>" expression="DateUnixTimeStamp.SimpleDTZFromDateMX(row3.FechaHoraPrimerMensaje__c)">
+  <variables name="row2.Id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.ParentId" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.CreatedById" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.CreatedDate" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row2.LastModifiedDate" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row2.Subject" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.FromName" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.FromAddress" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.ToAddress" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.Incoming" value="null" talendType="id_Boolean" nullable="true"/>
+  <variables name="row2.MessageDate" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row2.Status" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.LastModifiedById" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.Id" value="null" talendType="id_String"/>
+  <variables name="row3.CaseNumber" value="null" talendType="id_String"/>
+  <variables name="row3.CreatedDate" value="null" talendType="id_Date"/>
+  <variables name="row3.CSIdentificadorPais__c" value="null" talendType="id_String"/>
+  <variables name="row3.Origin" value="null" talendType="id_String"/>
+  <variables name="row3.Status" value="null" talendType="id_String"/>
+  <variables name="row3.Subestado__c" value="null" talendType="id_String"/>
+  <variables name="row3.CSSubcategoria__c" value="null" talendType="id_String"/>
+  <variables name="row3.CategoriaOriginal__c" value="null" talendType="id_String"/>
+  <variables name="row3.NumeroItemID__c" value="null" talendType="id_String"/>
+  <variables name="row3.NumeroOrdenManual__c" value="null" talendType="id_String"/>
+  <variables name="row3.ClosedDate" value="null" talendType="id_Date"/>
+  <variables name="row3.FechaHoraPrimerMensaje__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.TipificacionFormulado__c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.Id" value="null" talendType="id_String"/>
+  <variables name="row4.Name" value="null" talendType="id_String"/>
+  <variables name="row4.IdentificadorPaIs__c" value="null" talendType="id_String"/>
+  <variables name="row4.Email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row4.agent_identification__c" value="null" talendType="id_String" nullable="true"/>
 </expression:EMFExpression>
