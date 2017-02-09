@@ -675,6 +675,7 @@
       <relatedItems xmi:id="_D_XNkOGWEeaLcc40zSQgqA" id="_F8xvECQxEeasy_Aj2qHcOw" version="Latest" type="property"/>
       <relatedItems xmi:id="_hKb2AOJZEea60PPRDkTXvA" id="_Rq7jkBOvEeaN4s27YySL8w - Account" version="Latest" type="schema"/>
     </ItemsRelations>
+<<<<<<< HEAD
     <ItemsRelations xmi:id="_qOEkgOQsEeaDwqAU_jJ9fA">
       <baseItem xmi:id="_qOEkgeQsEeaDwqAU_jJ9fA" id="_SkybgOQrEeaDwqAU_jJ9fA" version="0.1" type="job"/>
       <relatedItems xmi:id="_qOEkguQsEeaDwqAU_jJ9fA" id="Numeric" version="Latest" type="routine"/>
@@ -713,6 +714,20 @@
       <relatedItems xmi:id="_SQpMGe7iEea1Ic6WtdiSWQ" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_SQpMGu7iEea1Ic6WtdiSWQ" id="MX_Processing" version="Latest" type="routine"/>
       <relatedItems xmi:id="_SQpMG-7iEea1Ic6WtdiSWQ" id="Mathematical" version="Latest" type="routine"/>
+=======
+    <ItemsRelations xmi:id="_z2onkOPnEeavZfv9PtxY3w">
+      <baseItem xmi:id="_z2onkePnEeavZfv9PtxY3w" id="_2vdVcONQEeaW-oUfNDzvqw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_z2onkuPnEeavZfv9PtxY3w" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_z2onk-PnEeavZfv9PtxY3w" id="DateUnixTimeStamp" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_z2onlOPnEeavZfv9PtxY3w" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_z2onlePnEeavZfv9PtxY3w" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_z2onluPnEeavZfv9PtxY3w" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_z2onl-PnEeavZfv9PtxY3w" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_z2onmOPnEeavZfv9PtxY3w" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_z2onmePnEeavZfv9PtxY3w" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_z2onmuPnEeavZfv9PtxY3w" id="MX_Processing" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_z2onm-PnEeavZfv9PtxY3w" id="Mathematical" version="Latest" type="routine"/>
+>>>>>>> origin/master
     </ItemsRelations>
     <migrationTask xmi:id="_e5FV4LsyEeaWEPpoLw8QQw" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_e5FV4bsyEeaWEPpoLw8QQw" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>

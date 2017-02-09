@@ -2803,7 +2803,7 @@
         <mapperTableEntries name="Id" expression="row11.Id " type="id_String" nullable="true"/>
         <mapperTableEntries name="IsDeleted" expression="row11.IsDeleted " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="Name" expression="row11.Name " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CreatedDate" expression="row11.CreatedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CreatedDate" expression="DateUnixTimeStamp.SimpleDTZFromDateMX(row11.CreatedDate) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CreatedById" expression="row11.CreatedById " type="id_String" nullable="true"/>
         <mapperTableEntries name="LastModifiedDate" expression="row11.LastModifiedDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LastModifiedById" expression="row11.LastModifiedById " type="id_String" nullable="true"/>
