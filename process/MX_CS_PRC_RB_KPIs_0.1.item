@@ -7,7 +7,7 @@
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="256" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="342" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -60,7 +60,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/mario.rasgado/Documents/Talend/TOS_DI-Win32-20160912_1228-V6.1.2/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/gustavo.sanchez/Desktop/operations_mx/workspace/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -416,7 +416,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="1216">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -465,7 +464,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="1216">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -498,17 +496,17 @@
       <column comment="" defaultValue="" key="false" length="21" name="NU_Monitoreos" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="NU_Reabiertos_RB" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="NU_Suma_Calificacion" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="21" name="NU_Encuestas" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="21" name="NU_Encuestas" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="NU_suma_calificacion_15" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="21" name="NU_entrenamientos_15" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="21" name="NU_entrenamientos_15" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_Closed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_Closed_PRC" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="21" name="NU_CasosEspeciales" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="21" name="NU_CasosEspeciales" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_CerradosCasosEspeciales" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="27" name="Promedio_2do_Nivel" nullable="true" pattern="" precision="4" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout2_0">
         <mapperTableEntries name="DT_Date" expression="row16.Date " type="id_Date" nullable="true"/>
@@ -533,12 +531,12 @@
         <mapperTableEntries name="NU_Monitoreos" expression="row13.monitoreos " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NU_Reabiertos_RB" expression="row4.NU_Reabiertos_RB " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NU_Suma_Calificacion" expression="row8.peso " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="NU_Encuestas" expression="row8.numero_encuestas " type="id_Integer"/>
+        <mapperTableEntries name="NU_Encuestas" expression="row8.numero_encuestas " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NU_suma_calificacion_15" expression="row27.calificacion " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="NU_entrenamientos_15" expression="row27.NU_entrenamientos " type="id_Integer"/>
+        <mapperTableEntries name="NU_entrenamientos_15" expression="row27.NU_entrenamientos " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NU_Closed" expression="row6.ClosedNum " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NU_Closed_PRC" expression="row11.NU_Cerrados " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="NU_CasosEspeciales" expression="row14.NU_CasosEspeciales " type="id_Integer"/>
+        <mapperTableEntries name="NU_CasosEspeciales" expression="row14.NU_CasosEspeciales " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NU_CerradosCasosEspeciales" expression="row14.Closed " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Promedio_2do_Nivel" expression="row31.Promedio " type="id_Float" nullable="true"/>
       </outputTables>
@@ -632,7 +630,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_4" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -675,7 +672,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_5" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -718,7 +714,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_6" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -761,7 +756,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1408">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_7" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -776,7 +770,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;    DATE(CreatedDate) AS DateCreated,&#xD;&#xA;    SUM(TicketReabierto__c) as NU_Tickets_Reabiertos,&#xD;&#xA;    sum(if(CategoriaOriginal__c like '%reembolso%',TicketReabierto__c,0)) as NU_Reabiertos_RB&#xD;&#xA;FROM&#xD;&#xA;    operations_test.MX_Tickets&#xD;&#xA;WHERE&#xD;&#xA;    CSIdentificadorPais__c = 'Customer Service MX'&#xD;&#xA;GROUP BY DATE(CreatedDate)&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;    DATE(CreatedDate) AS DateCreated,&#xD;&#xA;    SUM(IF(TicketReabierto__c =1 and MotivReapertura__c = 'Caso sin solución',1,IF(TicketReabierto__c =1 and MotivReapertura__c is null,1,0))) as NU_Tickets_Reabiertos,&#xD;&#xA;    sum(IF(CategoriaOriginal__c like '%reembolso%' and TicketReabierto__c =1 and MotivReapertura__c = 'Caso sin solución',1,IF(CategoriaOriginal__c like '%reembolso%' and TicketReabierto__c =1 and MotivReapertura__c is null,1,0))) as NU_Reabiertos_RB&#xD;&#xA;FROM&#xD;&#xA;    operations_test.MX_Tickets&#xD;&#xA;WHERE&#xD;&#xA;    CSIdentificadorPais__c in( 'Customer Service MX')&#xD;&#xA;GROUP BY DATE(CreatedDate);&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -804,7 +798,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="1408">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_8" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -847,7 +840,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="1408">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_9" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -890,7 +882,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_3" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -933,7 +924,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="1408">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_10" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -973,7 +963,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="1216">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1185,12 +1174,12 @@
       <column comment="" defaultValue="" key="false" length="21" name="NU_Monitoreos" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="NU_Reabiertos_RB" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="NU_Suma_Calificacion" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="21" name="NU_Encuestas" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="21" name="NU_Encuestas" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="NU_suma_calificacion_15" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="21" name="NU_entrenamientos_15" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="21" name="NU_entrenamientos_15" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_Closed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_Closed_PRC" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="21" name="NU_CasosEspeciales" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="21" name="NU_CasosEspeciales" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_CerradosCasosEspeciales" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="27" name="Promedio_2do_Nivel" nullable="true" pattern="" precision="4" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
     </metadata>
@@ -1217,12 +1206,12 @@
       <column comment="" defaultValue="" key="false" length="21" name="NU_Monitoreos" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="NU_Reabiertos_RB" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="NU_Suma_Calificacion" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="21" name="NU_Encuestas" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="21" name="NU_Encuestas" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="NU_suma_calificacion_15" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="21" name="NU_entrenamientos_15" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="21" name="NU_entrenamientos_15" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_Closed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_Closed_PRC" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="21" name="NU_CasosEspeciales" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="21" name="NU_CasosEspeciales" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="23" name="NU_CerradosCasosEspeciales" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="27" name="Promedio_2do_Nivel" nullable="true" pattern="" precision="4" sourceType="FLOAT" type="id_Float" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1231,7 +1220,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="1408">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_13" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1274,7 +1262,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_15" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1317,7 +1304,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_12" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1357,7 +1343,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="1408">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_16" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1397,7 +1382,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="1408">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1440,7 +1424,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="992">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_17" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1483,7 +1466,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="960">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_11" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1529,7 +1511,6 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="1408">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_18" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -1885,7 +1866,7 @@
     <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;Case&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,&#xA;    CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Pa_s_del_Usuario__c,&#xA;    LastModifiedById,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSKUs_Texto__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    EstatusItem__c,&#xA;    Proceso__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    TotalContactosCaso__c,&#xA;    TotalContactosCasoInbound__c,&#xA;    CSIN_OUT__c,&#xA;    Subestado_Back_office__c,&#xA;    OwnerId,&#xA;    CreatedById,&#xA;    LastModifiedDate,&#xA;    ClosedDate,&#xA;    Priority,&#xA;    ParentId,&#xA;    Fecha_Ingreso_Cola_Garant_as__c,&#xA;    CategoriaTicketPrincipal__c,&#xA;    CSAsignadoA__c,&#xA;    CSTipo__c,Bandera_escalamientos__c, TicketEscalado__c,TicketReabierto__c &#xA;FROM&#xA;    Case &#xA;&#xD;&#xA;WHERE&#xA;   (CSIdentificadorPais__c IN (&#xA; 'Customer Service MX','Customer Service MXCP','Tienda HP MX','Customer Service MX Casos Especiales'))      &#xD;&#xA; AND CreatedDate>= &quot;+context.UpDate+&quot;&#xD;&#xA;AND  Origin IN ('Teléfono','Email','Chat','Twitter','Facebook')&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,&#xA;    CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Pa_s_del_Usuario__c,&#xA;    LastModifiedById,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSKUs_Texto__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    EstatusItem__c,&#xA;    Proceso__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    TotalContactosCaso__c,&#xA;    TotalContactosCasoInbound__c,&#xA;    CSIN_OUT__c,&#xA;    Subestado_Back_office__c,&#xA;    OwnerId,&#xA;    CreatedById,&#xA;    LastModifiedDate,&#xA;    ClosedDate,&#xA;    Priority,&#xA;    ParentId,&#xA;    Fecha_Ingreso_Cola_Garant_as__c,&#xA;    CategoriaTicketPrincipal__c,&#xA;    CSAsignadoA__c,&#xA;    CSTipo__c,Bandera_escalamientos__c, TicketEscalado__c,TicketReabierto__c ,  MotivReapertura__c,  CSSubestado_Reembolso__c&#xD;&#xA;FROM&#xA;    Case &#xA;&#xD;&#xA;WHERE&#xA;   (CSIdentificadorPais__c IN (&#xA; 'Customer Service MX','Customer Service MXCP','Tienda HP MX','Customer Service MX Casos Especiales'))      &#xD;&#xA; AND CreatedDate>= &quot;+context.UpDate+&quot;&#xD;&#xA;AND  Origin IN ('Teléfono','Email','Chat','Twitter','Facebook')&#xD;&#xA;&quot;"/>
     <elementParameter field="CHECK" name="QUERY_ALL" value="false" show="false"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="500" show="false"/>
     <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
@@ -1936,6 +1917,8 @@
       <column comment="" key="false" length="100" name="Bandera_escalamientos__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="TicketEscalado__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="5" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="TicketReabierto__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="5" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSSubestado_Reembolso__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MotivReapertura__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="18" name="Id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="false"/>
       <column comment="" key="false" length="0" name="IsDeleted" nullable="false" pattern="" precision="0" type="id_Boolean" usefulColumn="false"/>
       <column comment="" key="false" length="18" name="ContactId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="false"/>
@@ -2412,9 +2395,11 @@
       <column comment="" key="false" length="-1" name="ClosedDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CSAsignadoA__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="OwnerId" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSSubestado_Reembolso__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MotivReapertura__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="Origin" expression="row1.Origin==null?&quot;N/A&quot;:row1.Origin " type="id_String"/>
         <mapperTableEntries name="CSIN_OUT__c" expression="row1.CSIN_OUT__c==null?&quot;IN&quot;:row1.CSIN_OUT__c " type="id_String"/>
@@ -2442,6 +2427,8 @@
         <mapperTableEntries name="ClosedDate" expression="DateUnixTimeStamp.SimpleDTZFromDateMX(row1.ClosedDate) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CSAsignadoA__c" expression="row1.CSAsignadoA__c " type="id_String" nullable="true"/>
         <mapperTableEntries name="OwnerId" expression="row1.OwnerId " type="id_String"/>
+        <mapperTableEntries name="CSSubestado_Reembolso__c" expression="row1.CSSubestado_Reembolso__c " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MotivReapertura__c" expression="row1.MotivReapertura__c " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Id" type="id_String"/>
@@ -2477,6 +2464,8 @@
         <mapperTableEntries name="Bandera_escalamientos__c" type="id_String" nullable="true"/>
         <mapperTableEntries name="TicketEscalado__c" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="TicketReabierto__c" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="CSSubestado_Reembolso__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MotivReapertura__c" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -2503,7 +2492,7 @@
       <column comment="" key="false" length="50" name="CSTipo__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="CSIdentificadorPais__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSIdentificadorPais__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="TicketEscalado__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="5" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="TicketReabierto__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="5" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CSIN_OUT__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
@@ -2513,12 +2502,14 @@
       <column comment="" key="false" length="121" name="Asigned_Name" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="121" name="DelegatedApproverName" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="OwnerId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSSubestado_Reembolso__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MotivReapertura__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Agent_Profile" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="Email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
       <column comment="" key="false" length="80" name="Username" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out4">
         <mapperTableEntries name="Id" expression="TicketsEscalados.Id " type="id_String" nullable="true"/>
@@ -2541,6 +2532,8 @@
         <mapperTableEntries name="Asigned_Name" expression=" out1.Name " type="id_String" nullable="true"/>
         <mapperTableEntries name="DelegatedApproverName" expression="out1.DelegatedApproverName " type="id_String" nullable="true"/>
         <mapperTableEntries name="OwnerId" expression="TicketsEscalados.OwnerId " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CSSubestado_Reembolso__c" expression="TicketsEscalados.CSSubestado_Reembolso__c " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MotivReapertura__c" expression="TicketsEscalados.MotivReapertura__c " type="id_String" nullable="true"/>
         <mapperTableEntries name="Agent_Profile" expression="out1.Profile " type="id_String" nullable="true"/>
         <mapperTableEntries name="Email" expression="out1.Email " type="id_String" nullable="true"/>
         <mapperTableEntries name="Username" expression="out1.Username " type="id_String" nullable="true"/>
@@ -2564,6 +2557,8 @@
         <mapperTableEntries name="ClosedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CSAsignadoA__c" type="id_String" nullable="true"/>
         <mapperTableEntries name="OwnerId" type="id_String"/>
+        <mapperTableEntries name="CSSubestado_Reembolso__c" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MotivReapertura__c" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Name" type="id_String" nullable="true"/>
@@ -2839,6 +2834,16 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CSSubestado_Reembolso__c"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MotivReapertura__c"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Agent_Profile"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -2874,7 +2879,7 @@
       <column comment="" key="false" length="50" name="CSTipo__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="CSIdentificadorPais__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSIdentificadorPais__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="TicketEscalado__c" nullable="true" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="5" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="TicketReabierto__c" nullable="true" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="5" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CSIN_OUT__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="50" usefulColumn="true"/>
@@ -2884,6 +2889,8 @@
       <column comment="" key="false" length="121" name="Asigned_Name" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="121" name="DelegatedApproverName" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="OwnerId" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSSubestado_Reembolso__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MotivReapertura__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Agent_Profile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="Email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
       <column comment="" key="false" length="80" name="Username" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -2899,7 +2906,7 @@
       <column comment="" key="false" length="50" name="CSTipo__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CategoriaOriginal__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CSSubcategoria__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="CSIdentificadorPais__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSIdentificadorPais__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="TicketEscalado__c" nullable="true" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="5" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="TicketReabierto__c" nullable="true" pattern="" precision="-1" sourceType="BIT" type="id_Boolean" originalLength="5" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CSIN_OUT__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="50" usefulColumn="true"/>
@@ -2909,6 +2916,8 @@
       <column comment="" key="false" length="121" name="Asigned_Name" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="121" name="DelegatedApproverName" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="OwnerId" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CSSubestado_Reembolso__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MotivReapertura__c" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Agent_Profile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="Email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
       <column comment="" key="false" length="80" name="Username" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -5541,7 +5550,7 @@
       <column comment="" key="false" length="255" name="Agent_Profile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout3">
         <mapperTableEntries name="Id" expression="row33.CSAsignadoA__c " type="id_String" nullable="true"/>
@@ -5695,7 +5704,7 @@
       <column comment="" defaultValue="" key="false" length="23" name="NU_Closed_10days" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfout4">
         <mapperTableEntries name="date" expression="copyOfout3.date " type="id_Date" nullable="true"/>
@@ -6524,14 +6533,14 @@
       <column comment="" key="false" length="0" name="LicenciaChat__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="false"/>
     </metadata>
   </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_25" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_25" target="tMysqlInput_28">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row38" lineStyle="0" metaname="tMysqlInput_25" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_25" target="tMap_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row38" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_25" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_25" target="tMysqlInput_28">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row37" lineStyle="8" metaname="tMysqlInput_24" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_24" target="tMap_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -6553,14 +6562,13 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row39" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMysqlInput_19">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfout2_0" lineStyle="0" metaname="copyOfout2_0" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMysqlOutput_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -6626,87 +6634,70 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout2_0" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row17" lineStyle="8" metaname="tMysqlInput_4" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_4" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tMysqlInput_5" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_5" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tMysqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_6" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tMysqlInput_7" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_7" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tMysqlInput_8" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_8" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tMysqlInput_9" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_9" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="8" metaname="tMysqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_3" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row9" lineStyle="8" metaname="tMysqlInput_10" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_10" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="8" metaname="tMysqlInput_13" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_13" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row11" lineStyle="8" metaname="tMysqlInput_15" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_15" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row12" lineStyle="8" metaname="tMysqlInput_12" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_12" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row13" lineStyle="8" metaname="tMysqlInput_16" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_16" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row8" lineStyle="8" metaname="tMysqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row27" lineStyle="8" metaname="tMysqlInput_17" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_17" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row27" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row14" lineStyle="8" metaname="tMysqlInput_11" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_11" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row31" lineStyle="8" metaname="tMysqlInput_18" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_18" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row31" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row22" lineStyle="0" metaname="tSalesforceInput_1" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tMap_12">
@@ -6734,14 +6725,19 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row24" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_2" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_2" target="tSalesforceInput_4">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSalesforceInput_2" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MotivReapertura__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_2" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_2" target="tSalesforceInput_4">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="TicketsEscalados" lineStyle="0" metaname="TicketsEscalados" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_8">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -6749,6 +6745,12 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="OwnerId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSSubestado_Reembolso__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MotivReapertura__c"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -6768,6 +6770,12 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="Username"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CSSubestado_Reembolso__c"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MotivReapertura__c"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -6799,10 +6807,6 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tSalesforceInput_3">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row28" lineStyle="0" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tMap_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="AccountId"/>
@@ -6812,6 +6816,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row28" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tSalesforceInput_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfcopyOfTicketsEscalados" lineStyle="0" metaname="copyOfcopyOfTicketsEscalados" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMysqlOutput_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -6850,14 +6858,14 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row30" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMysqlInput_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row29" lineStyle="0" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row29" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMysqlInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out5" lineStyle="0" metaname="out5" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMysqlOutput_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -6890,14 +6898,14 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row25" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_19" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_19" target="tMysqlInput_25">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row32" lineStyle="0" metaname="tMysqlInput_19" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_19" target="tMap_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row32" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_19" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_19" target="tMysqlInput_25">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row33" lineStyle="8" metaname="tMysqlInput_20" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_20" target="tMap_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
