@@ -3,7 +3,7 @@
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="4" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -106,7 +106,7 @@
     <routinesParameter id="_brhzsBX9Eeaknp0o2OE8iQ" name="DateUnixTimeStamp"/>
     <routinesParameter id="_D0-TkLWFEea2X8iOUDN24A" name="MX_Processing"/>
   </parameters>
-  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="384">
+  <node componentName="tSalesforceInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tSalesforceConnection_2" show="false"/>
@@ -1432,7 +1432,7 @@
       <column comment="" key="false" length="121" name="Ultimo_contacto_por" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="OutFinal2">
         <mapperTableEntries name="Propietario_Ticket" expression="outFinal.DSC_Owner_Name" type="id_String" nullable="true"/>
@@ -1599,7 +1599,7 @@
       <column comment="" key="false" length="18" name="CreatedById" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="384">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -2638,6 +2638,392 @@
       <column comment="" key="false" length="-1" name="agent_identification__c" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_4" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wms_live_mx&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DT_Consult&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xD;&#xA;  'MEX' as country, &#xD;&#xA;  'Opened_Tickets_MX' as table_name,&#xD;&#xA;  'start' as step,&#xD;&#xA;  NOW() as updated_at ,&#xD;&#xA;  NOW() as key_date,&#xD;&#xA;  0 as total_rows,&#xD;&#xA;  0 as total_rows_check;&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;autoReconnect=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="table_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="step"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="updated_at"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="key_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_row"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_row_check"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlInput_4">
+      <column comment="" key="false" length="3" name="country" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="table_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="step" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="updated_at" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="key_date" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_row" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_row_check" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_9" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_DYvn0LKWEea_oZu5XtznZA-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfout3">
+      <column comment="" key="false" length="3" name="country" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="table_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="step" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="updated_at" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="key_date" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows_check" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfout3">
+        <mapperTableEntries name="country" expression="row31.country " type="id_String"/>
+        <mapperTableEntries name="table_name" expression="row31.table_name " type="id_String"/>
+        <mapperTableEntries name="step" expression="row31.step " type="id_String"/>
+        <mapperTableEntries name="updated_at" expression="row31.updated_at " type="id_Date"/>
+        <mapperTableEntries name="key_date" expression="row31.key_date " type="id_Date"/>
+        <mapperTableEntries name="total_rows" expression="row31.total_row " type="id_Integer"/>
+        <mapperTableEntries name="total_rows_check" expression="row31.total_row_check " type="id_Integer"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row31" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="country" type="id_String"/>
+        <mapperTableEntries name="table_name" type="id_String"/>
+        <mapperTableEntries name="step" type="id_String"/>
+        <mapperTableEntries name="updated_at" type="id_Date"/>
+        <mapperTableEntries name="key_date" type="id_Date"/>
+        <mapperTableEntries name="total_row" type="id_Integer"/>
+        <mapperTableEntries name="total_row_check" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;operations_test&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mario.rasgado&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="rybtc1D0en7vSNCI95RnovQYYk8nNyOl"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;MX_monitoring_log&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="table_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="step"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="updated_at"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="key_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_rows"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_rows_check"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlOutput_2">
+      <column comment="" key="false" length="3" name="country" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="table_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="step" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="updated_at" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="key_date" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows_check" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="3" name="country" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="table_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="step" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="updated_at" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="key_date" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows_check" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;wms_live_mx&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DT_Consult&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xD;&#xA;  'MEX' as country, &#xD;&#xA;  'Opened_Tickets_MX' as table_name,&#xD;&#xA;  'finish' as step,&#xD;&#xA;  NOW() as updated_at ,&#xD;&#xA;  NOW() as key_date,&#xD;&#xA;  0 as total_rows,&#xD;&#xA;  0 as total_rows_check;&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;autoReconnect=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="table_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="step"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="updated_at"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="key_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_rows"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_rows_check"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlInput_2">
+      <column comment="" key="false" length="3" name="country" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="table_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="step" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="updated_at" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="key_date" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows_check" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1504" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_10" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_s-GIIN21EearHc-2lGYqLg-tMap_10-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfcopyOfout3">
+      <column comment="" key="false" length="3" name="country" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="table_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="step" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="updated_at" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="key_date" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows_check" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout3">
+        <mapperTableEntries name="country" expression="row32.country " type="id_String"/>
+        <mapperTableEntries name="table_name" expression="row32.table_name " type="id_String"/>
+        <mapperTableEntries name="step" expression="row32.step " type="id_String"/>
+        <mapperTableEntries name="updated_at" expression="row32.updated_at " type="id_Date"/>
+        <mapperTableEntries name="key_date" expression="row32.key_date " type="id_Date"/>
+        <mapperTableEntries name="total_rows" expression="row32.total_rows " type="id_Integer"/>
+        <mapperTableEntries name="total_rows_check" expression="row32.total_rows_check " type="id_Integer"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row32" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="country" type="id_String"/>
+        <mapperTableEntries name="table_name" type="id_String"/>
+        <mapperTableEntries name="step" type="id_String"/>
+        <mapperTableEntries name="updated_at" type="id_Date"/>
+        <mapperTableEntries name="key_date" type="id_Date"/>
+        <mapperTableEntries name="total_rows" type="id_Integer"/>
+        <mapperTableEntries name="total_rows_check" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1696" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_3" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;operations_test&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;mario.rasgado&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="rybtc1D0en7vSNCI95RnovQYYk8nNyOl"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;MX_monitoring_log&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="table_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="step"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="updated_at"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="key_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_rows"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_rows_check"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlOutput_3">
+      <column comment="" key="false" length="3" name="country" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="table_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="step" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="updated_at" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="key_date" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows_check" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="3" name="country" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="table_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="step" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="updated_at" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="key_date" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="total_rows_check" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSalesforceInput_1" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_1" target="tMap_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Subcategoria2__c"/>
@@ -2842,6 +3228,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row21" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMysqlOutput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlOutput_1" target="tMysqlInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tSalesforceInput_10" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_10" target="tMap_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
@@ -2931,9 +3320,70 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row30" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row31" lineStyle="0" metaname="tMysqlInput_4" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_4" target="tMap_9">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="total_rows"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row31" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_4" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_4" target="tSalesforceInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfout3" lineStyle="0" metaname="copyOfout3" offsetLabelX="0" offsetLabelY="0" source="tMap_9" target="tMysqlOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="total_row"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="total_rows"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row32" lineStyle="0" metaname="tMysqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_2" target="tMap_10">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="total_rows"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row32" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfcopyOfout3" lineStyle="0" metaname="copyOfcopyOfout3" offsetLabelX="0" offsetLabelY="0" source="tMap_10" target="tMysqlOutput_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="total_row"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="total_rows"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfout3" show="false"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_4" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Production Monitorng Log"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Production Monitorng Log"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
 </talendfile:ProcessType>
