@@ -56,7 +56,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/mario.rasgado/Documents/Talend/TOS_DI-Win32-20160912_1228-V6.1.2/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/mario.rasgado/Documents/operations_mx_github/workspace/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -95,13 +95,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
-    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
-    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
-    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
-    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
     <routinesParameter id="_5FeQwBOuEeaN4s27YySL8w" name="DataOperation"/>
     <routinesParameter id="_5GIYEBOuEeaN4s27YySL8w" name="Mathematical"/>
     <routinesParameter id="_5Gkc8BOuEeaN4s27YySL8w" name="Numeric"/>
@@ -148,7 +141,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM DWH.FactTickets&#xD;&#xA;where Date(CreatedDate)=curdate()&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT * FROM DWH.FactTickets&#xD;&#xA;where Date(CreatedDate)=curdate()&#xD;&#xA;limit 1&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -213,6 +206,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NK_Nature"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Ticket_Type"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FK_Subcategory_CS"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Creator"/>
@@ -229,7 +224,11 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FK_Category_Real"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FK_TicketPadre"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Parent_Ticket"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Ticket_Type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Scalated_Ticket"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
@@ -262,6 +261,7 @@
       <column comment="" defaultValue="" key="false" length="19" name="CreatedDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="IS_Contact" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="15" name="NK_Nature" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="FK_Ticket_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="100" name="FK_Subcategory_CS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="121" name="DSC_Creator" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="121" name="DSC_Asigned_To" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -270,7 +270,9 @@
       <column comment="" defaultValue="" key="false" length="45" name="DSC_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="45" name="DSC_Queue" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="50" name="FK_Category_Real" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="45" name="FK_TicketPadre" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="45" name="FK_Parent_Ticket" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="NK_Ticket_Type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="DSC_Scalated_Ticket" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="288">
@@ -347,6 +349,7 @@
         <mapperTableEntries name="CreatedDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="IS_Contact" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NK_Nature" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FK_Ticket_Type" type="id_String" nullable="true"/>
         <mapperTableEntries name="FK_Subcategory_CS" type="id_String" nullable="true"/>
         <mapperTableEntries name="DSC_Creator" type="id_String" nullable="true"/>
         <mapperTableEntries name="DSC_Asigned_To" type="id_String" nullable="true"/>
@@ -355,7 +358,9 @@
         <mapperTableEntries name="DSC_Status" type="id_String" nullable="true"/>
         <mapperTableEntries name="DSC_Queue" type="id_String" nullable="true"/>
         <mapperTableEntries name="FK_Category_Real" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FK_TicketPadre" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FK_Parent_Ticket" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Ticket_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DSC_Scalated_Ticket" type="id_Integer" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -368,6 +373,8 @@
     <elementParameter field="TEXT" name="API_VERSION" value="&quot;34.0&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;operations.strategy@linio.com.desarrollo&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="LxOIQcSAkjZfZeDPIS7aSXfIfDeV0nEeTVU7oyRnHoeAcuXHtujiAg=="/>
+    <elementParameter field="CHECK" name="USE_SAVE_SESSION" value="false"/>
+    <elementParameter field="DIRECTORY" name="SESSION_DIRECTORY" value="&quot;C:/Users/mario.rasgado/Documents/operations_mx_github/workspace&quot;" show="false"/>
     <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="OAUTH_CLIENT_SECRET" value="0RMsyjmybrE=" show="false"/>
     <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;&quot;" show="false"/>

@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="COL">
+  <context confirmationNeeded="false" name="COL">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_co"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_co"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_co"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="COL"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="CO"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_co_project"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_co"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value="NPSDataCO"/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="2"/>
+  </context>
+  <context confirmationNeeded="false" name="MEX">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_mx"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_mx"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_mx"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="MEX"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="MX"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_mx"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_mx"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value="NPSDataMX"/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="2"/>
+  </context>
+  <context confirmationNeeded="false" name="LMC">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_co_av"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_co"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_co"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="3"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="COL"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="LM"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_lm"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_co"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="8"/>
+  </context>
+  <context confirmationNeeded="false" name="CHL">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_cl"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_cl"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_cl"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="CHL"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="CL"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="developmet_cl"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_cl"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value="NPSDataCL"/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="2"/>
+  </context>
+  <context confirmationNeeded="false" name="CLP">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_mx_cp"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_mx"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_mx"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="2"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="MEX"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="CP"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_cp"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_mx"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="9"/>
+  </context>
+  <context confirmationNeeded="false" name="CLHP">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_cl_hp"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_cl"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_cl"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="4"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="CHL"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="CL_HP"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_cl"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_cl"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="7"/>
+  </context>
+  <context confirmationNeeded="false" name="LMP">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_pe_av"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_pe"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_pe"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="3"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="PER"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="LP"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_lp"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_pe"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="8"/>
+  </context>
+  <context confirmationNeeded="false" name="ARG">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_ar"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_ar"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_ar"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="ARG"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="AR"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="developmet_ar"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_ar"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value="NPSDataAR"/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="2"/>
+  </context>
+  <context confirmationNeeded="false" name="ECU">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_ec"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_ec"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_ec"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="ECU"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="EC"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_ec"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_ec"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value="NPSDataEC"/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="2"/>
+  </context>
+  <context confirmationNeeded="false" name="MXHP">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_mx_hp"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_mx"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_mx"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="4"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="MEX"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="MX_HP"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_mx"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_mx"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="7"/>
+  </context>
+  <context confirmationNeeded="false" name="PAN">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_pa"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_pa"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_pa"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="PAN"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="PA"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_pa"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_pa"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value="NPSDataPA"/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="2"/>
+  </context>
+  <context confirmationNeeded="false" name="PER">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_pe"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_pe"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_pe"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="PER"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="PE"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_pe"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_pe"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value="NPSDataPE"/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="2"/>
+  </context>
+  <context confirmationNeeded="false" name="VEN">
+    <contextParameter comment="" name="bob_country_prefix" prompt="bob_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="bob_live_ve"/>
+    <contextParameter comment="" name="sc_country_prefix" prompt="sc_country_prefix?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="sc_live_ve"/>
+    <contextParameter comment="" name="procurement_prefic" prompt="procurement_prefic?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="procurement_live_ve"/>
+    <contextParameter comment="" name="venture_id" prompt="venture_id?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Country" prompt="Country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="VEN"/>
+    <contextParameter comment="" name="two_letter_country" prompt="two_letter_country?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="VE"/>
+    <contextParameter comment="" name="development" prompt="development?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_String" value="development_ve"/>
+    <contextParameter comment="" name="wms_country_prefix" prompt="wms_country_prefix?" promptNeeded="false" type="id_String" value="wms_live_ve"/>
+    <contextParameter comment="" name="NPSData" prompt="NPSData?" promptNeeded="false" type="id_String" value="NPSDataVE"/>
+    <contextParameter comment="" name="order_initial" prompt="order_initial?" promptNeeded="false" repositoryContextId="_GbynIP9iEeWxIqTxnh33FA" type="id_Integer" value="2"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms2048M -Xmx2048M " show="false"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="320" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="160" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/mario.rasgado/Documents/operations_mx_github/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <routinesParameter id="_ZT3eQP6PEeWFL9KZby1-8Q" name="DataOperation"/>
+    <routinesParameter id="_ZVdZsP6PEeWFL9KZby1-8Q" name="Mathematical"/>
+    <routinesParameter id="_ZVwUo_6PEeWFL9KZby1-8Q" name="Numeric"/>
+    <routinesParameter id="_ZV6FoP6PEeWFL9KZby1-8Q" name="Relational"/>
+    <routinesParameter id="_ZWNAkP6PEeWFL9KZby1-8Q" name="StringHandling"/>
+    <routinesParameter id="_ZWWxkP6PEeWFL9KZby1-8Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_ZWpsgP6PEeWFL9KZby1-8Q" name="TalendDate"/>
+    <routinesParameter id="_ZW8ncP6PEeWFL9KZby1-8Q" name="TalendString"/>
+  </parameters>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;staging_dwh&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;STG_FACT_NPS&quot;+context.two_letter_country"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;   `ordernumber`, &#xD;&#xA;   `DateSubmitted`, &#xD;&#xA;   `Order_status`, &#xD;&#xA;   `ItemID`, &#xD;&#xA;   `tipificacion_problema`, &#xD;&#xA;   `ProblemaRaiz`, &#xD;&#xA;   `ResponseID`, &#xD;&#xA;   `Loyalty`, &#xD;&#xA;   `touch_por_cola`, &#xD;&#xA;   `sac`, &#xD;&#xA;   `sku`, &#xD;&#xA;   `payment_method`, &#xD;&#xA;   `fk_supplier`, &#xD;&#xA;   `FULFILLMENT`, &#xD;&#xA;   `fk_customer`, &#xD;&#xA;   `LinioPlus`, &#xD;&#xA;   `NK_Country`,&#xD;&#xA; `NK_Carrier_Service`,&#xD;&#xA;   `transportadora_id`,&#xD;&#xA;  `Holiday`,&#xD;&#xA;  `Venture`,&#xD;&#xA;  `is_stockout`,&#xD;&#xA;  `FK_Order_Category`&#xD;&#xA;FROM STG_FACT_NPS&quot;+context.two_letter_country+&quot; &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ordernumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateSubmitted"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Order_status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ItemID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tipificacion_problema"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProblemaRaiz"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ResponseID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Loyalty"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="touch_por_cola"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sac"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sku"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="payment_method"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fk_supplier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FULFILLMENT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fk_customer"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LinioPlus"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Carrier_Service"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="transportadora_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Holiday"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Venture"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_stockout"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Order_Category"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMysqlInput_1">
+      <column comment="" defaultValue="" key="false" length="11" name="ordernumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DateSubmitted" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Order_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="255" name="ItemID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="tipificacion_problema" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ProblemaRaiz" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ResponseID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Loyalty" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="touch_por_cola" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="sac" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="sku" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="payment_method" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="fk_supplier" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="FULFILLMENT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="fk_customer" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="LinioPlus" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="NK_Carrier_Service" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="transportadora_id" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Holiday" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Venture" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="is_stockout" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="FK_Order_Category" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" originalLength="11" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MSqhUAqOEeaNsuzIOTl_Qg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata comment="" connector="FLOW" label="DWH_FACT_NPS_D" name="out1">
+      <column comment="" key="false" length="10" name="SK_NPS" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Carrier_Real" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Class_Loyalty" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Class_Fulfillment_Real" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Product" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Date_Response" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Payment_Method" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Supplier" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Typification" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_NetOrder" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Sub_Status" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Costumer" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Order_Number" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Response" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_CS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_LinioPlus" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Stockout" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="NU_Touchpoint" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Holiday" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1" activateCondensedTool="true" reject="true">
+        <mapperTableEntries name="SK_NPS" type="id_Integer"/>
+        <mapperTableEntries name="NK_Country" expression="row1.NK_Country " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FK_Carrier_Real" expression="row9.SK_Carrier_Service " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_Class_Loyalty" expression="row2.SK_Class " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_Class_Fulfillment_Real" expression="row10.SK_Class " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_Product" expression="row5.SK_Product " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_Date_Response" expression="row1.DateSubmitted " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_Payment_Method" expression="row8.SK_PaymentMethod " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_Supplier" expression="row7.SK_Supplier " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_Typification" expression="row4.FK_RootCause " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_NetOrder" expression="row1.FK_Order_Category>0?row1.FK_Order_Category:0 " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_Sub_Status" expression="row3.SK_Class " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_Costumer" expression="row6.SK_Customer " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NK_Order_Number" expression="row1.ordernumber " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NK_Response" expression="row1.ResponseID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IN_CS" expression="row1.sac " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IN_LinioPlus" expression="row1.LinioPlus " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IN_Stockout" expression="row1.is_stockout " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NU_Touchpoint" expression="row1.touch_por_cola !=null?row1.touch_por_cola:&quot;0&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="IN_Holiday" expression="row1.Holiday " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ordernumber" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DateSubmitted" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Order_status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ItemID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="tipificacion_problema" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ProblemaRaiz" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ResponseID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Loyalty" type="id_String" nullable="true"/>
+        <mapperTableEntries name="touch_por_cola" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sac" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="sku" type="id_String" nullable="true"/>
+        <mapperTableEntries name="payment_method" type="id_String"/>
+        <mapperTableEntries name="fk_supplier" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FULFILLMENT" type="id_String"/>
+        <mapperTableEntries name="fk_customer" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LinioPlus" type="id_Integer"/>
+        <mapperTableEntries name="NK_Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Carrier_Service" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="transportadora_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Holiday" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Venture" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="is_stockout" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FK_Order_Category" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_Class" type="id_Integer"/>
+        <mapperTableEntries name="NK_Class" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DSC_Class" expression="row1.Loyalty " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Schema" expression="7" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DSC_Schema" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DSC_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Country" expression="row1.NK_Country " type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_Class" type="id_Integer"/>
+        <mapperTableEntries name="NK_Class" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DSC_Class" expression="row1.Order_status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Schema" expression="19" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DSC_Schema" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DSC_Status" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Country" expression="row1.NK_Country " type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="FK_RootCause" type="id_Integer"/>
+        <mapperTableEntries name="DSC_RootCause" expression="row1.ProblemaRaiz " type="id_String"/>
+        <mapperTableEntries name="DSC_Issue_Typification" expression="row1.tipificacion_problema " type="id_String"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_Product" type="id_Integer"/>
+        <mapperTableEntries name="NK_SKU_Simple" expression="row1.sku " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Country" expression="row1.NK_Country " type="id_String" nullable="true"/>
+        <mapperTableEntries name="IN_Active" expression="1" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row6" activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_Customer" type="id_Integer"/>
+        <mapperTableEntries name="NK_Customer" expression="row1.fk_customer " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NK_Country" expression="row1.NK_Country " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_venture" expression="row1.Venture " type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row7" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_Supplier" expression="" type="id_Integer"/>
+        <mapperTableEntries name="NK_Supplier" expression="row1.fk_supplier " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NK_Seller" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NK_Currency" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Venture" expression="1" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NK_Country" expression="row1.NK_Country " type="id_String" nullable="true"/>
+        <mapperTableEntries name="IN_Active" expression="1" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row8" activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_PaymentMethod" type="id_Integer"/>
+        <mapperTableEntries name="NK_PaymentMethod" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DSC_PaymentMethod" expression="row1.payment_method " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DSC_PaymentMethodType" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DSC_Status_PaymentFees" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IN_Credit_Card" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IN_manual_fraud_check_applicable" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IN_Auto_Fraud_Check_applicable" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="MO_Max__Order_Value_Limit" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="IN_Linio_Plus" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="QT_Max_Weight_Allowed" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="NK_Country" expression="row1.NK_Country " type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row9" activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_Carrier_Service" type="id_Integer"/>
+        <mapperTableEntries name="NK_Carrier_Service" expression="row1.NK_Carrier_Service " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NK_Carrier" expression="row1.transportadora_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NK_Country" expression="row1.NK_Country " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Active" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row10" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_Class" type="id_Integer"/>
+        <mapperTableEntries name="NK_Class" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DSC_Class" expression="row1.FULFILLMENT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Schema" expression="2" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DSC_Schema" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DSC_Status" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NK_Country" expression="row1.NK_Country " type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="-50" offsetLabelY="0" posX="-128" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA - DWH_DIM_CLASS" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_DIM_CLASS&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `DWH_DIM_CLASS`.`SK_Class`, &#xA;  `DWH_DIM_CLASS`.`NK_Class`, &#xA;  `DWH_DIM_CLASS`.`DSC_Class`, &#xA;  `DWH_DIM_CLASS`.`NK_Schema`, &#xA;  `DWH_DIM_CLASS`.`DSC_Schema`, &#xA;  `DWH_DIM_CLASS`.`DSC_Status`, &#xA;  `DWH_DIM_CLASS`.`NK_Country`&#xA;FROM `DWH_DIM_CLASS`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Schema"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Schema"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_DIM_CLASS" name="tMysqlInput_2">
+      <column comment="" key="false" length="10" name="SK_Class" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Class" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DSC_Class" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Schema" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DSC_Schema" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="DSC_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA - DWH_DIM_CLASS" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_DIM_CLASS&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `DWH_DIM_CLASS`.`SK_Class`, &#xA;  `DWH_DIM_CLASS`.`NK_Class`, &#xA;  `DWH_DIM_CLASS`.`DSC_Class`, &#xA;  `DWH_DIM_CLASS`.`NK_Schema`, &#xA;  `DWH_DIM_CLASS`.`DSC_Schema`, &#xA;  `DWH_DIM_CLASS`.`DSC_Status`, &#xA;  `DWH_DIM_CLASS`.`NK_Country`&#xA;FROM `DWH_DIM_CLASS`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Schema"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Schema"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_DIM_CLASS" name="tMysqlInput_3">
+      <column comment="" key="false" length="10" name="SK_Class" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Class" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DSC_Class" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Schema" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DSC_Schema" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="DSC_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA - DWH_DIM_ROOTCAUSE" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_DIM_ROOTCAUSE&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `DWH_DIM_ROOTCAUSE`.`SK_RootCause`, &#xA;  `DWH_DIM_ROOTCAUSE`.`DSC_RootCause`, &#xA;  `DWH_DIM_ROOTCAUSE`.`DSC_Issue_Typification`&#xA;FROM `DWH_DIM_ROOTCAUSE`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_RootCause"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_RootCause"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Issue_Typification"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_DIM_ROOTCAUSE" name="tMysqlInput_4">
+      <column comment="" key="true" length="10" name="FK_RootCause" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'N/A'" key="false" length="50" name="DSC_RootCause" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'N/A'" key="false" length="50" name="DSC_Issue_Typification" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-256" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_5" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_DIM_PRODUCT&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `DWH_DIM_PRODUCT`.`SK_Product`, &#xA;  `DWH_DIM_PRODUCT`.`NK_SKU_Simple`, &#xA;  `DWH_DIM_PRODUCT`.`NK_Country`,&#xD;&#xA;  `DWH_DIM_PRODUCT`.`IN_Active`&#xA;FROM `DWH_DIM_PRODUCT`&#xD;&#xA;where NK_Country like '&quot;+context.Country+&quot;' &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_Product"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_SKU_Simple"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_Active"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_DIM_PRODUCT" name="tMysqlInput_5">
+      <column comment="" key="false" length="10" name="SK_Product" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="NK_SKU_Simple" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Active" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_6" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_DIM_CUSTOMER&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `DWH_DIM_CUSTOMER`.`SK_Customer`, &#xA;  `DWH_DIM_CUSTOMER`.`NK_Customer`, &#xA;  `DWH_DIM_CUSTOMER`.`NK_Country`, &#xA;  `DWH_DIM_CUSTOMER`.`NK_venture`&#xA;FROM `DWH_DIM_CUSTOMER`&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_Customer"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Customer"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_venture"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_DIM_CUSTOMER" name="tMysqlInput_6">
+      <column comment="" key="false" length="10" name="SK_Customer" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="19" name="NK_Customer" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="NK_venture" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_7" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_DIM_SUPPLIER&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `DWH_DIM_SUPPLIER`.`SK_Supplier`, &#xA;  `DWH_DIM_SUPPLIER`.`NK_Supplier`, &#xA;  `DWH_DIM_SUPPLIER`.`NK_Seller`, &#xA;    `DWH_DIM_SUPPLIER`.`NK_Currency`, &#xA;  `DWH_DIM_SUPPLIER`.`NK_Venture`, &#xA;  `DWH_DIM_SUPPLIER`.`NK_Country`, &#xA;   `DWH_DIM_SUPPLIER`.`IN_Active`&#xA;FROM `DWH_DIM_SUPPLIER`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_Supplier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Supplier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Seller"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Currency"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Venture"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_Active"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_DIM_SUPPLIER" name="tMysqlInput_7">
+      <column comment="" key="false" length="10" name="SK_Supplier" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Supplier" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Seller" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="NK_Currency" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Venture" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Active" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_8" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA - DWH_DIM_PAYMENT_METHOD" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_DIM_PAYMENT_METHOD&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `DWH_DIM_PAYMENT_METHOD`.`SK_PaymentMethod`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`NK_PaymentMethod`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`DSC_PaymentMethod`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`DSC_PaymentMethodType`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`DSC_Status_PaymentFees`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`IN_Credit_Card`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`IN_manual_fraud_check_applicable`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`IN_Auto_Fraud_Check_applicable`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`MO_Max _Order_Value_Limit`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`IN_Linio_Plus`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`QT_Max_Weight_Allowed`, &#xA;  `DWH_DIM_PAYMENT_METHOD`.`NK_Country`&#xA;FROM `DWH_DIM_PAYMENT_METHOD`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_PaymentMethod"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_PaymentMethod"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_PaymentMethod"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_PaymentMethodType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Status_PaymentFees"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_Credit_Card"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_manual_fraud_check_applicable"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_Auto_Fraud_Check_applicable"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MO_Max__Order_Value_Limit"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_Linio_Plus"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QT_Max_Weight_Allowed"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_DIM_PAYMENT_METHOD" name="tMysqlInput_8">
+      <column comment="" key="false" length="10" name="SK_PaymentMethod" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_PaymentMethod" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DSC_PaymentMethod" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DSC_PaymentMethodType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DSC_Status_PaymentFees" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Credit_Card" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_manual_fraud_check_applicable" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Auto_Fraud_Check_applicable" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="MO_Max__Order_Value_Limit" nullable="true" originalDbColumnName="MO_Max _Order_Value_Limit" pattern="" precision="5" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Linio_Plus" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="QT_Max_Weight_Allowed" nullable="true" pattern="" precision="5" sourceType="FLOAT" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_9" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_DIM_CARRIER&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `DWH_DIM_CARRIER`.`SK_Carrier_Service`, &#xA;  `DWH_DIM_CARRIER`.`NK_Carrier_Service`, &#xA;  `DWH_DIM_CARRIER`.`NK_Carrier`, &#xA;  `DWH_DIM_CARRIER`.`NK_Country`, &#xA;  `DWH_DIM_CARRIER`.`NK_Active`&#xA;FROM `DWH_DIM_CARRIER`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_Carrier_Service"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Carrier_Service"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Carrier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Active"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_DIM_CARRIER" name="tMysqlInput_9">
+      <column comment="" key="true" length="10" name="SK_Carrier_Service" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Carrier_Service" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Carrier" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Active" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_10" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eMu5kP6uEeWUxq8B0zUPwA - DWH_DIM_CLASS" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_DIM_CLASS&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `DWH_DIM_CLASS`.`SK_Class`, &#xA;  `DWH_DIM_CLASS`.`NK_Class`, &#xA;  `DWH_DIM_CLASS`.`DSC_Class`, &#xA;  `DWH_DIM_CLASS`.`NK_Schema`, &#xA;  `DWH_DIM_CLASS`.`DSC_Schema`, &#xA;  `DWH_DIM_CLASS`.`DSC_Status`, &#xA;  `DWH_DIM_CLASS`.`NK_Country`&#xA;FROM `DWH_DIM_CLASS`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Schema"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Schema"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSC_Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_DIM_CLASS" name="tMysqlInput_10">
+      <column comment="" key="false" length="10" name="SK_Class" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Class" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DSC_Class" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Schema" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DSC_Schema" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="DSC_Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.31.15.140&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWH&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;etl_dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="IBQkUsmjNyTx/oyRGr6RYduR6nSCHIOd"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DWH_FACT_NPS_D&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_NPS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Country"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Carrier_Real"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Class_Loyalty"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Class_Fulfillment_Real"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Product"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Date_Response"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Payment_Method"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Supplier"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Typification"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_NetOrder"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Sub_Status"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FK_Costumer"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Order_Number"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NK_Response"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_CS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_LinioPlus"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_Stockout"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NU_Touchpoint"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_Holiday"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DWH_FACT_NPS_D" name="tMysqlOutput_1">
+      <column comment="" key="false" length="10" name="SK_NPS" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Carrier_Real" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Class_Loyalty" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Class_Fulfillment_Real" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Product" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Date_Response" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Payment_Method" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Supplier" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Typification" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_NetOrder" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Sub_Status" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Costumer" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Order_Number" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Response" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_CS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_LinioPlus" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Stockout" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="NU_Touchpoint" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Holiday" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="DWH_FACT_NPS_D" name="REJECT">
+      <column comment="" key="false" length="10" name="SK_NPS" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="NK_Country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Carrier_Real" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Class_Loyalty" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Class_Fulfillment_Real" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Product" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Date_Response" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Payment_Method" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Supplier" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Typification" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_NetOrder" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Sub_Status" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FK_Costumer" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Order_Number" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NK_Response" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_CS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_LinioPlus" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Stockout" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="NU_Touchpoint" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IN_Holiday" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Holiday"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Venture"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="is_stockout"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FK_Order_Category"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMysqlOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tMysqlInput_2" offsetLabelX="-13" offsetLabelY="-6" source="tMysqlInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tMysqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tMysqlInput_4" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tMysqlInput_5" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_5" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tMysqlInput_6" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_6" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="8" metaname="tMysqlInput_7" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_7" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="8" metaname="tMysqlInput_8" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_8" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="8" metaname="tMysqlInput_9" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_9" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="8" metaname="tMysqlInput_10" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_10" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

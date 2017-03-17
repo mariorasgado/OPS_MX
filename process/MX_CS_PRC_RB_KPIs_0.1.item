@@ -1884,7 +1884,7 @@
     <elementParameter field="TEXT" name="CUSTOM_MODULE" value="&quot;Case&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONDITION" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="MANUAL_QUERY" value="true"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,&#xA;    CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Pa_s_del_Usuario__c,&#xA;    LastModifiedById,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSKUs_Texto__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    EstatusItem__c,&#xA;    Proceso__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    TotalContactosCaso__c,&#xA;    TotalContactosCasoInbound__c,&#xA;    CSIN_OUT__c,&#xA;    Subestado_Back_office__c,&#xA;    OwnerId,&#xA;    CreatedById,&#xA;    LastModifiedDate,&#xA;    ClosedDate,&#xA;    Priority,&#xA;    ParentId,&#xA;    Fecha_Ingreso_Cola_Garant_as__c,&#xA;    CategoriaTicketPrincipal__c,&#xA;    CSAsignadoA__c,&#xA;    CSTipo__c,Bandera_escalamientos__c, TicketEscalado__c,TicketReabierto__c &#xA;FROM&#xA;    Case &#xA;&#xD;&#xA;WHERE&#xA;   (CSIdentificadorPais__c IN (&#xA; 'Customer Service MX','Customer Service CO','Customer Service MX','Customer Service MXCP','Tienda HP MX','Customer Service MX Casos Especiales'))      &#xD;&#xA; AND CreatedDate>= &quot;+context.UpDate+&quot;&#xD;&#xA;AND  Origin IN ('Teléfono','Email','Chat','Twitter','Facebook')&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xA;    Id,&#xA;    CaseNumber,&#xA;    CreatedDate,&#xA;    CSIdentificadorPais__c,&#xA;    Pa_s_del_Usuario__c,&#xA;    LastModifiedById,&#xA;    Origin,&#xA;    Status,&#xA;    Subestado__c,&#xA;    CSSKUs_Texto__c,&#xA;    CSSubcategoria__c,&#xA;    CategoriaOriginal__c,&#xA;    EstatusItem__c,&#xA;    Proceso__c,&#xA;    NumeroItemID__c,&#xA;    NumeroOrdenManual__c,&#xA;    TotalContactosCaso__c,&#xA;    TotalContactosCasoInbound__c,&#xA;    CSIN_OUT__c,&#xA;    Subestado_Back_office__c,&#xA;    OwnerId,&#xA;    CreatedById,&#xA;    LastModifiedDate,&#xA;    ClosedDate,&#xA;    Priority,&#xA;    ParentId,&#xA;    Fecha_Ingreso_Cola_Garant_as__c,&#xA;    CategoriaTicketPrincipal__c,&#xA;    CSAsignadoA__c,&#xA;    CSTipo__c,Bandera_escalamientos__c, TicketEscalado__c,TicketReabierto__c &#xA;FROM&#xA;    Case &#xA;&#xD;&#xA;WHERE&#xA;   (CSIdentificadorPais__c IN (&#xA; 'Customer Service MX','Customer Service CO','Customer Service PE','Customer Service MX','Customer Service MXCP','Tienda HP MX','Customer Service MX Casos Especiales'))      &#xD;&#xA; AND CreatedDate>= &quot;+context.UpDate+&quot;&#xD;&#xA;AND  Origin IN ('Teléfono','Email','Chat','Twitter','Facebook')&#xD;&#xA;&quot;"/>
     <elementParameter field="CHECK" name="QUERY_ALL" value="false" show="false"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="500" show="false"/>
     <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
@@ -2412,7 +2412,7 @@
       <column comment="" key="false" length="50" name="OwnerId" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="Origin" expression="row1.Origin==null?&quot;N/A&quot;:row1.Origin " type="id_String"/>
         <mapperTableEntries name="CSIN_OUT__c" expression="row1.CSIN_OUT__c==null?&quot;IN&quot;:row1.CSIN_OUT__c " type="id_String"/>
@@ -2515,7 +2515,7 @@
       <column comment="" key="false" length="80" name="Username" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out4">
         <mapperTableEntries name="Id" expression="TicketsEscalados.Id " type="id_String" nullable="true"/>
@@ -6516,14 +6516,14 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_25" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_25" target="tMysqlInput_28">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row38" lineStyle="0" metaname="tMysqlInput_25" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_25" target="tMap_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row38" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_25" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_25" target="tMysqlInput_28">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row37" lineStyle="8" metaname="tMysqlInput_24" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_24" target="tMap_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -6545,14 +6545,14 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row39" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMysqlInput_19">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMysqlInput_19">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfout2_0" lineStyle="0" metaname="copyOfout2_0" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMysqlOutput_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -6796,6 +6796,10 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSalesforceInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tSalesforceInput_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row28" lineStyle="0" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tMap_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="AccountId"/>
@@ -6805,10 +6809,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row28" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_4" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_4" target="tSalesforceInput_3">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfcopyOfTicketsEscalados" lineStyle="0" metaname="copyOfcopyOfTicketsEscalados" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMysqlOutput_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -6847,14 +6847,14 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row30" show="false"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMysqlInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row29" lineStyle="0" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row29" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSalesforceInput_3" offsetLabelX="0" offsetLabelY="0" source="tSalesforceInput_3" target="tMysqlInput_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out5" lineStyle="0" metaname="out5" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMysqlOutput_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -6887,14 +6887,14 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row25" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_19" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_19" target="tMysqlInput_25">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row32" lineStyle="0" metaname="tMysqlInput_19" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_19" target="tMap_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row32" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMysqlInput_19" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_19" target="tMysqlInput_25">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row33" lineStyle="8" metaname="tMysqlInput_20" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_20" target="tMap_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
