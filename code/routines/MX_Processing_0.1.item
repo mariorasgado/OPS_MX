@@ -304,4 +304,87 @@ public class MX_Processing {
     		return "Null";
     	}
     }
+    /**
+     * RWS_Status_Machine: Regresa el status de la merma
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(DSC_URL_PDF,DSC_URL_XML,FK_Supplier,DSC_SKU_nuevo,IN_Paid) input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static String RWS_Status_Machine (String  DSC_URL_PDF,String DSC_URL_XML,String FK_Supplier,String DSC_SKU_nuevo,Integer IN_Paid,String DSC_PO) throws ParseException{
+    	//try{
+    		String ret = "";
+    		// Primero la informacion de Invoice
+    		if(DSC_URL_PDF !=null && DSC_URL_XML!=null)
+    		ret=ret+"Invoice, ";
+    		
+    		//Informacion del BOB como Supplier
+    		if(FK_Supplier!=null)
+    			ret=ret+"BOB, ";
+    		
+    		//Informacion del SKU
+    		if(DSC_SKU_nuevo!=null)
+    			ret=ret+"SKU, ";
+    		
+    		ret= ret + "Acquired ";
+    		
+    		//Cuando ya tiene todo
+    		if(DSC_URL_PDF !=null && DSC_URL_XML!=null && FK_Supplier!=null && DSC_SKU_nuevo!=null)
+    			ret="Ready to PO";
+    		else
+    			ret=ret;
+    		
+    		//Cuando ya tiene la PO
+    		if(DSC_PO!=null)
+    			ret="Waiting for Approve";
+    		else
+    			ret=ret;
+    	
+    		//Cuando no tiene nada
+    		if(DSC_URL_PDF ==null && DSC_URL_XML==null&&FK_Supplier==null&&DSC_SKU_nuevo==null) 
+    			ret="Notificaciones enviadas";
+    		else 
+    			ret=ret;
+    		
+    		//Cuando esta pagado
+    		if(IN_Paid!=0)
+    			ret="Paid";
+    		else 
+    			ret=ret;
+    		
+    		return ret;
+    	//}
+    	//catch(Exception e)
+    	/*{
+    		return "Null";
+    	}*/
+    }
+    /**
+     * RWS_Status_Machine: Regresa el status de la merma
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(DSC_URL_PDF,DSC_URL_XML,FK_Supplier,DSC_SKU_nuevo,IN_Paid) input: The string need to be printed.
+     * 
+     */
+    public static String RemoveAccents(String input) {
+        // Cadena de caracteres original a sustituir.
+        String original = "áàäéèëíìïóòöúùuÁÀÄÉÈËÍÌÏÓÒÖÚÙÜÑçÇ";
+        // Cadena de caracteres ASCII que reemplazarán los originales.
+        String ascii = "aaaeeeiiiooouuuAAAEEEIIIOOOUUUNcC";
+        String output = input;
+        for (int i=0; i<original.length(); i++) {
+            // Reemplazamos los caracteres especiales.
+            output = output.replace(original.charAt(i), ascii.charAt(i));
+        }//for i
+        return output;
+    }//remove1
 }
